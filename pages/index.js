@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLeaf, faTshirt, faVirus } from '@fortawesome/pro-regular-svg-icons'
 
 export default function Home() {
   return (
@@ -139,22 +141,7 @@ export default function Home() {
                 <div className="flex">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center h-12 w-12 rounded-full bg-light-blue-500 text-white">
-                      {/* Heroicon name: globe-alt */}
-                      <svg
-                        className="h-6 w-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                        />
-                      </svg>
+                      <FontAwesomeIcon icon={faLeaf} className="h-6 w-6" />
                     </div>
                   </div>
                   <div className="ml-4">
@@ -174,20 +161,18 @@ export default function Home() {
                 <div className="flex">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center h-12 w-12 rounded-full bg-light-blue-500 text-white">
-                      {/* Heroicon name: scale */}
                       <svg
                         className="h-6 w-6"
-                        xmlns="http://www.w3.org/2000/svg"
                         fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
                         aria-hidden="true"
+                        stroke-width="0.4"
                       >
                         <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"
+                          d="M21.219 2H2.78A.781.781 0 002 2.781V21.22c0 .431.35.781.781.781H21.22c.431 0 .781-.35.781-.781V2.78A.781.781 0 0021.219 2zM3.562 6.688h7.62c-.379 3.949-3.594 7.1-7.62 7.464V6.688zm0 13.75V15.86c1.818.525 2.889 2.653 3.086 4.576H3.563zm12.221 0H8.217c-.169-1.979-1.003-3.915-2.46-5.13C8.59 14.443 10.875 12.36 12 9.733c1.124 2.623 3.407 4.71 6.242 5.575-1.46 1.218-2.29 3.156-2.459 5.13zm4.655 0h-3.086c.196-1.914 1.261-4.05 3.085-4.577v4.576zm0-6.286c-4.026-.364-7.241-3.515-7.62-7.464h7.62v7.464zm0-9.027H3.563V3.562h16.875v1.563z"
+                          fill="currentColor"
                         />
                       </svg>
                     </div>
@@ -206,22 +191,7 @@ export default function Home() {
                 <div className="flex">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center h-12 w-12 rounded-full bg-light-blue-500 text-white">
-                      {/* Heroicon name: lightning-bolt */}
-                      <svg
-                        className="h-6 w-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M13 10V3L4 14h7v7l9-11h-7z"
-                        />
-                      </svg>
+                      <FontAwesomeIcon icon={faTshirt} className="h-6 w-6" />
                     </div>
                   </div>
                   <div className="ml-4">
@@ -238,7 +208,6 @@ export default function Home() {
                 <div className="flex">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center h-12 w-12 rounded-full bg-light-blue-500 text-white">
-                      {/* Heroicon name: lightning-bolt */}
                       <svg
                         className="h-6 w-6"
                         xmlns="http://www.w3.org/2000/svg"
@@ -246,12 +215,11 @@ export default function Home() {
                         viewBox="0 0 24 24"
                         stroke="currentColor"
                         aria-hidden="true"
+                        stroke-width="0.4"
                       >
                         <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M13 10V3L4 14h7v7l9-11h-7z"
+                          d="M22.811 1.189a.645.645 0 00-.832-.068L8.65 10.704c-.4.288-.78.61-1.128.959a3.387 3.387 0 00-.725 1.073H4.061A3.06 3.06 0 001 15.797v.02a3.045 3.045 0 003.041 3.04h.02c.786 0 1.426.64 1.426 1.427s-.64 1.427-1.426 1.427h-.02a.645.645 0 000 1.289h.02a2.719 2.719 0 002.715-2.716 2.719 2.719 0 00-2.715-2.715h-.02a1.754 1.754 0 01-1.752-1.753v-.019a1.77 1.77 0 011.772-1.772h2.465c-.012.888.319 1.779.995 2.455a3.41 3.41 0 004.816 0 9.16 9.16 0 00.959-1.129l.953-1.326h3.275A2.027 2.027 0 0019.548 12a.644.644 0 10-1.289 0c0 .406-.33.736-.735.736h-2.348l7.703-10.715a.645.645 0 00-.068-.832zM12.25 14.599a7.88 7.88 0 01-.823.969 2.116 2.116 0 01-3.612-1.543h1.473a.642.642 0 001.098.502l1.38-1.38a.645.645 0 00-.911-.912l-.502.501H8.286a2.14 2.14 0 01.146-.162c.3-.3.626-.576.97-.823l10.13-7.283-7.283 10.13z"
+                          fill="currentColor"
                         />
                       </svg>
                     </div>
@@ -270,22 +238,7 @@ export default function Home() {
                 <div className="flex">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center h-12 w-12 rounded-full bg-light-blue-500 text-white">
-                      {/* Heroicon name: lightning-bolt */}
-                      <svg
-                        className="h-6 w-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M13 10V3L4 14h7v7l9-11h-7z"
-                        />
-                      </svg>
+                      <FontAwesomeIcon icon={faVirus} className="h-6 w-6" />
                     </div>
                   </div>
                   <div className="ml-4">
@@ -388,78 +341,15 @@ export default function Home() {
                   La nostra storia
                 </h3>
                 <p className="mt-3 text-lg text-gray-500">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Impedit ex obcaecati natus eligendi delectus, cum deleniti
-                  sunt in labore nihil quod quibusdam expedita nemo.
+                  Nata nel 1981 con perseveranza e determinazione della Signora
+                  Raffaella Lava&Lava é diventata con l'ingresso del figlio
+                  Vittorio, punto di riferimento per tutto il territorio. <br />
+                  Nel 2017 abbiamo aperto un laboratorio attrezzato con
+                  macchinari moderni per rispondere alla crescente domanda.{' '}
+                  <br />
+                  Infine nel febbario 2020 abbiamo aperto un nuovo punto vendita
+                  presso il centro commerciale Pam Panorama di Fornacette.
                 </p>
-
-                <dl className="mt-10 space-y-10">
-                  <div className="flex">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-full bg-light-blue-500 text-white">
-                        {/* Heroicon name: annotation */}
-                        <svg
-                          className="h-6 w-6"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          aria-hidden="true"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div className="ml-4">
-                      <dt className="text-lg leading-6 font-medium text-gray-900">
-                        Mobile notifications
-                      </dt>
-                      <dd className="mt-2 text-base text-gray-500">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Maiores impedit perferendis suscipit eaque, iste
-                        dolor cupiditate blanditiis ratione.
-                      </dd>
-                    </div>
-                  </div>
-
-                  <div className="flex">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center h-12 w-12 rounded-full bg-light-blue-500 text-white">
-                        {/* Heroicon name: mail */}
-                        <svg
-                          className="h-6 w-6"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          aria-hidden="true"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                    <div className="ml-4">
-                      <dt className="text-lg leading-6 font-medium text-gray-900">
-                        Reminder emails
-                      </dt>
-                      <dd className="mt-2 text-base text-gray-500">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Maiores impedit perferendis suscipit eaque, iste
-                        dolor cupiditate blanditiis ratione.
-                      </dd>
-                    </div>
-                  </div>
-                </dl>
               </div>
 
               <div className="px-4 mt-10 -mx-4 relative lg:mt-0 lg:col-start-1">
