@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
 
       {/* Header */}
-      <div className="relative bg-gray-50">
+      <div className="relative bg-gray-50 antialiased">
         <div className="relative bg-white shadow">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
@@ -854,19 +854,10 @@ export default function Home() {
           >
             <div className="px-5 py-2">
               <a
-                href="#i-nostri-servizi"
+                href="#su-di-noi"
                 className="text-base text-gray-500 hover:text-gray-900"
               >
-                Servizi
-              </a>
-            </div>
-
-            <div className="px-5 py-2">
-              <a
-                href="#la-nostra-storia"
-                className="text-base text-gray-500 hover:text-gray-900"
-              >
-                Storia
+                Su di noi
               </a>
             </div>
 
