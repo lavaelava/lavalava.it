@@ -10,6 +10,11 @@ export default function Home() {
       <Head>
         <title>Lava&Lava</title>
         <link rel="icon" href="/favicon.ico" />
+
+        <meta
+          name="description"
+          content="Lavaggio a secco e ad acqua, sanificazione ad ozono e lavaggio tappeti. Questi sono solo alcuni dei servizi che offriamo da Lava&Lava. Vieni a trovarci: siamo a Pisa e a Fornacette."
+        />
       </Head>
 
       {/* Header */}
@@ -20,9 +25,11 @@ export default function Home() {
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href="/">
                   <span className="sr-only">Lava&Lava</span>
-                  <img
+                  <Image
                     className="h-8 w-auto sm:h-10"
                     src="/logo.svg"
+                    width={113}
+                    height={40}
                     alt="Lava&Lava"
                   />
                 </a>
@@ -296,12 +303,15 @@ export default function Home() {
                   fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)"
                 />
               </svg>
-              <img
-                className="relative mx-auto rounded-md shadow-md"
-                width="490"
-                src="https://as2.ftcdn.net/jpg/00/75/51/47/500_F_75514758_cvn8Vbw28ZSmZFibYNY6kDEcGaldWtAz.jpg"
-                alt=""
-              />
+              <div className="relative mx-auto rounded-md shadow-md overflow-hidden">
+                <Image
+                  src="/images/lab.jpg"
+                  layout="responsive"
+                  width={700}
+                  height={400}
+                  alt="Laboratorio Lava&Lava"
+                />
+              </div>
             </div>
           </div>
 
@@ -394,17 +404,15 @@ export default function Home() {
                     fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)"
                   />
                 </svg>
-                {/* <img
-                  className="relative mx-auto rounded-md shadow-lg"
-                  src="/images/old-laundry.png"
-                /> */}
-                <Image
-                  className="relative mx-auto rounded-md shadow-md"
-                  src="/images/old-laundry.png"
-                  width="540"
-                  height="350"
-                  alt=""
-                />
+                <div className="relative mx-auto rounded-md shadow-md overflow-hidden">
+                  <Image
+                    src="/images/old-laundry.png"
+                    layout="responsive"
+                    width={700}
+                    height={400}
+                    alt="Laboratorio Lava&Lava"
+                  />
+                </div>
               </div>
             </div>
           </div>
