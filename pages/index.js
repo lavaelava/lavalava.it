@@ -350,7 +350,7 @@ export default function Home() {
                 </h3>
                 <p className="mt-3 text-lg text-gray-500">
                   Nata nel 1981 con perseveranza e determinazione della Signora
-                  Raffaella Lava&Lava é diventata con l'ingresso del figlio
+                  Raffaella Lava&Lava é diventata, con l'ingresso del figlio
                   Vittorio, punto di riferimento per tutto il territorio. <br />
                   Nel 2017 abbiamo aperto un laboratorio attrezzato con
                   macchinari moderni per rispondere alla crescente domanda.{' '}
@@ -476,10 +476,13 @@ export default function Home() {
                             />
                           </svg>
                         </div>
-                        <p className="ml-3 text-lg text-gray-700">
+                        <a
+                          href="https://g.page/lavaelava"
+                          className="ml-3 text-lg text-gray-700 underline hover:text-gray-900"
+                        >
                           Via Benedetto Croce, 81 <br />
                           56125, Pisa (PI)
-                        </p>
+                        </a>
                       </li>
 
                       <li className="flex items-start">
@@ -500,7 +503,12 @@ export default function Home() {
                             />
                           </svg>
                         </div>
-                        <p className="ml-3 text-lg text-gray-700">050 41046</p>
+                        <a
+                          href="tel:+3905041046"
+                          className="ml-3 text-lg text-gray-700 underline hover:text-gray-800"
+                        >
+                          050 41046
+                        </a>
                       </li>
 
                       <li className="flex items-start">
@@ -616,11 +624,19 @@ export default function Home() {
                             />
                           </svg>
                         </div>
-                        <p className="ml-3 text-lg text-gray-700">
-                          Piazza Kolbe, 15
-                          <br />
-                          56012, Fornacette (PI)
-                        </p>
+                        <div className="ml-3">
+                          <a
+                            href="https://g.page/lavaelava-fornacette"
+                            className="text-lg text-gray-700 underline hover:text-gray-800"
+                          >
+                            Piazza Kolbe, 15
+                            <br />
+                            56012, Fornacette (PI)
+                          </a>
+                          <p className="text-base text-gray-700">
+                            (presso centro commerciale Pam Panorama)
+                          </p>
+                        </div>
                       </li>
 
                       <li className="flex items-start">
@@ -641,9 +657,12 @@ export default function Home() {
                             />
                           </svg>
                         </div>
-                        <p className="ml-3 text-lg text-gray-700">
+                        <a
+                          href="tel:+390587477444"
+                          className="ml-3 text-lg text-gray-700 underline hover:text-gray-800"
+                        >
                           0587 477444
-                        </p>
+                        </a>
                       </li>
 
                       <li className="flex items-start">
@@ -728,14 +747,21 @@ export default function Home() {
                   <dl className="mt-2 text-base text-gray-500">
                     <div>
                       <dt className="sr-only">Email</dt>
-                      <dd>info@lavalava.it</dd>
+                      <dd>
+                        <a
+                          href="mailto:info@lavalava.it"
+                          className="underline text-gray-500 hover:text-gray-600"
+                        >
+                          info@lavalava.it
+                        </a>
+                      </dd>
                     </div>
                     <div className="mt-1">
                       <dt className="sr-only">Facebook Messenger</dt>
                       <dd>
                         <a
                           href="https://m.me/lavaelava"
-                          className="text-gray-600 font-medium underline"
+                          className="underline text-gray-500 hover:text-gray-600"
                         >
                           Facebook Messenger
                         </a>
@@ -753,7 +779,7 @@ export default function Home() {
                       <dd>
                         <a
                           href="https://facebook.com/lavaelava"
-                          className="text-gray-600 font-medium underline"
+                          className="underline text-gray-500 hover:text-gray-600"
                         >
                           Facebook
                         </a>
@@ -764,7 +790,7 @@ export default function Home() {
                       <dd>
                         <a
                           href="https://instagram.com/lavanderialavaelava"
-                          className="text-gray-600 font-medium underline"
+                          className="underline text-gray-500 hover:text-gray-600"
                         >
                           Instagram
                         </a>
@@ -783,21 +809,27 @@ export default function Home() {
                   <h3 className="text-lg leading-6 font-medium text-gray-900">
                     Pisa
                   </h3>
-                  <div className="mt-2 text-base text-gray-500">
+                  <a
+                    href="https://g.page/lavaelava"
+                    className="mt-2 text-base underline text-gray-500 hover:text-gray-600"
+                  >
                     <p>Via Benedetto Croce, 81</p>
                     <p className="mt-1">56125, Pisa (PI)</p>
                     <p className="mt-1">050 41046</p>
-                  </div>
+                  </a>
                 </div>
                 <div>
                   <h3 className="text-lg leading-6 font-medium text-gray-900">
                     Fornacette
                   </h3>
-                  <div className="mt-2 text-base text-gray-500">
+                  <a
+                    href="https://g.page/lavaelava-fornacette"
+                    className="mt-2 text-base underline text-gray-500 hover:text-gray-600"
+                  >
                     <p>Piazza Kolbe, 15</p>
                     <p className="mt-1">56012, Fornacette (PI)</p>
                     <p className="mt-1">0587 477444</p>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -849,7 +881,10 @@ export default function Home() {
             </div>
           </nav>
           <div className="mt-8 flex justify-center space-x-6">
-            <a href="/" className="text-gray-400 hover:text-gray-500">
+            <a
+              href="https://facebook.com/lavaelava"
+              className="text-gray-400 hover:text-gray-500"
+            >
               <span className="sr-only">Facebook</span>
               <svg
                 className="h-6 w-6"
@@ -865,7 +900,10 @@ export default function Home() {
               </svg>
             </a>
 
-            <a href="/" className="text-gray-400 hover:text-gray-500">
+            <a
+              href="https://instagram.com/lavanderialavaelava"
+              className="text-gray-400 hover:text-gray-500"
+            >
               <span className="sr-only">Instagram</span>
               <svg
                 className="h-6 w-6"
