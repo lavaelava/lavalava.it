@@ -10,6 +10,7 @@ export default function Home() {
       <Head>
         <title>Lava&Lava</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
 
         <meta
           name="description"
