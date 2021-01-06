@@ -9,8 +9,11 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="it">
-        <Head />
-        <body>
+        <Head>
+          <link rel="icon" href="/favicon.ico" />
+          <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
+        </Head>
+        <body className="antialiased">
           <Main />
           <NextScript />
         </body>

@@ -9,9 +9,6 @@ export default function Home() {
     <div>
       <Head>
         <title>Lava&Lava</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
-
         <meta
           name="description"
           content="Lavaggio a secco e ad acqua, sanificazione ad ozono e lavaggio tappeti. Questi sono solo alcuni dei servizi che offriamo da Lava&Lava. Vieni a trovarci: siamo a Pisa e a Fornacette."
@@ -19,21 +16,23 @@ export default function Home() {
       </Head>
 
       {/* Header */}
-      <div className="relative bg-gray-50 antialiased">
+      <div className="relative bg-gray-50">
         <div className="relative bg-white shadow">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
-                <a href="/">
-                  <span className="sr-only">Lava&Lava</span>
-                  <Image
-                    className="h-8 w-auto sm:h-10"
-                    src="/logo.svg"
-                    width={113}
-                    height={40}
-                    alt="Lava&Lava"
-                  />
-                </a>
+                <Link href="/">
+                  <a>
+                    <span className="sr-only">Lava&Lava</span>
+                    <img
+                      className="h-8 w-auto sm:h-10"
+                      src="/logo.svg"
+                      height={40}
+                      width={113}
+                      alt="Lava&Lava"
+                    />
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -84,7 +83,7 @@ export default function Home() {
               className="absolute inset-0 w-full h-full object-cover"
               src="/images/hero.jpg"
               layout="fill"
-              alt=""
+              alt="Mamma e figlia che odorano il bucato"
             />
           </div>
         </main>
@@ -407,7 +406,7 @@ export default function Home() {
                 </svg>
                 <div className="relative mx-auto rounded-md shadow-md overflow-hidden">
                   <Image
-                    src="/images/old-laundry.png"
+                    src="/images/old-laundry.jpg"
                     layout="responsive"
                     width={700}
                     height={400}
@@ -446,9 +445,9 @@ export default function Home() {
                   <div className="relative h-60 flex-shrink-0">
                     <Image
                       className="object-cover"
-                      src="/images/lava-e-lava--pisa.png"
+                      src="/images/lava-e-lava--pisa.jpg"
                       layout="fill"
-                      alt=""
+                      alt="Facciata del punto vendita Lava&Lava a Pisa"
                     />
                     <div className="absolute top-6 left-6">
                       <h3
@@ -594,9 +593,9 @@ export default function Home() {
                   <div className="relative h-60 flex-shrink-0">
                     <Image
                       className="object-cover"
-                      src="/images/lava-e-lava--fornacette.png"
+                      src="/images/lava-e-lava--fornacette.jpg"
                       layout="fill"
-                      alt=""
+                      alt="Facciata del punto vendita Lava&Lava a Fornacette"
                     />
                     <div className="absolute top-6 left-6">
                       <h3
