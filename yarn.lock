@@ -3246,6 +3246,7 @@ fsevents@~2.1.2:
     autoprefixer: latest
     next: 10.0.4
     postcss: latest
+    preact: ^10.5.12
     react: 17.0.1
     react-dom: 17.0.1
     tailwindcss: latest
@@ -4388,6 +4389,13 @@ fsevents@~2.1.2:
     nanoid: ^3.1.20
     source-map: ^0.6.1
   checksum: aa7ba3d80a4d8e25bc1a3f61461d7f6b60d361fb1301465d0eb973c5f38b347ad0842b02b8cc8801ede46559391d7c640c7313301a829ef9ca77e34be7230854
+  languageName: node
+  linkType: hard
+
+"preact@npm:^10.5.12":
+  version: 10.5.12
+  resolution: "preact@npm:10.5.12"
+  checksum: 38c5ae61ae0a343525e6a62dfcdde8055864f79c274157115dff2f62c2577490efce91d90f3952f1365020cc1e3d4b8e9d824d63644354f5fcef3b1e1ed5a653
   languageName: node
   linkType: hard
 
