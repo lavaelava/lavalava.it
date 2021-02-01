@@ -8,18 +8,21 @@
     font-weight: 400;
     src: url(/fonts/sen/400-regular.woff2) format('woff2'),
       url(/fonts/sen/400-regular.woff) format('woff');
+    font-display: swap;
   }
   @font-face {
     font-family: Sen;
     font-weight: 700;
     src: url(/fonts/sen/700-bold.woff2) format('woff2'),
       url(/fonts/sen/700-bold.woff) format('woff');
+    font-display: swap;
   }
   @font-face {
     font-family: Sen;
     font-weight: 800;
     src: url(/fonts/sen/800-extrabold.woff2) format('woff2'),
       url(/fonts/sen/800-extrabold.woff) format('woff');
+    font-display: swap;
   }
 }
 
