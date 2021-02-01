@@ -53,7 +53,7 @@ export default function MaglieMaglioni2021() {
               <div className="sm:text-center lg:text-left">
                 <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
                   Valida fino al
-                  <span className="text-amber-700"> 15 Febbraio</span>
+                  <span className="text-amber-700"> 20 Febbraio</span>
                 </p>
                 <h2 className="mt-4 text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                   Promozione
@@ -101,11 +101,11 @@ export default function MaglieMaglioni2021() {
                   </div>
                 </div>
                 <p className="mt-4 text-xs text-gray-500 sm:mt-6 sm:max-w-xl sm:mx-auto lg:mx-0">
-                  La promozione in oggetto è valida fino al giorno 15/02/2021 ed
+                  La promozione in oggetto è valida fino al giorno 20/02/2021 ed
                   esclusivamente nel nostro negozio di Fornacette (Piazza Kolbe,
                   15 56012, Fornacette (PI) ). Sono esclusi dalla promozione
-                  maglie e maglioni in tesuti particolare che necessitano di un
-                  lavaggio ad acqua.
+                  maglie e maglioni con accessori particolari o che necessitano
+                  di un lavaggio ad acqua.
                 </p>
               </div>
             </main>
