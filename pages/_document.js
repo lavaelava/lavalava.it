@@ -11,7 +11,11 @@ class MyDocument extends Document {
       <Html lang="it">
         <Head>
           <link rel="icon" href="/favicon.ico" />
-          <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
+          <link
+            rel="preload"
+            href="https://rsms.me/inter/inter.css"
+            as="style"
+          ></link>
         </Head>
         <body className="antialiased">
           <Main />
