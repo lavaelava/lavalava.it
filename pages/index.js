@@ -589,7 +589,10 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                <div
+                  id="dove-siamo--fornacette"
+                  className="flex flex-col rounded-lg shadow-lg overflow-hidden"
+                >
                   <div className="relative h-60 flex-shrink-0">
                     <Image
                       className="object-cover"
