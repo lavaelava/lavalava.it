@@ -62,8 +62,8 @@ export default function MaglieMaglioni2021() {
                   <span className="text-amber-600"> Maglioni</span>
                 </h2>
                 <p className="mt-6 text-base text-gray-500 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                  Scalda le tue giornate con un maglione, perchè a lavarlo ci
-                  pensiamo noi! <br />
+                  Scalda le tue giornate con un maglione, a lavarlo ci pensiamo
+                  noi! <br />
                   Con l'innovativo sistema di lavaggio a secco SENSENE le tue
                   maglie saranno più morbide e profumate che mai. <br />
                   La promozione è disponibile esclusivamente nel nostro nuovo
