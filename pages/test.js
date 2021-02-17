@@ -571,8 +571,7 @@ export default function Home() {
                 <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
                   <div>
                     <div>
-                      <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-teal-500 to-cyan-600">
-                        {/* Heroicon name: outline/inbox */}
+                      {/* <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-teal-500 to-cyan-600">
                         <svg
                           className="h-6 w-6 text-white"
                           xmlns="http://www.w3.org/2000/svg"
@@ -588,7 +587,22 @@ export default function Home() {
                             d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
                           />
                         </svg>
-                      </span>
+                      </span> */}
+                      <svg
+                        className="h-12 w-12 text-cyan-700"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 60 60"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M43.42 29.37l5.03 7.34L56 31.68l-9.22-13.06a5.03 5.03 0 00-2.2-1.76l-5.97-2.43C37.28 17.89 30 23.7 30 23.7s-7.28-5.82-8.6-9.28l-5.98 2.43c-.88.37-1.65.98-2.2 1.76L4 31.68l7.55 5.03 5.03-7.34m26.84-2.72l-.84 5.87V56H17.42V32.52l-.84-5.87m5.03-11.75L30 11.55m0 0l8.39 3.35M30 11.55v-1.2a1.62 1.62 0 01.96-1.5 2.52 2.52 0 10-3.48-2.33m7.32 12.84l-1.65-.66a8.39 8.39 0 00-6.3 0l-1.65.66"
+                        />
+                      </svg>
                     </div>
                     <div className="mt-6">
                       <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
@@ -614,9 +628,10 @@ export default function Home() {
                     <blockquote>
                       <div>
                         <p className="text-base text-gray-500">
-                          “Cras velit quis eros eget rhoncus lacus ultrices sed
-                          diam. Sit orci risus aenean curabitur donec aliquet.
-                          Mi venenatis in euismod ut.”
+                          “Personalmente porto i miei indumenti da oltre due
+                          anni. Sono i più convenienti del mercato e
+                          garantiscono una qualità TOP. Personale cordiale e
+                          simpatico.”
                         </p>
                       </div>
                       <footer className="mt-3">
@@ -624,12 +639,12 @@ export default function Home() {
                           <div className="flex-shrink-0">
                             <img
                               className="h-6 w-6 rounded-full"
-                              src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+                              src="https://lh4.googleusercontent.com/-VZwVXp7C2Fo/AAAAAAAAAAI/AAAAAAAAAAA/_BhayN-m-Rg/w66-h66-p-rp-mo-ba3-br100/photo.jpg"
                               alt=""
                             />
                           </div>
                           <div className="text-base font-medium text-gray-700">
-                            Marcia Hill, Digital Marketing Manager
+                            Walter, cliente
                           </div>
                         </div>
                       </footer>
@@ -652,8 +667,7 @@ export default function Home() {
                 <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
                   <div>
                     <div>
-                      <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-teal-500 to-cyan-600">
-                        {/* Heroicon name: outline/sparkles */}
+                      {/* <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-teal-500 to-cyan-600">
                         <svg
                           className="h-6 w-6 text-white"
                           xmlns="http://www.w3.org/2000/svg"
@@ -669,7 +683,22 @@ export default function Home() {
                             d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
                           />
                         </svg>
-                      </span>
+                      </span> */}
+                      <svg
+                        className="h-12 w-12 text-cyan-700"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 60 60"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M37.26 10.8a4.89 4.89 0 00-3.8-1.77h-6.91a4.89 4.89 0 00-3.81 1.77m-5.32-1.77L16.58 30l10.9-2.52m15.1-18.45L43.42 30l-10.9-2.52M19.94 54.32H5.68A1.68 1.68 0 014 52.65V14.17a3.35 3.35 0 012.54-3.26L17.42 8.2m25.16 0l10.88 2.72A3.35 3.35 0 0156 14.17v38.48a1.68 1.68 0 01-1.68 1.67H35.87M30.84 34.2h2.51m0 0L35.03 56H24.97l1.68-21.8-1.68-5.88m8.38 5.87l1.68-5.87M21.98 4h16.04a4.2 4.2 0 013.47 6.55l-8.71 12.84a3.36 3.36 0 01-5.56 0l-8.71-12.84A4.2 4.2 0 0121.98 4z"
+                        />
+                      </svg>
                     </div>
                     <div className="mt-6">
                       <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
@@ -708,6 +737,116 @@ export default function Home() {
                       className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                       src="/images/old-laundry.jpg"
                       alt="Customer profile user interface"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mt-24">
+              <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
+                <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
+                  <div>
+                    <div>
+                      {/* <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-teal-500 to-cyan-600">
+                        <svg
+                          className="h-6 w-6 text-white"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+                          />
+                        </svg>
+                      </span> */}
+                      <svg
+                        className="h-12 w-12 text-cyan-700"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 60 60"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M10.71 50.97a5.03 5.03 0 1010.06 0 5.03 5.03 0 00-10.06 0zm0 0H7.35A3.35 3.35 0 014 47.6v-21.8a3.36 3.36 0 013.35-3.36h27.99a13.42 13.42 0 0110.43 4.98l7.24 8.94A13.42 13.42 0 0156 44.82v2.8a3.35 3.35 0 01-3.35 3.35h-1.68m-10.9-21.8v3.35a3.36 3.36 0 003.35 3.35h3.35m-25.16 15.1h17.62M22.45 14.9H19.1m31.87 0h-1.68a2.52 2.52 0 00-3.75-2.18A5.89 5.89 0 0034.2 14.9h-7.54m-2.52-6.7a4.2 4.2 0 00-8.39 0h-6.7m9.22 22.64A3.36 3.36 0 1122.74 34a1.62 1.62 0 00-1.13 1.5v2.05M9.87 40.06s11.74-3.35 23.48 0m16.78 10.9a5.03 5.03 0 11-10.07 0 5.03 5.03 0 0110.07 0z"
+                        />
+                      </svg>
+                    </div>
+                    <div className="mt-6">
+                      <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
+                        Servizio a domicilio
+                      </h2>
+                      <p className="mt-4 text-lg text-gray-500">
+                        La professionalità ed esperienza di Lava&Lava arrivano
+                        direttamente a casa tua!
+                        <span className="block">
+                          Dedica più tempo a te stesso o al tuo lavoro senza
+                          preoccuparti di dover andare in lavanderia.
+                        </span>
+                        <span className="block">
+                          Puoi ordinare direttamente online oppure
+                          telefonandoci, il giorno concordato passeremo a
+                          ritirare i tuoi capi e te li riconsegneremo puliti e
+                          profumati.
+                        </span>
+                        <span className="block">
+                          Sappiamo quanto tieni ai tuoi abiti, siamo esperti
+                          artigiani e curiamo attentamente i dettagli, con la
+                          massima qualità possibile.
+                        </span>
+                      </p>
+                      <div className="mt-6">
+                        <a
+                          href="#"
+                          className="inline-flex py-2 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
+                        >
+                          Ordina ora
+                        </a>
+                      </div>
+                    </div>
+                    <div className="mt-8 border-t border-gray-200 pt-6">
+                      <blockquote>
+                        <div>
+                          <p className="text-base text-gray-500">
+                            “Ho portato un piumone molto mal ridotto, e dopo
+                            qualche giorno, ripensando alle sue condizioni, ho
+                            provato ad annullare l'ordine. Meno male non l'ho
+                            fatto! Il piumone è tornato come nuovo, e non ho più
+                            avuto bisogno di comprarne un altro. Miracoloso.”
+                          </p>
+                        </div>
+                        <footer className="mt-3">
+                          <div className="flex items-center space-x-3">
+                            <div className="flex-shrink-0">
+                              <img
+                                className="h-6 w-6 rounded-full"
+                                src="https://lh3.googleusercontent.com/-VmlClvLMfYI/AAAAAAAAAAI/AAAAAAAAAAA/WcAJ8quj0eQ/w66-h66-p-rp-mo-br100/photo.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div className="text-base font-medium text-gray-700">
+                              Pier Francesco, cliente
+                            </div>
+                          </div>
+                        </footer>
+                      </blockquote>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-12 sm:mt-16 lg:mt-0">
+                  <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
+                    <img
+                      className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                      src="/images/shirt.jpg"
+                      alt="Inbox user interface"
                     />
                   </div>
                 </div>
@@ -813,8 +952,9 @@ export default function Home() {
                       Wet-cleaning
                     </h3>
                     <p className="mt-2 text-base text-gray-500">
-                      Laviamo ad acqua con tecnologia Wet-cleaning e l'utilizzo
-                      di detergenti ad alta sanificazione.
+                      Questa tipologia di lavaggio ci permette di lavare ad
+                      acqua tessuti come seta e lana, altrimenti lavabili solo a
+                      secco.
                     </p>
                   </div>
                 </div>
@@ -993,9 +1133,9 @@ export default function Home() {
                       Sanificazione ad ozono
                     </h3>
                     <p className="mt-2 text-base text-gray-500">
-                      Eliminiamo muffe, acari, virus, batteri e cattivi odori da
-                      cuscini, caschi moto, passeggini, valigie, ecc. con
-                      l'innovativo sistema di igienizzazione ad ozono.
+                      L'innovativo sistema di igienizzazione ad ozono elimina
+                      muffe, acari, virus, batteri e cattivi odori da cuscini,
+                      caschi moto, passeggini, valigie, ecc.
                     </p>
                   </div>
                 </div>
