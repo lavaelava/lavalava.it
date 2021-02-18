@@ -474,7 +474,7 @@ export default function Home() {
                     className="absolute inset-0 w-full h-full object-cover"
                     src="/images/hero-2.jpg"
                     layout="fill"
-                    alt="Mamma e figlia che odorano il bucato"
+                    alt="Pila di vestiti su un tavolo"
                   />
                   <div
                     className="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-600"
@@ -640,7 +640,7 @@ export default function Home() {
                             <img
                               className="h-6 w-6 rounded-full"
                               src="https://lh4.googleusercontent.com/-VZwVXp7C2Fo/AAAAAAAAAAI/AAAAAAAAAAA/_BhayN-m-Rg/w66-h66-p-rp-mo-ba3-br100/photo.jpg"
-                              alt=""
+                              alt="Walter"
                             />
                           </div>
                           <div className="text-base font-medium text-gray-700">
@@ -656,7 +656,7 @@ export default function Home() {
                     <img
                       className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                       src="/images/shirt.jpg"
-                      alt="Inbox user interface"
+                      alt="Macchinario per stirare la camicie"
                     />
                   </div>
                 </div>
@@ -736,7 +736,7 @@ export default function Home() {
                     <img
                       className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                       src="/images/old-laundry.jpg"
-                      alt="Customer profile user interface"
+                      alt="Lavanderia nel negli anni 80"
                     />
                   </div>
                 </div>
@@ -829,7 +829,7 @@ export default function Home() {
                               <img
                                 className="h-6 w-6 rounded-full"
                                 src="https://lh3.googleusercontent.com/-VmlClvLMfYI/AAAAAAAAAAI/AAAAAAAAAAA/WcAJ8quj0eQ/w66-h66-p-rp-mo-br100/photo.jpg"
-                                alt=""
+                                alt="Pier Francesco"
                               />
                             </div>
                             <div className="text-base font-medium text-gray-700">
@@ -846,7 +846,7 @@ export default function Home() {
                     <img
                       className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                       src="/images/phone-mockup.jpg"
-                      alt="Mockup di telefoni che mostrano l'applicazione: Ordini Online - Lav&Lava"
+                      alt="Applicazione degli ordini online mostrata su dei telefoni"
                     />
                   </div>
                 </div>
