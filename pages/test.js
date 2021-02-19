@@ -15,7 +15,7 @@ export default function Home() {
         />
       </Head>
 
-      <div className="bg-white">
+      <div className="bg-white font-gilroy">
         <header>
           <div className="relative bg-white">
             <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">

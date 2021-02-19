@@ -24,6 +24,42 @@
       url(/fonts/sen/800-extrabold.woff) format('woff');
     font-display: swap;
   }
+
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 400;
+    src: url(/fonts/gilroy/400-regular.woff2) format('woff2'),
+      url(/fonts/gilroy/400-regular.woff) format('woff');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 500;
+    src: url(/fonts/gilroy/500-medium.woff2) format('woff2'),
+      url(/fonts/gilroy/500-medium.woff) format('woff');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 600;
+    src: url(/fonts/gilroy/600-semibold.woff2) format('woff2'),
+      url(/fonts/gilroy/600-semibold.woff) format('woff');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 700;
+    src: url(/fonts/gilroy/700-bold.woff2) format('woff2'),
+      url(/fonts/gilroy/700-bold.woff) format('woff');
+    font-display: swap;
+  }
+  @font-face {
+    font-family: Gilroy;
+    font-weight: 800;
+    src: url(/fonts/gilroy/800-extrabold.woff2) format('woff2'),
+      url(/fonts/gilroy/800-extrabold.woff) format('woff');
+    font-display: swap;
+  }
 }
 
 html {
