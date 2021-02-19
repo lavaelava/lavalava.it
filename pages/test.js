@@ -62,7 +62,7 @@ export default function Home() {
                         Dove siamo
                       </a>
                       <a
-                        href="#"
+                        href="#overview"
                         className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-cyan-500 bg-opacity-60 hover:bg-opacity-70 focus:outline-none focus:ring focus:ring-white sm:px-8"
                       >
                         Scopri di più
@@ -75,7 +75,7 @@ export default function Home() {
           </div>
 
           {/* Alternating Feature Sections */}
-          <div className="relative pt-16 pb-32 overflow-hidden">
+          <div id="overview" className="relative pt-16 pb-32 overflow-hidden">
             <div
               aria-hidden="true"
               className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100"
@@ -236,7 +236,7 @@ export default function Home() {
                       </p>
                       <div className="mt-6">
                         <a
-                          href="#"
+                          href="#servizi"
                           className="inline-flex py-2 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
                         >
                           Scopri i nostri servizi
@@ -256,7 +256,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="mt-24">
+            <div className="pt-24" id="domicilio">
               <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
                 <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
                   <div>
@@ -306,10 +306,10 @@ export default function Home() {
                           preoccuparti di dover andare in lavanderia.
                         </span>
                         <span className="block">
-                          Puoi ordinare direttamente online oppure
-                          telefonandoci, il giorno concordato passeremo a
-                          ritirare i tuoi capi e te li riconsegneremo puliti e
-                          profumati.
+                          Puoi ordinare direttamente online, scrivendoci su
+                          WhatsApp oppure telefonandoci, il giorno concordato
+                          passeremo a ritirare i tuoi capi e te li
+                          riconsegneremo puliti e profumati.
                         </span>
                         <span className="block">
                           Sappiamo quanto tieni ai tuoi abiti, siamo esperti
@@ -370,7 +370,7 @@ export default function Home() {
 
           {/* Gradient Feature Section */}
           {/* <div className="bg-gradient-to-r from-teal-500 to-cyan-600"> */}
-          <div>
+          <div id="servizi">
             <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
               <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight">
                 I nostri principali servizi
@@ -1003,7 +1003,10 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8">
+            <div
+              id="conto-terzi"
+              className="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8"
+            >
               <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
                 <h2 className="text-sm font-semibold tracking-wide uppercase">
                   <span className="bg-gradient-to-r from-teal-300 to-cyan-300 bg-clip-text text-transparent">

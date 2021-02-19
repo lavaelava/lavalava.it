@@ -45,25 +45,25 @@ export default function Header() {
           </div>
           <nav className="hidden md:flex space-x-10">
             <a
-              href="#"
+              href="#servizi"
               className="text-base font-medium text-gray-500 hover:text-gray-900"
             >
               Servizi
             </a>
             <a
-              href="#"
+              href="#domicilio"
               className="text-base font-medium text-gray-500 hover:text-gray-900"
             >
               Lavanderia a domicilio
             </a>
             <a
-              href="#"
+              href="#dove-siamo"
               className="text-base font-medium text-gray-500 hover:text-gray-900"
             >
               Dove siamo
             </a>
             <a
-              href="#"
+              href="#conto-terzi"
               className="text-base font-medium text-gray-500 hover:text-gray-900"
             >
               Per le lavanderie
@@ -137,7 +137,7 @@ export default function Header() {
                 <div className="mt-6">
                   <nav className="grid grid-cols-1 gap-7">
                     <a
-                      href="#"
+                      href="#servizi"
                       className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
                     >
                       <svg
@@ -160,7 +160,7 @@ export default function Header() {
                       </div>
                     </a>
                     <a
-                      href="#"
+                      href="#domicilio"
                       className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
                     >
                       <svg
@@ -183,7 +183,7 @@ export default function Header() {
                       </div>
                     </a>
                     <a
-                      href="#"
+                      href="#dove-siamo"
                       className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
                     >
                       <svg
@@ -206,7 +206,7 @@ export default function Header() {
                       </div>
                     </a>
                     <a
-                      href="#"
+                      href="#conto-terzi"
                       className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
                     >
                       <svg
