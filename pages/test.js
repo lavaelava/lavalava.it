@@ -23,11 +23,6 @@ export default function Home() {
             <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
               <div className="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
                 <div className="absolute inset-0">
-                  {/* <img
-                    className="h-full w-full object-cover"
-                    src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
-                    alt="People working on laptops"
-                  /> */}
                   <Image
                     className="absolute inset-0 w-full h-full object-cover"
                     src="/images/hero-2.jpg"
@@ -85,23 +80,6 @@ export default function Home() {
                 <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
                   <div>
                     <div>
-                      {/* <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-teal-500 to-cyan-600">
-                        <svg
-                          className="h-6 w-6 text-white"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          aria-hidden="true"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
-                          />
-                        </svg>
-                      </span> */}
                       <svg
                         className="h-12 w-12 text-cyan-700"
                         xmlns="http://www.w3.org/2000/svg"
@@ -181,23 +159,6 @@ export default function Home() {
                 <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
                   <div>
                     <div>
-                      {/* <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-teal-500 to-cyan-600">
-                        <svg
-                          className="h-6 w-6 text-white"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          aria-hidden="true"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-                          />
-                        </svg>
-                      </span> */}
                       <svg
                         className="h-12 w-12 text-cyan-700"
                         xmlns="http://www.w3.org/2000/svg"
@@ -261,23 +222,6 @@ export default function Home() {
                 <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
                   <div>
                     <div>
-                      {/* <span className="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-teal-500 to-cyan-600">
-                        <svg
-                          className="h-6 w-6 text-white"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          aria-hidden="true"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
-                          />
-                        </svg>
-                      </span> */}
                       <svg
                         className="h-12 w-12 text-cyan-700"
                         xmlns="http://www.w3.org/2000/svg"
@@ -369,7 +313,6 @@ export default function Home() {
           </div>
 
           {/* Gradient Feature Section */}
-          {/* <div className="bg-gradient-to-r from-teal-500 to-cyan-600"> */}
           <div id="servizi">
             <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
               <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight">
@@ -383,23 +326,6 @@ export default function Home() {
               <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
                 <div>
                   <div>
-                    {/* <span className="flex items-center justify-center h-12 w-12 rounded-md bg-teal-800 bg-opacity-10">
-                      <svg
-                        className="h-6 w-6 text-gray-900"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
-                        />
-                      </svg>
-                    </span> */}
                     <svg
                       className="h-12 w-12 text-cyan-700"
                       xmlns="http://www.w3.org/2000/svg"
@@ -428,23 +354,6 @@ export default function Home() {
                 </div>
                 <div>
                   <div>
-                    {/* <span className="flex items-center justify-center h-12 w-12 rounded-md bg-gray-900 bg-opacity-10">
-                      <svg
-                        className="h-6 w-6 text-gray-900"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
-                        />
-                      </svg>
-                    </span> */}
                     <svg
                       className="h-12 w-12 text-cyan-700"
                       xmlns="http://www.w3.org/2000/svg"
@@ -474,23 +383,6 @@ export default function Home() {
                 </div>
                 <div>
                   <div>
-                    {/* <span className="flex items-center justify-center h-12 w-12 rounded-md bg-gray-900 bg-opacity-10">
-                      <svg
-                        className="h-6 w-6 text-gray-900"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
-                        />
-                      </svg>
-                    </span> */}
                     <svg
                       className="h-12 w-12 text-cyan-700"
                       xmlns="http://www.w3.org/2000/svg"
@@ -519,23 +411,6 @@ export default function Home() {
                 </div>
                 <div>
                   <div>
-                    {/* <span className="flex items-center justify-center h-12 w-12 rounded-md bg-gray-900 bg-opacity-10">
-                      <svg
-                        className="h-6 w-6 text-gray-900"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
-                        />
-                      </svg>
-                    </span> */}
                     <svg
                       className="h-12 w-12 text-cyan-700"
                       xmlns="http://www.w3.org/2000/svg"
@@ -564,23 +439,6 @@ export default function Home() {
                 </div>
                 <div>
                   <div>
-                    {/* <span className="flex items-center justify-center h-12 w-12 rounded-md bg-gray-900 bg-opacity-10">
-                      <svg
-                        className="h-6 w-6 text-gray-900"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                        />
-                      </svg>
-                    </span> */}
                     <svg
                       className="h-12 w-12 text-cyan-700"
                       xmlns="http://www.w3.org/2000/svg"
@@ -609,23 +467,6 @@ export default function Home() {
                 </div>
                 <div>
                   <div>
-                    {/* <span className="flex items-center justify-center h-12 w-12 rounded-md bg-gray-900 bg-opacity-10">
-                      <svg
-                        className="h-6 w-6 text-gray-900"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"
-                        />
-                      </svg>
-                    </span> */}
                     <svg
                       className="h-12 w-12 text-cyan-700"
                       xmlns="http://www.w3.org/2000/svg"
@@ -1070,6 +911,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+
           {/* CTA Section */}
           <div className="bg-white">
             <div className="max-w-4xl mx-auto py-16 px-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 lg:flex lg:items-center lg:justify-between">

@@ -70,12 +70,6 @@ export default function Header() {
             </a>
           </nav>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            {/* <a
-                  href="#"
-                  className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
-                >
-                  Sign in
-                </a> */}
             <a
               href="#"
               className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
@@ -84,16 +78,7 @@ export default function Header() {
             </a>
           </div>
         </div>
-        {/*
-              Mobile menu, show/hide based on mobile menu state.
 
-              Entering: "duration-200 ease-out"
-                From: "opacity-0 scale-95"
-                To: "opacity-100 scale-100"
-              Leaving: "duration-100 ease-in"
-                From: "opacity-100 scale-100"
-                To: "opacity-0 scale-95"
-            */}
         {isOpen && (
           <div className="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
             <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
