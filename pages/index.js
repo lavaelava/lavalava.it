@@ -131,7 +131,7 @@ export default function Home() {
                           <div className="flex-shrink-0">
                             <img
                               className="h-6 w-6 rounded-full"
-                              src="https://lh4.googleusercontent.com/-VZwVXp7C2Fo/AAAAAAAAAAI/AAAAAAAAAAA/_BhayN-m-Rg/w66-h66-p-rp-mo-ba3-br100/photo.jpg"
+                              src="/images/testimonials/walter.jpg"
                               alt="Walter"
                             />
                           </div>
@@ -286,7 +286,7 @@ export default function Home() {
                             <div className="flex-shrink-0">
                               <img
                                 className="h-6 w-6 rounded-full"
-                                src="https://lh3.googleusercontent.com/-VmlClvLMfYI/AAAAAAAAAAI/AAAAAAAAAAA/WcAJ8quj0eQ/w66-h66-p-rp-mo-br100/photo.jpg"
+                                src="/images/testimonials/pier-francesco.jpg"
                                 alt="Pier Francesco"
                               />
                             </div>
