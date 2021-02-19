@@ -56,221 +56,57 @@ export default function Home() {
                 </button>
               </div>
               <nav className="hidden md:flex space-x-10">
-                <div className="relative">
-                  {/* Item active: "text-gray-900", Item inactive: "text-gray-500" */}
-                  <button
-                    type="button"
-                    className="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
-                  >
-                    <span>Solutions</span>
-                    {/*
-          Heroicon name: solid/chevron-down
-
-          Item active: "text-gray-600", Item inactive: "text-gray-400"
-        */}
-                    <svg
-                      className="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </button>
-                  {/*
-        'Solutions' flyout menu, show/hide based on flyout menu state.
-
-        Entering: "transition ease-out duration-200"
-          From: "opacity-0 translate-y-1"
-          To: "opacity-100 translate-y-0"
-        Leaving: "transition ease-in duration-150"
-          From: "opacity-100 translate-y-0"
-          To: "opacity-0 translate-y-1"
-      */}
-                  <div className="hidden absolute z-10 -ml-4 mt-3 transform w-screen max-w-md lg:max-w-2xl lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-                    <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
-                      <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
-                        <a
-                          href="#"
-                          className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
-                        >
-                          <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-teal-500 to-cyan-600 text-white sm:h-12 sm:w-12">
-                            {/* Heroicon name: outline/inbox */}
-                            <svg
-                              className="h-6 w-6"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                              aria-hidden="true"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
-                              />
-                            </svg>
-                          </div>
-                          <div className="ml-4">
-                            <p className="text-base font-medium text-gray-900">
-                              Inbox
-                            </p>
-                            <p className="mt-1 text-sm text-gray-500">
-                              Get a better understanding of where your traffic
-                              is coming from.
-                            </p>
-                          </div>
-                        </a>
-                        <a
-                          href="#"
-                          className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
-                        >
-                          <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-teal-500 to-cyan-600 text-white sm:h-12 sm:w-12">
-                            {/* Heroicon name: outline/annotation */}
-                            <svg
-                              className="h-6 w-6"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                              aria-hidden="true"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
-                              />
-                            </svg>
-                          </div>
-                          <div className="ml-4">
-                            <p className="text-base font-medium text-gray-900">
-                              Messaging
-                            </p>
-                            <p className="mt-1 text-sm text-gray-500">
-                              Speak directly to your customers in a more
-                              meaningful way.
-                            </p>
-                          </div>
-                        </a>
-                        <a
-                          href="#"
-                          className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
-                        >
-                          <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-teal-500 to-cyan-600 text-white sm:h-12 sm:w-12">
-                            {/* Heroicon name: outline/chat-alt-2 */}
-                            <svg
-                              className="h-6 w-6"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                              aria-hidden="true"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
-                              />
-                            </svg>
-                          </div>
-                          <div className="ml-4">
-                            <p className="text-base font-medium text-gray-900">
-                              Live Chat
-                            </p>
-                            <p className="mt-1 text-sm text-gray-500">
-                              Your customers' data will be safe and secure.
-                            </p>
-                          </div>
-                        </a>
-                        <a
-                          href="#"
-                          className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
-                        >
-                          <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-teal-500 to-cyan-600 text-white sm:h-12 sm:w-12">
-                            {/* Heroicon name: outline/question-mark-circle */}
-                            <svg
-                              className="h-6 w-6"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor"
-                              aria-hidden="true"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                              />
-                            </svg>
-                          </div>
-                          <div className="ml-4">
-                            <p className="text-base font-medium text-gray-900">
-                              Knowledge Base
-                            </p>
-                            <p className="mt-1 text-sm text-gray-500">
-                              Connect with third-party tools that you're already
-                              using.
-                            </p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <a
                   href="#"
                   className="text-base font-medium text-gray-500 hover:text-gray-900"
                 >
-                  Pricing
+                  Servizi
                 </a>
                 <a
                   href="#"
                   className="text-base font-medium text-gray-500 hover:text-gray-900"
                 >
-                  Partners
+                  Lavanderia a domicilio
                 </a>
                 <a
                   href="#"
                   className="text-base font-medium text-gray-500 hover:text-gray-900"
                 >
-                  Company
+                  Dove siamo
+                </a>
+                <a
+                  href="#"
+                  className="text-base font-medium text-gray-500 hover:text-gray-900"
+                >
+                  Per le lavanderie
                 </a>
               </nav>
               <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                <a
+                {/* <a
                   href="#"
                   className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
                 >
                   Sign in
-                </a>
+                </a> */}
                 <a
                   href="#"
                   className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
                 >
-                  Sign up
+                  Ordina online
                 </a>
               </div>
             </div>
             {/*
-  Mobile menu, show/hide based on mobile menu state.
+              Mobile menu, show/hide based on mobile menu state.
 
-  Entering: "duration-200 ease-out"
-    From: "opacity-0 scale-95"
-    To: "opacity-100 scale-100"
-  Leaving: "duration-100 ease-in"
-    From: "opacity-100 scale-100"
-    To: "opacity-0 scale-95"
-*/}
-            <div className="hidden absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+              Entering: "duration-200 ease-out"
+                From: "opacity-0 scale-95"
+                To: "opacity-100 scale-100"
+              Leaving: "duration-100 ease-in"
+                From: "opacity-100 scale-100"
+                To: "opacity-0 scale-95"
+            */}
+            <div className="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
               <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
                 <div className="pt-5 pb-6 px-5">
                   <div className="flex items-center justify-between">
@@ -314,141 +150,109 @@ export default function Home() {
                         href="#"
                         className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
                       >
-                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-teal-500 to-cyan-600 text-white">
-                          {/* Heroicon name: outline/inbox */}
-                          <svg
-                            className="h-6 w-6"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            aria-hidden="true"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
-                            />
-                          </svg>
-                        </div>
+                        <svg
+                          className="h-10 w-10 text-cyan-700"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 60 60"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M46.77 20.48a19.29 19.29 0 100 19.04m0-19.04c.27-.46.54-.91.84-1.35m-.84 1.35a19.27 19.27 0 000 19.04m0 0c.27.46.54.91.84 1.35M16.7 38.39c1.9 1.49 5.16 1.16 7.52.45 2.36-.71 4.43-2.05 6.62-3.14 3.12-1.7 6.54-2.79 10.07-3.18m-7.53 1.67s-9.07-3.35-18.47 0M56 30a26 26 0 11-52 0 26 26 0 0152 0z"
+                          />
+                        </svg>
                         <div className="ml-4 text-base font-medium text-gray-900">
-                          Inbox
+                          Servizi
                         </div>
                       </a>
                       <a
                         href="#"
                         className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
                       >
-                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-teal-500 to-cyan-600 text-white">
-                          {/* Heroicon name: outline/annotation */}
-                          <svg
-                            className="h-6 w-6"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            aria-hidden="true"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
-                            />
-                          </svg>
-                        </div>
+                        <svg
+                          className="h-10 w-10 text-cyan-700"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 60 60"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M10.71 50.97a5.03 5.03 0 1010.06 0 5.03 5.03 0 00-10.06 0zm0 0H7.35A3.35 3.35 0 014 47.6v-21.8a3.36 3.36 0 013.35-3.36h27.99a13.42 13.42 0 0110.43 4.98l7.24 8.94A13.42 13.42 0 0156 44.82v2.8a3.35 3.35 0 01-3.35 3.35h-1.68m-10.9-21.8v3.35a3.36 3.36 0 003.35 3.35h3.35m-25.16 15.1h17.62M22.45 14.9H19.1m31.87 0h-1.68a2.52 2.52 0 00-3.75-2.18A5.89 5.89 0 0034.2 14.9h-7.54m-2.52-6.7a4.2 4.2 0 00-8.39 0h-6.7m9.22 22.64A3.36 3.36 0 1122.74 34a1.62 1.62 0 00-1.13 1.5v2.05M9.87 40.06s11.74-3.35 23.48 0m16.78 10.9a5.03 5.03 0 11-10.07 0 5.03 5.03 0 0110.07 0z"
+                          />
+                        </svg>
                         <div className="ml-4 text-base font-medium text-gray-900">
-                          Messaging
+                          Lavanderia a domicilio
                         </div>
                       </a>
                       <a
                         href="#"
                         className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
                       >
-                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-teal-500 to-cyan-600 text-white">
-                          {/* Heroicon name: outline/chat-alt-2 */}
-                          <svg
-                            className="h-6 w-6"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            aria-hidden="true"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
-                            />
-                          </svg>
-                        </div>
+                        <svg
+                          className="h-10 w-10 text-cyan-700"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 60 60"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M18.26 50.13l1.68-4.2m-1.68 4.2L4 56l7.55-17.61 1.68-.84m5.03 12.58L30 56l11.74-5.87m0 0l-1.68-4.2m1.68 4.2L56 56l-7.55-17.61-1.68-.84M26.65 19.1a3.36 3.36 0 114.48 3.16 1.62 1.62 0 00-1.13 1.5v2.05m-11.74 2.51s11.74-3.35 23.48 0m6.71-5.87C48.45 36.71 30 50.13 30 50.13S11.55 36.7 11.55 22.45a18.45 18.45 0 1136.9 0z"
+                          />
+                        </svg>
                         <div className="ml-4 text-base font-medium text-gray-900">
-                          Live Chat
+                          Dove siamo
                         </div>
                       </a>
                       <a
                         href="#"
                         className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
                       >
-                        <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-teal-500 to-cyan-600 text-white">
-                          {/* Heroicon name: outline/question-mark-circle */}
-                          <svg
-                            className="h-6 w-6"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            aria-hidden="true"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                            />
-                          </svg>
-                        </div>
+                        <svg
+                          className="h-10 w-10 text-cyan-700"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 60 60"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M37.26 10.8a4.89 4.89 0 00-3.8-1.77h-6.91a4.89 4.89 0 00-3.81 1.77m-5.32-1.77L16.58 30l10.9-2.52m15.1-18.45L43.42 30l-10.9-2.52M19.94 54.32H5.68A1.68 1.68 0 014 52.65V14.17a3.35 3.35 0 012.54-3.26L17.42 8.2m25.16 0l10.88 2.72A3.35 3.35 0 0156 14.17v38.48a1.68 1.68 0 01-1.68 1.67H35.87M30.84 34.2h2.51m0 0L35.03 56H24.97l1.68-21.8-1.68-5.88m8.38 5.87l1.68-5.87M21.98 4h16.04a4.2 4.2 0 013.47 6.55l-8.71 12.84a3.36 3.36 0 01-5.56 0l-8.71-12.84A4.2 4.2 0 0121.98 4z"
+                          />
+                        </svg>
                         <div className="ml-4 text-base font-medium text-gray-900">
-                          Knowledge Base
+                          Per le lavanderie
                         </div>
                       </a>
                     </nav>
                   </div>
                 </div>
                 <div className="py-6 px-5">
-                  <div className="grid grid-cols-2 gap-4">
-                    <a
-                      href="#"
-                      className="text-base font-medium text-gray-900 hover:text-gray-700"
-                    >
-                      Pricing
-                    </a>
-                    <a
-                      href="#"
-                      className="text-base font-medium text-gray-900 hover:text-gray-700"
-                    >
-                      Partners
-                    </a>
-                    <a
-                      href="#"
-                      className="text-base font-medium text-gray-900 hover:text-gray-700"
-                    >
-                      Company
-                    </a>
-                  </div>
-                  <div className="mt-6">
+                  <div>
                     <a
                       href="#"
                       className="w-full flex items-center justify-center px-4 py-2 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
                     >
-                      Sign up
+                      Ordina online
                     </a>
                     <p className="mt-6 text-center text-base font-medium text-gray-500">
-                      Existing customer?
+                      Preferisci venire in negozio?{' '}
                       <a href="#" className="text-gray-900">
-                        Sign in
+                        Scopri dove siamo
                       </a>
                     </p>
                   </div>
@@ -460,7 +264,7 @@ export default function Home() {
 
         <main>
           {/* Hero section */}
-          <div className="relative">
+          <div className="relative pb-12 md:pt-12 md:pb-24">
             <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
             <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
               <div className="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
@@ -515,51 +319,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          {/* Logo Cloud */}
-          <div className="bg-gray-100">
-            <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-              <p className="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">
-                Trusted by over 5 very average small businesses
-              </p>
-              <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
-                    alt="Tuple"
-                  />
-                </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
-                    alt="Mirage"
-                  />
-                </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
-                    alt="StaticKit"
-                  />
-                </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
-                    alt="Transistor"
-                  />
-                </div>
-                <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
-                    alt="Workcation"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+
           {/* Alternating Feature Sections */}
           <div className="relative pt-16 pb-32 overflow-hidden">
             <div
