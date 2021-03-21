@@ -101,11 +101,11 @@ export default function Home() {
                         La camicia conveniente
                       </h2>
                       <p className="mt-4 text-lg text-gray-500">
-                        Semper curabitur ullamcorper posuere nunc sed. Ornare
-                        iaculis bibendum malesuada faucibus lacinia porttitor.
-                        Pulvinar laoreet sagittis viverra duis. In venenatis sem
-                        arcu pretium pharetra at. Lectus viverra dui tellus
-                        ornare pharetra.
+                        Utilizzando un sistema di stiratura meccanica con
+                        manichino automatizzato, siamo in grado di offire un
+                        prezzo conveniente per il lavaggio e la stiratura delle
+                        camicie da uomo. Inoltre il prezzo varia in base alla
+                        quantità, piu ne porti e più risparmi!
                       </p>
                       <div className="mt-6">
                         <Link href="/promo/la-camicia-conveniente">
