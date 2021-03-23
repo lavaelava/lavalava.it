@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Link from 'next/link'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -7,16 +8,18 @@ export default function Header() {
       <div className="relative bg-white">
         <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
-              <span className="sr-only">Lava&Lava</span>
-              <img
-                className="h-8 w-auto sm:h-10"
-                src="/logo.svg"
-                height={40}
-                width={113}
-                alt="Lava&Lava"
-              />
-            </a>
+            <Link href="/">
+              <span>
+                <span className="sr-only">Lava&Lava</span>
+                <img
+                  className="h-8 w-auto sm:h-10"
+                  src="/logo.svg"
+                  height={40}
+                  width={113}
+                  alt="Lava&Lava"
+                />
+              </span>
+            </Link>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
             <button
@@ -63,7 +66,7 @@ export default function Header() {
               Dove siamo
             </a>
             <a
-              href="#conto-terzi"
+              href="#per-le-lavanderie"
               className="text-base font-medium text-gray-500 hover:text-gray-900"
             >
               Per le lavanderie
@@ -71,7 +74,7 @@ export default function Header() {
           </nav>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <a
-              href="#"
+              href="https://ordini.lavalava.it"
               className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
             >
               Ordina online
@@ -191,7 +194,7 @@ export default function Header() {
                       </div>
                     </a>
                     <a
-                      href="#conto-terzi"
+                      href="#per-le-lavanderie"
                       className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
                     >
                       <svg
@@ -219,7 +222,7 @@ export default function Header() {
               <div className="py-6 px-5">
                 <div>
                   <a
-                    href="#"
+                    href="https://ordini.lavalava.it"
                     className="w-full flex items-center justify-center px-4 py-2 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
                   >
                     Ordina online

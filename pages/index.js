@@ -25,7 +25,7 @@ export default function Home() {
                 <div className="absolute inset-0">
                   <Image
                     className="absolute inset-0 w-full h-full object-cover"
-                    src="/images/hero-2.jpg"
+                    src="/images/hero.jpg"
                     layout="fill"
                     alt="Pila di vestiti su un tavolo"
                   />
@@ -257,13 +257,13 @@ export default function Home() {
                         </span>
                         <span className="block">
                           Sappiamo quanto tieni ai tuoi abiti, siamo esperti
-                          artigiani e curiamo attentamente i dettagli, con la
+                          artigiani e curiamo attentamente i dettagli con la
                           massima qualità possibile.
                         </span>
                       </p>
                       <div className="mt-6">
                         <a
-                          href="#"
+                          href="https://ordini.lavalava.it"
                           className="inline-flex py-2 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
                         >
                           Ordina ora
@@ -834,8 +834,8 @@ export default function Home() {
                 <div className="h-full xl:relative xl:col-start-2">
                   <img
                     className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
-                    src="https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
-                    alt="People working on laptops"
+                    src="/images/businessmen.jpeg"
+                    alt="Businessmen looking at a tablet"
                   />
                   <div
                     aria-hidden="true"
@@ -845,7 +845,7 @@ export default function Home() {
               </div>
             </div>
             <div
-              id="conto-terzi"
+              id="per-le-lavanderie"
               className="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8"
             >
               <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
@@ -931,7 +931,7 @@ export default function Home() {
               </h2>
               <div className="mt-6 space-y-4 sm:space-y-0 sm:flex sm:space-x-5">
                 <a
-                  href="#"
+                  href="https://ordini.lavalava.it"
                   className="flex items-center justify-center px-4 py-3 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
                 >
                   Ordina online
@@ -1031,7 +1031,7 @@ export default function Home() {
 
                       <li>
                         <a
-                          href="#conto-terzi"
+                          href="#per-le-lavanderie"
                           className="text-base text-gray-500 hover:text-gray-900"
                         >
                           Per le lavanderie
@@ -1058,7 +1058,7 @@ export default function Home() {
                           href="#dove-siamo"
                           className="text-base text-gray-500 hover:text-gray-900"
                         >
-                          Orari punti vendita
+                          Punti vendita
                         </a>
                       </li>
 
