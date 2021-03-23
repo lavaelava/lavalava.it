@@ -8,6 +8,8 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter()
   useEffect(() => {
     if (process.env.NODE_ENV === 'production') {
+      // This pageview only trigger first time (it is important for Pixel to have real information)
+      fbq.pageview()
       const handleRouteChange = (url) => {
         gtag.pageview(url)
         fbq.pageview()
