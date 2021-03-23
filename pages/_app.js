@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import * as gtag from '../lib/gtag'
+import * as fbq from '../lib/fpixel'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
@@ -9,6 +10,7 @@ function MyApp({ Component, pageProps }) {
     if (process.env.NODE_ENV === 'production') {
       const handleRouteChange = (url) => {
         gtag.pageview(url)
+        fbq.pageview()
       }
       router.events.on('routeChangeComplete', handleRouteChange)
       return () => {
