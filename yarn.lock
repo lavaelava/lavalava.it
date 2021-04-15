@@ -87,6 +87,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@headlessui/react@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@headlessui/react@npm:1.0.0"
+  peerDependencies:
+    react: ">=16"
+  checksum: ba256475913a3d54bc95b774f64e89495e623e2031805135b2ed604e8490ca46c2c88d2049d38365f1269cf3e47a17cbf5aed20931bc888f39a1dcbd10221dd2
+  languageName: node
+  linkType: hard
+
 "@next/env@npm:10.1.3":
   version: 10.1.3
   resolution: "@next/env@npm:10.1.3"
@@ -2069,6 +2078,7 @@ fsevents@~2.3.1:
   version: 0.0.0-use.local
   resolution: "lavalava.it@workspace:."
   dependencies:
+    "@headlessui/react": ^1.0.0
     autoprefixer: ^10.2.5
     next: 10.1.3
     postcss: ^8.2.10
