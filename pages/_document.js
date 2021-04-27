@@ -56,6 +56,39 @@ class MyDocument extends Document {
                   src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
                 />
               </noscript>
+              {/* Iubenda Cookie Solution */}
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
+                  var _iub = _iub || [];
+                  _iub.csConfiguration = {
+                      "perPurposeConsent": true,
+                      "whitelabel": false,
+                      "lang": "it",
+                      "siteId": 2199998,
+                      "consentOnContinuedBrowsing": false,
+                      "cookiePolicyId": 56045222,
+                      "banner": {
+                          "brandBackgroundColor": "none",
+                          "brandTextColor": "black",
+                          "logo": "https://lavalava.it/logo.svg",
+                          "acceptButtonDisplay": true,
+                          "customizeButtonDisplay": true,
+                          "acceptButtonColor": "#14b8a6",
+                          "acceptButtonCaptionColor": "white",
+                          "customizeButtonColor": "#d1d5db",
+                          "customizeButtonCaptionColor": "#4b5563",
+                          "rejectButtonColor": "#0073CE",
+                          "rejectButtonCaptionColor": "white",
+                          "position": "float-bottom-left",
+                          "textColor": "#111827",
+                          "backgroundColor": "white"
+                      }
+                  };
+                  `,
+                }}
+              />
+              <script src="//cdn.iubenda.com/cs/iubenda_cs.js" async></script>
             </>
           )}
         </Head>
