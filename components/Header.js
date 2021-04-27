@@ -12,16 +12,18 @@ export default function Header() {
             <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <Link href="/">
-                  <span>
-                    <span className="sr-only">Lava&Lava</span>
-                    <img
-                      className="h-8 w-auto sm:h-10"
-                      src="/logo.svg"
-                      height={40}
-                      width={113}
-                      alt="Lava&Lava"
-                    />
-                  </span>
+                  <a>
+                    <span>
+                      <span className="sr-only">Lava&Lava</span>
+                      <img
+                        className="h-8 w-auto sm:h-10"
+                        src="/logo.svg"
+                        height={40}
+                        width={113}
+                        alt="Lava&Lava"
+                      />
+                    </span>
+                  </a>
                 </Link>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
