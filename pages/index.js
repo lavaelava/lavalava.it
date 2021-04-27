@@ -989,21 +989,19 @@ export default function Home() {
                     </h3>
                     <ul className="mt-4 space-y-4">
                       <li>
-                        <a
-                          href="#"
-                          className="text-base text-gray-500 hover:text-gray-900"
-                        >
-                          Privacy
-                        </a>
+                        <Link href="/legal/privacy-policy">
+                          <a className="text-base text-gray-500 hover:text-gray-900">
+                            Privacy
+                          </a>
+                        </Link>
                       </li>
 
                       <li>
-                        <a
-                          href="#"
-                          className="text-base text-gray-500 hover:text-gray-900"
-                        >
-                          Cookie Policy
-                        </a>
+                        <Link href="/legal/cookie-policy">
+                          <a className="text-base text-gray-500 hover:text-gray-900">
+                            Cookie Policy
+                          </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
