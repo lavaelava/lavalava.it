@@ -29,10 +29,7 @@ export default function HeroSlider() {
                   layout="fill"
                   alt="Pila di vestiti su un tavolo"
                 />
-                <div
-                  className="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-600"
-                  style={{ mixBlendMode: 'multiply' }}
-                />
+                <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-600 mix-blend-multiply" />
               </div>
               <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                 <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
@@ -75,10 +72,7 @@ export default function HeroSlider() {
                   layout="fill"
                   alt="Pila di vestiti su un tavolo"
                 />
-                <div
-                  className="absolute inset-0 bg-indigo-300"
-                  style={{ mixBlendMode: 'multiply' }}
-                />
+                <div className="absolute inset-0 bg-indigo-300 mix-blend-multiply" />
               </div>
               <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                 <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
@@ -119,10 +113,7 @@ export default function HeroSlider() {
                   layout="fill"
                   alt="Pila di vestiti su un tavolo"
                 />
-                <div
-                  className="absolute inset-0 bg-cyan-200"
-                  style={{ mixBlendMode: 'multiply' }}
-                />
+                <div className="absolute inset-0 bg-cyan-200 mix-blend-multiply" />
               </div>
               <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                 <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
