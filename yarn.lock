@@ -2097,6 +2097,13 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
+"keen-slider@npm:^5.4.0":
+  version: 5.4.0
+  resolution: "keen-slider@npm:5.4.0"
+  checksum: f0c9e6d62994dd513e9e285eb81320ecffc2aa1d2d6b8d178fa6641f82b5f8fbb823e78d43c9851747bd37ff82d2cd65c9a480e6e71e0a8df4b2e367fd92c7cb
+  languageName: node
+  linkType: hard
+
 "lavalava.it@workspace:.":
   version: 0.0.0-use.local
   resolution: "lavalava.it@workspace:."
@@ -2105,6 +2112,7 @@ fsevents@~2.3.1:
     "@heroicons/react": ^1.0.1
     "@tailwindcss/typography": ^0.4.0
     autoprefixer: ^10.2.5
+    keen-slider: ^5.4.0
     next: 10.1.3
     postcss: ^8.2.10
     preact: ^10.5.13

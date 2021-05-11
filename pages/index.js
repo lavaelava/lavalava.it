@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import Header from '../components/Header'
+import HeroSlider from '../components/HeroSlider'
 import {
   LocationMarkerIcon,
   PhoneIcon,
@@ -22,57 +23,7 @@ export default function Home() {
       <div className="bg-white font-gilroy">
         <Header />
         <main>
-          {/* Hero section */}
-          <div className="relative pb-12 md:pt-12 md:pb-24">
-            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
-            <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-              <div className="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
-                <div className="absolute inset-0">
-                  <Image
-                    className="absolute inset-0 w-full h-full object-cover"
-                    src="/images/hero.jpg"
-                    layout="fill"
-                    alt="Pila di vestiti su un tavolo"
-                  />
-                  <div
-                    className="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-600"
-                    style={{ mixBlendMode: 'multiply' }}
-                  />
-                </div>
-                <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-                  <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-                    <span className="block text-white">
-                      Dal 1981 ci prendiamo
-                    </span>
-                    <span className="block text-cyan-200">
-                      cura dei tuoi capi
-                    </span>
-                  </h1>
-                  <p className="mt-6 max-w-lg mx-auto text-center text-xl text-cyan-100 sm:max-w-3xl">
-                    Professionalità e innovazione sono per Lava&Lava punti di
-                    riferimento per continuare ad offrire un servizio efficiente
-                    e di qualità.
-                  </p>
-                  <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-                    <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                      <a
-                        href="#dove-siamo"
-                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-cyan-700 bg-white hover:bg-cyan-50 focus:outline-none focus:ring focus:ring-cyan-300 sm:px-8"
-                      >
-                        Dove siamo
-                      </a>
-                      <a
-                        href="#overview"
-                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-cyan-500 bg-opacity-60 hover:bg-opacity-70 focus:outline-none focus:ring focus:ring-white sm:px-8"
-                      >
-                        Scopri di più
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <HeroSlider />
 
           {/* Alternating Feature Sections */}
           <div id="overview" className="relative pt-16 pb-32 overflow-hidden">
