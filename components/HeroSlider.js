@@ -168,26 +168,26 @@ export default function HeroSlider() {
                         }}
                       >
                         <span
-                          className="absolute w-5 h-5 p-px flex"
+                          className="absolute w-6 h-6 p-px flex"
                           aria-hidden="true"
                         >
                           <span className="w-full h-full rounded-full bg-teal-200" />
                         </span>
                         <span
-                          className="relative block w-2.5 h-2.5 bg-teal-600 rounded-full"
+                          className="relative block w-3 h-3 bg-teal-600 rounded-full"
                           aria-hidden="true"
                         />
-                        <span className="sr-only">{idx}</span>
+                        <span className="sr-only">Slide {idx}</span>
                       </button>
                     ) : (
                       <button
                         type="button"
-                        className="block w-2.5 h-2.5 bg-gray-300 rounded-full hover:bg-gray-400 focus:outline-none focus:bg-gray-400"
+                        className="block w-3 h-3 bg-gray-300 rounded-full hover:bg-gray-400 focus:outline-none focus:bg-gray-400"
                         onClick={() => {
                           slider.moveToSlideRelative(idx)
                         }}
                       >
-                        <span className="sr-only">{idx}</span>
+                        <span className="sr-only">Slide {idx}</span>
                       </button>
                     )}
                   </li>
