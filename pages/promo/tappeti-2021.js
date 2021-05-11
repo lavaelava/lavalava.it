@@ -102,7 +102,7 @@ export default function MaglieMaglioni2021() {
                 </div>
                 <p className="mt-4 text-xs text-gray-500 sm:mt-6 sm:max-w-xl sm:mx-auto lg:mx-0">
                   La promozione in oggetto è valida esclusivamente fino al
-                  giorno 30/04/2021.
+                  giorno 31/05/2021.
                 </p>
               </div>
             </main>

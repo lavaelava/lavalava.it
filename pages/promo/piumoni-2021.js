@@ -59,7 +59,7 @@ export default function MaglieMaglioni2021() {
               <div className="sm:text-center lg:text-left">
                 <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
                   Valida fino al
-                  <span className="text-indigo-700"> 20 Febbraio</span>
+                  <span className="text-indigo-700"> 12 Giugno</span>
                 </p>
                 <h2 className="mt-4 text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                   Promozione
@@ -105,8 +105,10 @@ export default function MaglieMaglioni2021() {
                   </div>
                 </div>
                 <p className="mt-4 text-xs text-gray-500 sm:mt-6 sm:max-w-xl sm:mx-auto lg:mx-0">
-                  La promozione in oggetto è valida escluzivamente fino al
-                  giorno 20/02/2021. Sono esclusi dalla promozione ...
+                  La promozione in oggetto è valida esclusivamente dal giorno
+                  15/05/2021 al giorno 12/06/2021. Sono esclusi dalla promozione
+                  eventuali piumoni in tessuti particolari (e.g. seta, lana,
+                  ricamati) o che comunque richiedono un lavaggio a secco.
                 </p>
               </div>
             </main>
