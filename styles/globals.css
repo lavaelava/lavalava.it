@@ -71,3 +71,8 @@ html {
     scroll-behavior: auto;
   }
 }
+
+/** Keen Slider Overflow Override **/
+.keen-slider {
+  overflow: visible !important;
+}
