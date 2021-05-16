@@ -18,6 +18,9 @@ module.exports = {
         cyan: colors.cyan,
         'light-blue': colors.lightBlue,
       },
+      screens: {
+        xs: '360px',
+      },
     },
   },
   variants: {

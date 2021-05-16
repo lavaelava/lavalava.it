@@ -576,35 +576,55 @@ export default function Home() {
                             <div className="flex-shrink-0">
                               <ClockIcon className="h-6 w-6 text-cyan-500" />
                             </div>
-                            <ul className="ml-3 w-full text-lg text-gray-700">
+                            <ul className="ml-3 w-full space-y-3 text-lg text-gray-700 xs:space-y-0">
                               <li className="flex justify-between">
                                 Lunedì
                                 <span className="font-medium">
-                                  08:30-13, 15:30-19
+                                  08:30-13
+                                  <span className="invisible block h-0 xs:visible xs:inline xs:h-auto">
+                                    ,
+                                  </span>{' '}
+                                  15:30-19
                                 </span>
                               </li>
                               <li className="flex justify-between">
                                 Martedì
                                 <span className="font-medium">
-                                  08:30-13, 15:30-19
+                                  08:30-13
+                                  <span className="invisible block h-0 xs:visible xs:inline xs:h-auto">
+                                    ,
+                                  </span>{' '}
+                                  15:30-19
                                 </span>
                               </li>
                               <li className="flex justify-between">
                                 Mercoledì
                                 <span className="font-medium">
-                                  08:30-13, 15:30-19
+                                  08:30-13
+                                  <span className="invisible block h-0 xs:visible xs:inline xs:h-auto">
+                                    ,
+                                  </span>{' '}
+                                  15:30-19
                                 </span>
                               </li>
                               <li className="flex justify-between">
                                 Giovedì
                                 <span className="font-medium">
-                                  08:30-13, 15:30-19
+                                  08:30-13
+                                  <span className="invisible block h-0 xs:visible xs:inline xs:h-auto">
+                                    ,
+                                  </span>{' '}
+                                  15:30-19
                                 </span>
                               </li>
                               <li className="flex justify-between">
                                 Venerdì
                                 <span className="font-medium">
-                                  08:30-13, 15:30-19
+                                  08:30-13
+                                  <span className="invisible block h-0 xs:visible xs:inline xs:h-auto">
+                                    ,
+                                  </span>{' '}
+                                  15:30-19
                                 </span>
                               </li>
                               <li className="flex justify-between">
