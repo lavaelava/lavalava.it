@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Header from '../components/Header'
 import HeroSlider from '../components/HeroSlider'
+import SpecialHoursDisclosure from '../components/SpecialHoursDisclosure'
 import {
   LocationMarkerIcon,
   PhoneIcon,
@@ -588,6 +589,18 @@ export default function Home() {
                               </li>
                             </ul>
                           </li>
+                          <SpecialHoursDisclosure>
+                            <ul className="w-full text-lg text-gray-700">
+                              <li className="flex justify-between">
+                                Dal 19/07 al 13/08
+                                <span className="font-medium">08:30-13:30</span>
+                              </li>
+                              <li className="flex justify-between">
+                                Dal 16/08 al 27/08
+                                <span className="font-medium">Chiuso</span>
+                              </li>
+                            </ul>
+                          </SpecialHoursDisclosure>
                         </ul>
                         <div className="rounded-full shadow">
                           <a
@@ -689,6 +702,18 @@ export default function Home() {
                               </li>
                             </ul>
                           </li>
+                          <SpecialHoursDisclosure>
+                            <ul className="w-full text-lg text-gray-700">
+                              <li className="flex justify-between">
+                                Sabato 07/08
+                                <span className="font-medium">Chiuso</span>
+                              </li>
+                              <li className="flex justify-between">
+                                Dal 14/08 al 28/08
+                                <span className="font-medium">Chiuso</span>
+                              </li>
+                            </ul>
+                          </SpecialHoursDisclosure>
                         </ul>
                         <div className="rounded-full shadow">
                           <a
