@@ -16,7 +16,7 @@ module.exports = {
         amber: colors.amber,
         teal: colors.teal,
         cyan: colors.cyan,
-        'light-blue': colors.lightBlue,
+        sky: colors.sky,
       },
       screens: {
         xs: '360px',
@@ -26,5 +26,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
 }
