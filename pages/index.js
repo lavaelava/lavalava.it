@@ -34,11 +34,11 @@ export default function Home() {
             />
             <div className="relative">
               <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-                <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
+                <div className="max-w-xl px-4 mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
                   <div>
                     <div>
                       <svg
-                        className="h-12 w-12 text-cyan-700"
+                        className="w-12 h-12 text-cyan-700"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 60 60"
@@ -66,14 +66,14 @@ export default function Home() {
                       </p>
                       <div className="mt-6">
                         <Link href="/promo/la-camicia-conveniente">
-                          <a className="inline-flex py-2 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400">
+                          <a className="inline-flex px-4 py-2 font-medium text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400">
                             Vedi i prezzi
                           </a>
                         </Link>
                       </div>
                     </div>
                   </div>
-                  <div className="mt-8 border-t border-gray-200 pt-6">
+                  <div className="pt-6 mt-8 border-t border-gray-200">
                     <blockquote>
                       <div>
                         <p className="text-base text-gray-500">
@@ -87,7 +87,7 @@ export default function Home() {
                         <div className="flex items-center space-x-3">
                           <div className="flex-shrink-0">
                             <img
-                              className="h-6 w-6 rounded-full"
+                              className="w-6 h-6 rounded-full"
                               src="/images/testimonials/walter.jpg"
                               alt="Walter"
                             />
@@ -103,7 +103,7 @@ export default function Home() {
                 <div className="mt-12 sm:mt-16 lg:mt-0">
                   <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                     <img
-                      className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                      className="w-full shadow-xl rounded-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                       src="/images/shirt.jpg"
                       alt="Macchinario per stirare la camicie"
                     />
@@ -113,11 +113,11 @@ export default function Home() {
             </div>
             <div className="mt-24">
               <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-                <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
+                <div className="max-w-xl px-4 mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-2">
                   <div>
                     <div>
                       <svg
-                        className="h-12 w-12 text-cyan-700"
+                        className="w-12 h-12 text-cyan-700"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 60 60"
@@ -155,7 +155,7 @@ export default function Home() {
                       <div className="mt-6">
                         <a
                           href="#servizi"
-                          className="inline-flex py-2 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
+                          className="inline-flex px-4 py-2 font-medium text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
                         >
                           Scopri i nostri servizi
                         </a>
@@ -166,7 +166,7 @@ export default function Home() {
                 <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
                   <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                     <img
-                      className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                      className="w-full shadow-xl rounded-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                       src="/images/old-laundry.jpg"
                       alt="Lavanderia nel negli anni 80"
                     />
@@ -176,11 +176,11 @@ export default function Home() {
             </div>
             <div className="pt-24" id="domicilio">
               <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-                <div className="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
+                <div className="max-w-xl px-4 mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
                   <div>
                     <div>
                       <svg
-                        className="h-12 w-12 text-cyan-700"
+                        className="w-12 h-12 text-cyan-700"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 60 60"
@@ -221,13 +221,13 @@ export default function Home() {
                       <div className="mt-6">
                         <a
                           href="https://ordini.lavalava.it"
-                          className="inline-flex py-2 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
+                          className="inline-flex px-4 py-2 font-medium text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
                         >
                           Ordina ora
                         </a>
                       </div>
                     </div>
-                    <div className="mt-8 border-t border-gray-200 pt-6">
+                    <div className="pt-6 mt-8 border-t border-gray-200">
                       <blockquote>
                         <div>
                           <p className="text-base text-gray-500">
@@ -242,7 +242,7 @@ export default function Home() {
                           <div className="flex items-center space-x-3">
                             <div className="flex-shrink-0">
                               <img
-                                className="h-6 w-6 rounded-full"
+                                className="w-6 h-6 rounded-full"
                                 src="/images/testimonials/pier-francesco.jpg"
                                 alt="Pier Francesco"
                               />
@@ -259,7 +259,7 @@ export default function Home() {
                 <div className="mt-12 sm:mt-16 lg:mt-0">
                   <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                     <img
-                      className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                      className="w-full shadow-xl rounded-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                       src="/images/phone-mockup.jpg"
                       alt="Applicazione degli ordini online mostrata su dei telefoni"
                     />
@@ -271,20 +271,20 @@ export default function Home() {
 
           {/* Gradient Feature Section */}
           <div id="servizi">
-            <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
-              <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight">
+            <div className="max-w-4xl px-4 py-16 mx-auto sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
+              <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">
                 I nostri principali servizi
               </h2>
-              <p className="mt-4 max-w-3xl text-lg text-gray-500">
+              <p className="max-w-3xl mt-4 text-lg text-gray-500">
                 In oltre quarant'anni di esperienza abbiamo ampliato le nostre
                 competenze e continuato ad investre in nuove tecnologie per
                 migliorare ed incrementare i nostri servizi.
               </p>
-              <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
+              <div className="grid grid-cols-1 mt-12 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
                 <div>
                   <div>
                     <svg
-                      className="h-12 w-12 text-cyan-700"
+                      className="w-12 h-12 text-cyan-700"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 60 60"
@@ -312,7 +312,7 @@ export default function Home() {
                 <div>
                   <div>
                     <svg
-                      className="h-12 w-12 text-cyan-700"
+                      className="w-12 h-12 text-cyan-700"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 60 60"
@@ -341,7 +341,7 @@ export default function Home() {
                 <div>
                   <div>
                     <svg
-                      className="h-12 w-12 text-cyan-700"
+                      className="w-12 h-12 text-cyan-700"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 60 60"
@@ -369,7 +369,7 @@ export default function Home() {
                 <div>
                   <div>
                     <svg
-                      className="h-12 w-12 text-cyan-700"
+                      className="w-12 h-12 text-cyan-700"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 60 60"
@@ -397,7 +397,7 @@ export default function Home() {
                 <div>
                   <div>
                     <svg
-                      className="h-12 w-12 text-cyan-700"
+                      className="w-12 h-12 text-cyan-700"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 60 60"
@@ -425,7 +425,7 @@ export default function Home() {
                 <div>
                   <div>
                     <svg
-                      className="h-12 w-12 text-cyan-700"
+                      className="w-12 h-12 text-cyan-700"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 60 60"
@@ -461,9 +461,9 @@ export default function Home() {
             className="bg-gradient-to-r from-teal-500 to-cyan-600"
           >
             <div className="pt-12 sm:pt-16 lg:pt-24">
-              <div className="max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+              <div className="px-4 mx-auto text-center max-w-7xl sm:px-6 lg:px-8">
                 <div className="max-w-3xl mx-auto space-y-2 lg:max-w-none">
-                  <h2 className="text-lg leading-6 font-semibold text-cyan-100 uppercase tracking-wider">
+                  <h2 className="text-lg font-semibold leading-6 tracking-wider uppercase text-cyan-100">
                     Dove siamo
                   </h2>
                   <p className="text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">
@@ -475,13 +475,13 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="mt-8 pb-12 bg-gray-50 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24">
+            <div className="pb-12 mt-8 bg-gray-50 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24">
               <div className="relative">
                 <div className="absolute inset-0 h-3/4 bg-gradient-to-r from-teal-500 to-cyan-600"></div>
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                   <div className="max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-2 lg:gap-5 lg:space-y-0">
-                    <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-                      <div className="relative h-60 flex-shrink-0">
+                    <div className="flex flex-col overflow-hidden rounded-lg shadow-lg">
+                      <div className="relative flex-shrink-0 h-60">
                         <Image
                           className="object-cover"
                           src="/images/lava-e-lava--pisa.jpg"
@@ -490,18 +490,18 @@ export default function Home() {
                         />
                         <div className="absolute top-6 left-6">
                           <h3
-                            className="inline-flex px-4 py-1 rounded-full text-base font-semibold tracking-wide uppercase bg-cyan-100 text-cyan-600"
+                            className="inline-flex px-4 py-1 text-base font-semibold tracking-wide uppercase rounded-full bg-cyan-100 text-cyan-600"
                             id="pisa"
                           >
                             Pisa
                           </h3>
                         </div>
                       </div>
-                      <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
+                      <div className="flex flex-col justify-between flex-1 px-6 pt-6 pb-8 space-y-6 bg-gray-50 sm:p-10 sm:pt-6">
                         <ul className="space-y-4">
                           <li className="flex items-start">
                             <div className="flex-shrink-0">
-                              <LocationMarkerIcon className="h-6 w-6 text-cyan-500" />
+                              <LocationMarkerIcon className="w-6 h-6 text-cyan-500" />
                             </div>
                             <a
                               href="https://g.page/lavaelava"
@@ -514,7 +514,7 @@ export default function Home() {
 
                           <li className="flex items-start">
                             <div className="flex-shrink-0">
-                              <PhoneIcon className="h-6 w-6 text-cyan-500" />
+                              <PhoneIcon className="w-6 h-6 text-cyan-500" />
                             </div>
                             <a
                               href="tel:+3905041046"
@@ -526,9 +526,9 @@ export default function Home() {
 
                           <li className="flex items-start">
                             <div className="flex-shrink-0">
-                              <ClockIcon className="h-6 w-6 text-cyan-500" />
+                              <ClockIcon className="w-6 h-6 text-cyan-500" />
                             </div>
-                            <ul className="ml-3 w-full space-y-3 text-lg text-gray-700 xs:space-y-0">
+                            <ul className="w-full ml-3 space-y-3 text-lg text-gray-700 xs:space-y-0">
                               <li className="flex justify-between">
                                 Lunedì
                                 <span className="font-medium">
@@ -605,7 +605,7 @@ export default function Home() {
                         <div className="rounded-full shadow">
                           <a
                             href="https://goo.gl/maps/Kh1QRqXv1YmUnKBu5"
-                            className="flex items-center justify-center px-5 py-3 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
+                            className="flex items-center justify-center px-5 py-3 font-medium text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
                             aria-describedby="tier-standard"
                           >
                             Ottieni Indicazioni
@@ -616,9 +616,9 @@ export default function Home() {
 
                     <div
                       id="dove-siamo--fornacette"
-                      className="flex flex-col rounded-lg shadow-lg overflow-hidden"
+                      className="flex flex-col overflow-hidden rounded-lg shadow-lg"
                     >
-                      <div className="relative h-60 flex-shrink-0">
+                      <div className="relative flex-shrink-0 h-60">
                         <Image
                           className="object-cover"
                           src="/images/lava-e-lava--fornacette.jpg"
@@ -627,18 +627,18 @@ export default function Home() {
                         />
                         <div className="absolute top-6 left-6">
                           <h3
-                            className="inline-flex px-4 py-1 rounded-full text-base font-semibold tracking-wide uppercase bg-cyan-100 text-cyan-600"
+                            className="inline-flex px-4 py-1 text-base font-semibold tracking-wide uppercase rounded-full bg-cyan-100 text-cyan-600"
                             id="fornacette"
                           >
                             Fornacette
                           </h3>
                         </div>
                       </div>
-                      <div className="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
+                      <div className="flex flex-col justify-between flex-1 px-6 pt-6 pb-8 space-y-6 bg-gray-50 sm:p-10 sm:pt-6">
                         <ul className="space-y-4">
                           <li className="flex items-start">
                             <div className="flex-shrink-0">
-                              <LocationMarkerIcon className="h-6 w-6 text-cyan-500" />
+                              <LocationMarkerIcon className="w-6 h-6 text-cyan-500" />
                             </div>
                             <div className="ml-3">
                               <a
@@ -657,7 +657,7 @@ export default function Home() {
 
                           <li className="flex items-start">
                             <div className="flex-shrink-0">
-                              <PhoneIcon className="h-6 w-6 text-cyan-500" />
+                              <PhoneIcon className="w-6 h-6 text-cyan-500" />
                             </div>
                             <a
                               href="tel:+390587477444"
@@ -669,9 +669,9 @@ export default function Home() {
 
                           <li className="flex items-start">
                             <div className="flex-shrink-0">
-                              <ClockIcon className="h-6 w-6 text-cyan-500" />
+                              <ClockIcon className="w-6 h-6 text-cyan-500" />
                             </div>
-                            <ul className="ml-3 w-full text-lg text-gray-700">
+                            <ul className="w-full ml-3 text-lg text-gray-700">
                               <li className="flex justify-between">
                                 Lunedì
                                 <span className="font-medium">16-19:30</span>
@@ -718,7 +718,7 @@ export default function Home() {
                         <div className="rounded-full shadow">
                           <a
                             href="https://goo.gl/maps/fxpdmBXMkoCMetkU7"
-                            className="flex items-center justify-center px-5 py-3 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
+                            className="flex items-center justify-center px-5 py-3 font-medium text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
                             aria-describedby="tier-standard"
                           >
                             Ottieni Indicazioni
@@ -734,11 +734,11 @@ export default function Home() {
 
           {/* Stats section */}
           <div className="relative bg-gray-900">
-            <div className="h-80 absolute bottom-0 xl:inset-0 xl:h-full xl:w-full">
-              <div className="h-full w-full xl:grid xl:grid-cols-2">
+            <div className="absolute bottom-0 h-80 xl:inset-0 xl:h-full xl:w-full">
+              <div className="w-full h-full xl:grid xl:grid-cols-2">
                 <div className="h-full xl:relative xl:col-start-2">
                   <img
-                    className="h-full w-full object-cover opacity-25 xl:absolute xl:inset-0"
+                    className="object-cover w-full h-full opacity-25 xl:absolute xl:inset-0"
                     src="/images/businessmen.jpeg"
                     alt="Businessmen looking at a tablet"
                   />
@@ -751,11 +751,11 @@ export default function Home() {
             </div>
             <div
               id="per-le-lavanderie"
-              className="max-w-4xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8"
+              className="max-w-4xl px-4 mx-auto sm:px-6 lg:max-w-7xl lg:px-8 xl:grid xl:grid-cols-2 xl:grid-flow-col-dense xl:gap-x-8"
             >
               <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
                 <h2 className="text-sm font-semibold tracking-wide uppercase">
-                  <span className="bg-gradient-to-r from-teal-300 to-cyan-300 bg-clip-text text-transparent">
+                  <span className="text-transparent bg-gradient-to-r from-teal-300 to-cyan-300 bg-clip-text">
                     Per le lavanderie
                   </span>
                 </h2>
@@ -774,17 +774,17 @@ export default function Home() {
                 <div className="mt-6">
                   <a
                     href="mailto:info@lavalava.it"
-                    className="text-base font-medium bg-gradient-to-r from-teal-300 to-cyan-300 bg-clip-text text-transparent"
+                    className="text-base font-medium text-transparent bg-gradient-to-r from-teal-300 to-cyan-300 bg-clip-text"
                   >
                     Contattaci&nbsp;&rarr;
                   </a>
                 </div>
-                <div className="mt-12 grid grid-cols-1 gap-y-12 gap-x-6 sm:grid-cols-2">
+                <div className="grid grid-cols-1 mt-12 gap-y-12 gap-x-6 sm:grid-cols-2">
                   <p>
                     <span className="block text-2xl font-bold text-white">
                       60K+
                     </span>
-                    <span className="mt-1 block text-base text-gray-300">
+                    <span className="block mt-1 text-base text-gray-300">
                       <span className="font-medium text-white">Capi</span>{' '}
                       lavati in un anno.
                     </span>
@@ -793,7 +793,7 @@ export default function Home() {
                     <span className="block text-2xl font-bold text-white">
                       2K+
                     </span>
-                    <span className="mt-1 block text-base text-gray-300">
+                    <span className="block mt-1 text-base text-gray-300">
                       <span className="font-medium text-white">Camicie</span>{' '}
                       lavate in un mese.
                     </span>
@@ -802,7 +802,7 @@ export default function Home() {
                     <span className="block text-2xl font-bold text-white">
                       40+
                     </span>
-                    <span className="mt-1 block text-base text-gray-300">
+                    <span className="block mt-1 text-base text-gray-300">
                       <span className="font-medium text-white">
                         Anni di esperienza
                       </span>{' '}
@@ -813,7 +813,7 @@ export default function Home() {
                     <span className="block text-2xl font-bold text-white">
                       12M+
                     </span>
-                    <span className="mt-1 block text-base text-gray-300">
+                    <span className="block mt-1 text-base text-gray-300">
                       <span className="font-medium text-white">
                         Issues resolved
                       </span>{' '}
@@ -827,23 +827,23 @@ export default function Home() {
 
           {/* CTA Section */}
           <div className="bg-white">
-            <div className="max-w-4xl mx-auto py-16 px-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <div className="max-w-4xl px-4 py-16 mx-auto sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 lg:flex lg:items-center lg:justify-between">
               <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                 <span className="block">Hai dei capi da lavare?</span>
-                <span className="block bg-gradient-to-r from-teal-500 to-cyan-600 bg-clip-text text-transparent">
+                <span className="block text-transparent bg-gradient-to-r from-teal-500 to-cyan-600 bg-clip-text">
                   Veniamo noi da te o puoi portarli in lavanderia.
                 </span>
               </h2>
               <div className="mt-6 space-y-4 sm:space-y-0 sm:flex sm:space-x-5">
                 <a
                   href="https://ordini.lavalava.it"
-                  className="flex items-center justify-center px-4 py-3 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
+                  className="flex items-center justify-center px-4 py-3 font-medium text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
                 >
                   Ordina online
                 </a>
                 <a
                   href="#dove-siamo"
-                  className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-cyan-800 bg-cyan-100 hover:bg-cyan-200"
+                  className="flex items-center justify-center px-4 py-3 text-base font-medium border border-transparent rounded-md shadow-sm text-cyan-800 bg-cyan-100 hover:bg-cyan-200"
                 >
                   Vieni in negozio
                 </a>
@@ -856,17 +856,17 @@ export default function Home() {
           <h2 id="footerHeading" className="sr-only">
             Footer
           </h2>
-          <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+          <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
             <div className="xl:grid xl:grid-cols-3 xl:gap-8">
               <div className="space-y-8 xl:col-span-1">
                 <img
-                  className="h-10 w-auto"
+                  className="w-auto h-10"
                   src="/logo.svg"
                   height={40}
                   width={113}
                   alt="Lava&Lava"
                 />
-                <p className="text-gray-500 text-base">
+                <p className="text-base text-gray-500">
                   Ci prendiamo cura dei tuoi capi dal 1981.
                 </p>
                 <div className="flex space-x-6">
@@ -876,7 +876,7 @@ export default function Home() {
                   >
                     <span className="sr-only">Facebook</span>
                     <svg
-                      className="h-6 w-6"
+                      className="w-6 h-6"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -895,7 +895,7 @@ export default function Home() {
                   >
                     <span className="sr-only">Instagram</span>
                     <svg
-                      className="h-6 w-6"
+                      className="w-6 h-6"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                       aria-hidden="true"
@@ -909,10 +909,10 @@ export default function Home() {
                   </a>
                 </div>
               </div>
-              <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+              <div className="grid grid-cols-2 gap-8 mt-12 xl:mt-0 xl:col-span-2">
                 <div className="md:grid md:grid-cols-2 md:gap-8">
                   <div>
-                    <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                    <h3 className="text-sm font-semibold tracking-wider text-gray-400 uppercase">
                       Servizi
                     </h3>
                     <ul className="mt-4 space-y-4">
@@ -945,7 +945,7 @@ export default function Home() {
                     </ul>
                   </div>
                   <div className="mt-12 md:mt-0">
-                    <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                    <h3 className="text-sm font-semibold tracking-wider text-gray-400 uppercase">
                       Contatti
                     </h3>
                     <ul className="mt-4 space-y-4">
@@ -980,7 +980,7 @@ export default function Home() {
                 </div>
                 <div>
                   <div>
-                    <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
+                    <h3 className="text-sm font-semibold tracking-wider text-gray-400 uppercase">
                       Legal
                     </h3>
                     <ul className="mt-4 space-y-4">
@@ -1004,7 +1004,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="mt-12 border-t border-gray-200 pt-8">
+            <div className="pt-8 mt-12 border-t border-gray-200">
               <p className="text-base text-gray-400 xl:text-center">
                 &copy; 2021 Lava&Lava di Vittorio Fortino & C. S.a.s. - P. IVA:
                 01998820508.
