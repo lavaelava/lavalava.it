@@ -16,11 +16,11 @@ export default function LaCamiciaConveniente() {
         />
       </Head>
 
-      <div className="relative bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto lg:h-screen">
-          <div className="relative h-full z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+      <div className="relative overflow-hidden bg-white">
+        <div className="mx-auto max-w-7xl lg:h-screen">
+          <div className="relative z-10 h-full pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
             <svg
-              className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+              className="absolute inset-y-0 right-0 hidden w-48 h-full text-white transform translate-x-1/2 lg:block"
               fill="currentColor"
               viewBox="0 0 100 100"
               preserveAspectRatio="none"
@@ -29,7 +29,7 @@ export default function LaCamiciaConveniente() {
               <polygon points="50,0 100,0 50,100 0,100" />
             </svg>
 
-            <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
+            <div className="relative px-4 pt-6 sm:px-6 lg:px-8">
               <nav
                 className="relative flex items-center justify-between sm:h-10 lg:justify-start"
                 aria-label="Global"
@@ -38,7 +38,7 @@ export default function LaCamiciaConveniente() {
                   <a className="sm:mx-auto lg:mx-0">
                     <span className="sr-only">Lava&Lava</span>
                     <img
-                      className="h-8 w-auto sm:h-10"
+                      className="w-auto h-8 sm:h-10"
                       src="/logo.svg"
                       height={40}
                       width={113}
@@ -49,11 +49,11 @@ export default function LaCamiciaConveniente() {
               </nav>
             </div>
 
-            <main className="flex items-center h-full mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 sm:justify-center md:mt-16 lg:justify-start lg:mt-0 lg:px-8">
+            <main className="flex items-center h-full px-4 mt-10 max-w-7xl sm:mt-12 sm:px-6 sm:justify-center md:mt-16 lg:justify-start lg:mt-0 lg:px-8">
               <div className="sm:text-center lg:text-left">
                 <img
                   src="/lcc-logo.svg"
-                  className="h-16 w-auto sm:mx-auto sm:h-20 md:h-24 lg:mx-0"
+                  className="w-auto h-16 sm:mx-auto sm:h-20 md:h-24 lg:mx-0"
                   width={350}
                   height={96}
                   alt="La Camicia Conveniente"
@@ -65,38 +65,38 @@ export default function LaCamiciaConveniente() {
                   prova la convenienza!
                 </p>
                 <p className="mt-3">
-                  <span className="mr-5 text-2xl text-light-blue-900 font-bold sm:text-3xl md:text4xl">
+                  <span className="mr-5 text-2xl font-bold text-light-blue-900 sm:text-3xl md:text4xl">
                     10 o più
                   </span>
-                  <span className="text-3xl text-light-blue-600 font-bold sm:text-4xl md:text5xl">
+                  <span className="text-3xl font-bold text-light-blue-600 sm:text-4xl md:text5xl">
                     €1,99
                   </span>
-                  <span className="text-base text-light-blue-700 font-semibold sm:text-lg md:text-xl">
+                  <span className="text-base font-semibold text-light-blue-700 sm:text-lg md:text-xl">
                     /camicia
                   </span>
                 </p>
                 <p className="mt-3">
-                  <span className="mr-5 text-2xl text-light-blue-900 font-bold sm:text-3xl md:text4xl">
+                  <span className="mr-5 text-2xl font-bold text-light-blue-900 sm:text-3xl md:text4xl">
                     Da 5 a 9
                   </span>
-                  <span className="text-3xl text-light-blue-600 font-bold sm:text-4xl md:text5xl">
+                  <span className="text-3xl font-bold text-light-blue-600 sm:text-4xl md:text5xl">
                     €2,10
                   </span>
-                  <span className="text-base text-light-blue-700 font-semibold sm:text-lg md:text-xl">
+                  <span className="text-base font-semibold text-light-blue-700 sm:text-lg md:text-xl">
                     /camicia
                   </span>
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-full shadow">
                     <Link href="/#dove-siamo">
-                      <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-light-blue-700 hover:bg-light-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-light-blue-500 md:py-4 md:text-lg md:px-10">
+                      <a className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-full bg-light-blue-700 hover:bg-light-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-light-blue-500 md:py-4 md:text-lg md:px-10">
                         Dove siamo
                       </a>
                     </Link>
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
                     <Link href="/">
-                      <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-light-blue-700 bg-light-blue-100 hover:bg-light-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-light-blue-500 md:py-4 md:text-lg md:px-10">
+                      <a className="flex items-center justify-center w-full px-8 py-3 text-base font-medium border border-transparent rounded-full text-light-blue-700 bg-light-blue-100 hover:bg-light-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-light-blue-500 md:py-4 md:text-lg md:px-10">
                         Su di noi
                       </a>
                     </Link>
@@ -108,7 +108,7 @@ export default function LaCamiciaConveniente() {
         </div>
         <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           <Image
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 object-cover w-full h-full"
             src="/images/confused-guy.jpg"
             layout="fill"
             alt="Guy with a confused look"

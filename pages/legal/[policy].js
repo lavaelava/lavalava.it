@@ -34,7 +34,7 @@ export default function PrivacyPolicy({ policyContent }) {
       </Head>
       <Header />
       <div
-        className="max-w-prose px-8 py-12 prose mx-auto"
+        className="px-8 py-12 mx-auto prose max-w-prose"
         dangerouslySetInnerHTML={{ __html: policyContent }}
       ></div>
 

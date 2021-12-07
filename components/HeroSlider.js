@@ -17,14 +17,14 @@ export default function HeroSlider() {
   return (
     <>
       {/* Hero section */}
-      <div className="relative pb-8 md:pt-8 overflow-x-hidden">
-        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
-        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+      <div className="relative pb-8 overflow-x-hidden md:pt-8">
+        <div className="absolute inset-x-0 bottom-0 bg-gray-100 h-1/2" />
+        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div ref={sliderRef} className="keen-slider">
-            <div className="keen-slider__slide relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
+            <div className="relative shadow-xl keen-slider__slide sm:rounded-2xl sm:overflow-hidden">
               <div className="absolute inset-0">
                 <Image
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className="absolute inset-0 object-cover w-full h-full"
                   src="/images/hero.jpg"
                   layout="fill"
                   alt="Pila di vestiti su un tavolo"
@@ -32,7 +32,7 @@ export default function HeroSlider() {
                 <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-600 mix-blend-multiply" />
               </div>
               <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-                <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                <h1 className="text-4xl font-extrabold tracking-tight text-center sm:text-5xl lg:text-6xl">
                   <span className="block text-white">
                     Dal 1981 ci prendiamo
                   </span>
@@ -40,22 +40,22 @@ export default function HeroSlider() {
                     cura dei tuoi capi
                   </span>
                 </h1>
-                <p className="mt-6 max-w-lg mx-auto text-center text-xl text-cyan-100 sm:max-w-3xl">
+                <p className="max-w-lg mx-auto mt-6 text-xl text-center text-cyan-100 sm:max-w-3xl">
                   Professionalità e innovazione sono per Lava&Lava punti di
                   riferimento per continuare ad offrire un servizio efficiente e
                   di qualità.
                 </p>
-                <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
+                <div className="max-w-sm mx-auto mt-10 sm:max-w-none sm:flex sm:justify-center">
                   <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
                     <a
                       href="#dove-siamo"
-                      className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-cyan-700 bg-white hover:bg-cyan-50 focus:outline-none focus:ring focus:ring-cyan-300 sm:px-8"
+                      className="flex items-center justify-center px-4 py-3 text-base font-medium bg-white border border-transparent rounded-md shadow-sm text-cyan-700 hover:bg-cyan-50 focus:outline-none focus:ring focus:ring-cyan-300 sm:px-8"
                     >
                       Dove siamo
                     </a>
                     <a
                       href="#overview"
-                      className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-cyan-500 bg-opacity-60 hover:bg-opacity-70 focus:outline-none focus:ring focus:ring-white sm:px-8"
+                      className="flex items-center justify-center px-4 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-cyan-500 bg-opacity-60 hover:bg-opacity-70 focus:outline-none focus:ring focus:ring-white sm:px-8"
                     >
                       Scopri di più
                     </a>
@@ -64,10 +64,10 @@ export default function HeroSlider() {
               </div>
             </div>
 
-            <div className="keen-slider__slide relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
+            <div className="relative shadow-xl keen-slider__slide sm:rounded-2xl sm:overflow-hidden">
               <div className="absolute inset-0">
                 <Image
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className="absolute inset-0 object-cover w-full h-full"
                   src="/images/woman-on-carpet.jpg"
                   layout="fill"
                   alt="Pila di vestiti su un tavolo"
@@ -75,28 +75,28 @@ export default function HeroSlider() {
                 <div className="absolute inset-0 bg-cyan-200 mix-blend-multiply" />
               </div>
               <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-                <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                <h1 className="text-4xl font-extrabold tracking-tight text-center sm:text-5xl lg:text-6xl">
                   <span className="block text-white">
                     Fai tornare il tuo tappeto
                   </span>
                   <span className="block text-cyan-200">come nuovo</span>
                 </h1>
-                <p className="mt-6 max-w-lg mx-auto text-center text-xl text-cyan-100 sm:max-w-3xl">
+                <p className="max-w-lg mx-auto mt-6 text-xl text-center text-cyan-100 sm:max-w-3xl">
                   Trattiamo tutte le tipologie di tappeti: orientali, persiani,
                   in lana, sintetici ed altre. Laviamo il tuo tappeto ad acqua
                   eliminando batteri, acari ed altre impurità. Approfitta ora
                   della promozione!
                 </p>
-                <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
+                <div className="max-w-sm mx-auto mt-10 sm:max-w-none sm:flex sm:justify-center">
                   <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
                     <Link href="/promo/tappeti-2021">
-                      <a className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-cyan-700 bg-white hover:bg-cyan-50 focus:outline-none focus:ring focus:ring-cyan-300 sm:px-8">
+                      <a className="flex items-center justify-center px-4 py-3 text-base font-medium bg-white border border-transparent rounded-md shadow-sm text-cyan-700 hover:bg-cyan-50 focus:outline-none focus:ring focus:ring-cyan-300 sm:px-8">
                         Scopri di più
                       </a>
                     </Link>
                     <a
                       href="https://ordini.lavalava.it"
-                      className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-cyan-500 bg-opacity-60 hover:bg-opacity-70 focus:outline-none focus:ring focus:ring-white sm:px-8"
+                      className="flex items-center justify-center px-4 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-cyan-500 bg-opacity-60 hover:bg-opacity-70 focus:outline-none focus:ring focus:ring-white sm:px-8"
                     >
                       Ordina online
                     </a>
@@ -107,14 +107,14 @@ export default function HeroSlider() {
           </div>
           {slider && (
             <nav
-              className="mt-12 flex items-center justify-center"
+              className="flex items-center justify-center mt-12"
               aria-label="Slides"
             >
               {/* <p className="text-sm font-medium">
               Step {steps.findIndex((step) => step.status === 'current') + 1} of{' '}
               {steps.length}
             </p> */}
-              <ol className="flex items-center space-x-5 z-10">
+              <ol className="z-10 flex items-center space-x-5">
                 {[...Array(slider.details().size).keys()].map((idx) => (
                   <li key={idx}>
                     {currentSlide === idx ? (
@@ -127,10 +127,10 @@ export default function HeroSlider() {
                         }}
                       >
                         <span
-                          className="absolute w-6 h-6 p-px flex"
+                          className="absolute flex w-6 h-6 p-px"
                           aria-hidden="true"
                         >
-                          <span className="w-full h-full rounded-full bg-teal-200" />
+                          <span className="w-full h-full bg-teal-200 rounded-full" />
                         </span>
                         <span
                           className="relative block w-3 h-3 bg-teal-600 rounded-full"

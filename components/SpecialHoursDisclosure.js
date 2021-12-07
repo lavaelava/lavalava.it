@@ -7,7 +7,7 @@ export default function SpecialHoursDisclosure({ children }) {
       <Disclosure>
         {({ open }) => (
           <>
-            <Disclosure.Button className="flex justify-between w-full px-4 py-2 font-medium text-left text-cyan-900 bg-cyan-100 rounded-lg hover:bg-cyan-200 focus:outline-none focus-visible:ring focus-visible:ring-cyan-500 focus-visible:ring-opacity-75">
+            <Disclosure.Button className="flex justify-between w-full px-4 py-2 font-medium text-left rounded-lg text-cyan-900 bg-cyan-100 hover:bg-cyan-200 focus:outline-none focus-visible:ring focus-visible:ring-cyan-500 focus-visible:ring-opacity-75">
               <span>Orari speciali</span>
               <ChevronUpIcon
                 className={`${

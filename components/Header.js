@@ -9,14 +9,14 @@ export default function Header() {
       <Popover className="relative bg-white">
         {({ open }) => (
           <>
-            <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
+            <div className="flex items-center justify-between px-4 py-6 mx-auto max-w-7xl sm:px-6 md:justify-start md:space-x-10 lg:px-8">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <Link href="/">
                   <a>
                     <span>
                       <span className="sr-only">Lava&Lava</span>
                       <img
-                        className="h-8 w-auto sm:h-10"
+                        className="w-auto h-8 sm:h-10"
                         src="/logo.svg"
                         height={40}
                         width={113}
@@ -26,13 +26,13 @@ export default function Header() {
                   </a>
                 </Link>
               </div>
-              <div className="-mr-2 -my-2 md:hidden">
-                <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500">
+              <div className="-my-2 -mr-2 md:hidden">
+                <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500">
                   <span className="sr-only">Apri menu</span>
-                  <MenuIcon className="h-6 w-6" aria-hidden="true" />
+                  <MenuIcon className="w-6 h-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
-              <nav className="hidden md:flex space-x-10">
+              <nav className="hidden space-x-10 md:flex">
                 <Link href="/#servizi">
                   <a className="text-base font-medium text-gray-500 hover:text-gray-900">
                     Servizi
@@ -54,10 +54,10 @@ export default function Header() {
                   </a>
                 </Link>
               </nav>
-              <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+              <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
                 <a
                   href="https://ordini.lavalava.it"
-                  className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
+                  className="inline-flex items-center justify-center px-4 py-2 ml-8 font-medium text-white rounded-md shadow whitespace-nowrap bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
                 >
                   Ordina online
                 </a>
@@ -77,14 +77,14 @@ export default function Header() {
               <Popover.Panel
                 focus
                 static
-                className="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+                className="absolute inset-x-0 top-0 z-30 p-2 transition origin-top-right transform md:hidden"
               >
-                <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-                  <div className="pt-5 pb-6 px-5">
+                <div className="bg-white divide-y-2 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 divide-gray-50">
+                  <div className="px-5 pt-5 pb-6">
                     <div className="flex items-center justify-between">
                       <div>
                         <img
-                          className="h-8 w-auto sm:h-10"
+                          className="w-auto h-8 sm:h-10"
                           src="/logo.svg"
                           height={40}
                           width={113}
@@ -92,18 +92,18 @@ export default function Header() {
                         />
                       </div>
                       <div className="-mr-2">
-                        <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500">
+                        <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500">
                           <span className="sr-only">Chiudi menu</span>
-                          <XIcon className="h-6 w-6" aria-hidden="true" />
+                          <XIcon className="w-6 h-6" aria-hidden="true" />
                         </Popover.Button>
                       </div>
                     </div>
                     <div className="mt-6">
                       <nav className="grid grid-cols-1 gap-7">
                         <Link href="/#servizi">
-                          <a className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                          <a className="flex items-center p-3 -m-3 rounded-lg hover:bg-gray-50">
                             <svg
-                              className="h-10 w-10 text-cyan-700"
+                              className="w-10 h-10 text-cyan-700"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
                               viewBox="0 0 60 60"
@@ -123,9 +123,9 @@ export default function Header() {
                           </a>
                         </Link>
                         <Link href="/#domicilio">
-                          <a className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                          <a className="flex items-center p-3 -m-3 rounded-lg hover:bg-gray-50">
                             <svg
-                              className="h-10 w-10 text-cyan-700"
+                              className="w-10 h-10 text-cyan-700"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
                               viewBox="0 0 60 60"
@@ -145,9 +145,9 @@ export default function Header() {
                           </a>
                         </Link>
                         <Link href="/#dove-siamo">
-                          <a className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                          <a className="flex items-center p-3 -m-3 rounded-lg hover:bg-gray-50">
                             <svg
-                              className="h-10 w-10 text-cyan-700"
+                              className="w-10 h-10 text-cyan-700"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
                               viewBox="0 0 60 60"
@@ -167,9 +167,9 @@ export default function Header() {
                           </a>
                         </Link>
                         <Link href="/#per-le-lavanderie">
-                          <a className="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                          <a className="flex items-center p-3 -m-3 rounded-lg hover:bg-gray-50">
                             <svg
-                              className="h-10 w-10 text-cyan-700"
+                              className="w-10 h-10 text-cyan-700"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
                               viewBox="0 0 60 60"
@@ -191,15 +191,15 @@ export default function Header() {
                       </nav>
                     </div>
                   </div>
-                  <div className="py-6 px-5">
+                  <div className="px-5 py-6">
                     <div>
                       <a
                         href="https://ordini.lavalava.it"
-                        className="w-full flex items-center justify-center px-4 py-2 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
+                        className="flex items-center justify-center w-full px-4 py-2 font-medium text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
                       >
                         Ordina online
                       </a>
-                      <p className="mt-6 text-center text-base font-medium text-gray-500">
+                      <p className="mt-6 text-base font-medium text-center text-gray-500">
                         Preferisci venire in negozio?{' '}
                         <a href="#dove-siamo" className="text-gray-900">
                           Scopri dove siamo
