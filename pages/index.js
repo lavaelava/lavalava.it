@@ -597,6 +597,10 @@ export default function Home() {
                               </li>
                               <li className="flex justify-between">
                                 24/12/21 (Vigilia di Natale)
+                                <span className="font-medium">08:30-13</span>
+                              </li>
+                              <li className="flex justify-between">
+                                31/12/21 (Notte di San Silvestro)
                                 <span className="font-medium">Chiuso</span>
                               </li>
                               <li className="flex justify-between">
