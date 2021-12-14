@@ -304,7 +304,14 @@ export default function Home() {
                       Lavaggio a secco
                     </h3>
                     <p className="mt-2 text-base text-gray-500">
-                      Utilizziamo il solvente di ultima generazione SENSENE™
+                      Utilizziamo il solvente di ultima generazione{' '}
+                      <a
+                        className="font-semibold transition-colors duration-150 hover:text-gray-600"
+                        href="https://safechem.com/it/lavaggio-dei-tessuti/sensenetm"
+                        target="_blank"
+                      >
+                        <span className="underline">SENSENE</span>™
+                      </a>{' '}
                       ecologicamente responsabile ed a basso impatto ambientale.
                     </p>
                   </div>
