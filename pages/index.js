@@ -85,7 +85,7 @@ export default function Home() {
                       </div>
                       <footer className="mt-3">
                         <div className="flex items-center space-x-3">
-                          <div className="flex-shrink-0">
+                          <div className="shrink-0">
                             <img
                               className="w-6 h-6 rounded-full"
                               src="/images/testimonials/walter.jpg"
@@ -240,7 +240,7 @@ export default function Home() {
                         </div>
                         <footer className="mt-3">
                           <div className="flex items-center space-x-3">
-                            <div className="flex-shrink-0">
+                            <div className="shrink-0">
                               <img
                                 className="w-6 h-6 rounded-full"
                                 src="/images/testimonials/pier-francesco.jpg"
@@ -488,7 +488,7 @@ export default function Home() {
                 <div className="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                   <div className="max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-2 lg:gap-5 lg:space-y-0">
                     <div className="flex flex-col overflow-hidden rounded-lg shadow-lg">
-                      <div className="relative flex-shrink-0 h-60">
+                      <div className="relative shrink-0 h-60">
                         <Image
                           className="object-cover"
                           src="/images/lava-e-lava--pisa.jpg"
@@ -507,7 +507,7 @@ export default function Home() {
                       <div className="flex flex-col justify-between flex-1 px-6 pt-6 pb-8 space-y-6 bg-gray-50 sm:p-10 sm:pt-6">
                         <ul className="space-y-4">
                           <li className="flex items-start">
-                            <div className="flex-shrink-0">
+                            <div className="shrink-0">
                               <LocationMarkerIcon className="w-6 h-6 text-cyan-500" />
                             </div>
                             <a
@@ -520,7 +520,7 @@ export default function Home() {
                           </li>
 
                           <li className="flex items-start">
-                            <div className="flex-shrink-0">
+                            <div className="shrink-0">
                               <PhoneIcon className="w-6 h-6 text-cyan-500" />
                             </div>
                             <a
@@ -532,7 +532,7 @@ export default function Home() {
                           </li>
 
                           <li className="flex items-start">
-                            <div className="flex-shrink-0">
+                            <div className="shrink-0">
                               <ClockIcon className="w-6 h-6 text-cyan-500" />
                             </div>
                             <ul className="w-full ml-3 space-y-3 text-lg text-gray-700 xs:space-y-0">
@@ -637,7 +637,7 @@ export default function Home() {
                       id="dove-siamo--fornacette"
                       className="flex flex-col overflow-hidden rounded-lg shadow-lg"
                     >
-                      <div className="relative flex-shrink-0 h-60">
+                      <div className="relative shrink-0 h-60">
                         <Image
                           className="object-cover"
                           src="/images/lava-e-lava--fornacette.jpg"
@@ -656,7 +656,7 @@ export default function Home() {
                       <div className="flex flex-col justify-between flex-1 px-6 pt-6 pb-8 space-y-6 bg-gray-50 sm:p-10 sm:pt-6">
                         <ul className="space-y-4">
                           <li className="flex items-start">
-                            <div className="flex-shrink-0">
+                            <div className="shrink-0">
                               <LocationMarkerIcon className="w-6 h-6 text-cyan-500" />
                             </div>
                             <div className="ml-3">
@@ -675,7 +675,7 @@ export default function Home() {
                           </li>
 
                           <li className="flex items-start">
-                            <div className="flex-shrink-0">
+                            <div className="shrink-0">
                               <PhoneIcon className="w-6 h-6 text-cyan-500" />
                             </div>
                             <a
@@ -687,7 +687,7 @@ export default function Home() {
                           </li>
 
                           <li className="flex items-start">
-                            <div className="flex-shrink-0">
+                            <div className="shrink-0">
                               <ClockIcon className="w-6 h-6 text-cyan-500" />
                             </div>
                             <ul className="w-full ml-3 text-lg text-gray-700">

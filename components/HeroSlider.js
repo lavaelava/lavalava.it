@@ -6,11 +6,17 @@ import 'keen-slider/keen-slider.min.css'
 
 export default function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0)
-  const [sliderRef, slider] = useKeenSlider({
+  const [loaded, setLoaded] = useState(false)
+  const [sliderRef, instanceRef] = useKeenSlider({
     initial: 0,
-    spacing: 50,
-    slideChanged(s) {
-      setCurrentSlide(s.details().relativeSlide)
+    slides: {
+      spacing: 50,
+    },
+    slideChanged(slider) {
+      setCurrentSlide(slider.track.details.rel)
+    },
+    created() {
+      setLoaded(true)
     },
   })
 
@@ -64,13 +70,17 @@ export default function HeroSlider() {
               </div>
             </div>
           </div>
-          {slider && (
-            <nav
-              className="flex items-center justify-center mt-12"
-              aria-label="Slides"
-            >
+          <nav
+            className="flex items-center justify-center mt-12"
+            aria-label="Slides"
+          >
+            {loaded && instanceRef.current && (
               <ol className="z-10 flex items-center space-x-5">
-                {[...Array(slider.details().size).keys()].map((idx) => (
+                {[
+                  ...Array(
+                    instanceRef.current.track.details.slides.length
+                  ).keys(),
+                ].map((idx) => (
                   <li key={idx}>
                     {currentSlide === idx ? (
                       <button
@@ -78,7 +88,7 @@ export default function HeroSlider() {
                         className="relative flex items-center justify-center"
                         aria-current="step"
                         onClick={() => {
-                          slider.moveToSlideRelative(idx)
+                          instanceRef.current?.moveToIdx(idx)
                         }}
                       >
                         <span
@@ -98,7 +108,7 @@ export default function HeroSlider() {
                         type="button"
                         className="block w-3 h-3 bg-gray-300 rounded-full hover:bg-gray-400 focus:outline-none focus:bg-gray-400"
                         onClick={() => {
-                          slider.moveToSlideRelative(idx)
+                          instanceRef.current?.moveToIdx(idx)
                         }}
                       >
                         <span className="sr-only">Slide {idx}</span>
@@ -107,8 +117,8 @@ export default function HeroSlider() {
                   </li>
                 ))}
               </ol>
-            </nav>
-          )}
+            )}
+          </nav>
         </div>
       </div>
     </>
