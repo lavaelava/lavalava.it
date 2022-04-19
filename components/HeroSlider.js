@@ -8,7 +8,6 @@ export default function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [loaded, setLoaded] = useState(false)
   const [sliderRef, instanceRef] = useKeenSlider({
-    initial: 0,
     slides: {
       spacing: 50,
     },
@@ -27,6 +26,47 @@ export default function HeroSlider() {
         <div className="absolute inset-x-0 bottom-0 bg-gray-100 h-1/2" />
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div ref={sliderRef} className="keen-slider">
+            <div className="relative shadow-xl keen-slider__slide sm:rounded-2xl sm:overflow-hidden">
+              <div className="absolute inset-0">
+                <Image
+                  className="absolute inset-0 object-cover w-full h-full"
+                  src="/images/woman-with-duvet.jpeg"
+                  layout="fill"
+                  alt="Ragazza che si nasconde dietro ad un piumone"
+                />
+                <div className="absolute inset-0 bg-indigo-200 mix-blend-multiply" />
+              </div>
+              <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+                <h1 className="text-4xl font-extrabold tracking-tight text-center sm:text-5xl lg:text-6xl">
+                  <span className="block text-white">È tempo di</span>
+                  <span className="block text-indigo-200">
+                    lavare il piumone
+                  </span>
+                </h1>
+                <p className="max-w-lg mx-auto mt-6 text-xl text-center text-indigo-100 sm:max-w-3xl">
+                  Perché non anticipare il cambio di stagione quest’anno?
+                  Portaci il tuo piumone entro il 30 Aprile e risparmia!
+                  Lavaggio ad acqua con detergenti professionali e additivi
+                  disinfettanti ed igienizzanti.
+                </p>
+                <div className="max-w-sm mx-auto mt-10 sm:max-w-none sm:flex sm:justify-center">
+                  <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
+                    <Link href="/promo/piumoni-flash-2022">
+                      <a className="flex items-center justify-center px-4 py-3 text-base font-medium text-indigo-700 bg-white border border-transparent rounded-md shadow-sm hover:bg-indigo-50 focus:outline-none focus:ring focus:ring-indigo-300 sm:px-8">
+                        Scopri di più
+                      </a>
+                    </Link>
+                    <a
+                      href="https://ordini.lavalava.it"
+                      className="flex items-center justify-center px-4 py-3 text-base font-medium text-white bg-indigo-500 border border-transparent rounded-md shadow-sm bg-opacity-60 hover:bg-opacity-70 focus:outline-none focus:ring focus:ring-white sm:px-8"
+                    >
+                      Ordina online
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="relative shadow-xl keen-slider__slide sm:rounded-2xl sm:overflow-hidden">
               <div className="absolute inset-0">
                 <Image
