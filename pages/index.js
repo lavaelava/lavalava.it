@@ -599,24 +599,7 @@ export default function Home() {
                           <SpecialHoursDisclosure>
                             <ul className="w-full text-lg text-gray-700">
                               <li className="flex justify-between">
-                                08/12/21 (Immacolata Concezione)
-                                <span className="font-medium">Chiuso</span>
-                              </li>
-                              <li className="flex justify-between">
-                                24/12/21 (Vigilia di Natale)
-                                <span className="font-medium">08:30-13</span>
-                              </li>
-                              <li className="flex justify-between">
-                                31/12/21 (Notte di San Silvestro)
-                                <span className="font-medium">Chiuso</span>
-                              </li>
-                              <li className="flex justify-between">
-                                06/01/22 (Epifania)
-                                <span className="font-medium">Chiuso</span>
-                              </li>
-                              <li className="flex justify-between">
-                                07/01/22
-                                <span className="font-medium">Chiuso</span>
+                                Non ci sono orari speciali al momento.
                               </li>
                             </ul>
                           </SpecialHoursDisclosure>
@@ -724,31 +707,7 @@ export default function Home() {
                           <SpecialHoursDisclosure>
                             <ul className="w-full text-lg text-gray-700">
                               <li className="flex justify-between">
-                                24/12/21 (Vigilia di Natale)
-                                <span className="font-medium">Chiuso</span>
-                              </li>
-                              <li className="flex justify-between">
-                                25/12/21 (Natale)
-                                <span className="font-medium">Chiuso</span>
-                              </li>
-                              <li className="flex justify-between">
-                                31/12/21 (Notte di San Silvestro)
-                                <span className="font-medium">Chiuso</span>
-                              </li>
-                              <li className="flex justify-between">
-                                01/01/22 (Capodanno)
-                                <span className="font-medium">Chiuso</span>
-                              </li>
-                              <li className="flex justify-between">
-                                06/01/22 (Epifania)
-                                <span className="font-medium">Chiuso</span>
-                              </li>
-                              <li className="flex justify-between">
-                                07/01/22
-                                <span className="font-medium">Chiuso</span>
-                              </li>
-                              <li className="flex justify-between">
-                                08/01/22
+                                07/05/22
                                 <span className="font-medium">Chiuso</span>
                               </li>
                             </ul>
