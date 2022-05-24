@@ -7,12 +7,12 @@ export default function MaglieMaglioni2021() {
     <>
       <Head>
         <title>
-          Piumoni in promozione - Fino al 30 Aprile il piumone sintetico viene
-          solo €11,90 | Lava&Lava
+          Piumoni in promozione - Fino al 6 Giugno il piumone sintetico ad una
+          piazza viene solo €14,90 | Lava&Lava
         </title>
         <meta
           name="description"
-          content="Non aspettare il caldo, portaci adesso il tuo piumone e risparmia. Lava il tuo piumone a partire da soli €11,90! Solo fino al 30 Aprile."
+          content="Non aspettare il caldo, portaci adesso il tuo piumone e risparmia. Lava il tuo piumone a partire da soli €14,90! Solo fino al 6 Giugno."
         />
         <meta name="og:title" content="Promozione Piumoni - Lava&Lava" />
         <meta
@@ -21,7 +21,7 @@ export default function MaglieMaglioni2021() {
         />
         <meta
           name="og:image"
-          content="https://s3.eu-central-1.amazonaws.com/assets.lavalava.it/images/promo/promo-piumoni-flash-2022-og-image.png"
+          content="https://s3.eu-central-1.amazonaws.com/assets.lavalava.it/images/promo/promo-piumoni-flash-2022-og-image-2.png"
         />
       </Head>
 
@@ -62,7 +62,7 @@ export default function MaglieMaglioni2021() {
               <div className="sm:text-center lg:text-left">
                 <p className="text-sm font-semibold tracking-wider text-gray-500 uppercase">
                   Valida fino al
-                  <span className="text-indigo-700"> 30 Aprile</span>
+                  <span className="text-indigo-700"> 6 Giugno</span>
                 </p>
                 <h2 className="mt-4 text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
                   Promozione
@@ -70,24 +70,65 @@ export default function MaglieMaglioni2021() {
                   <span className="text-indigo-600"> Piumoni</span>
                 </h2>
                 <p className="mt-6 text-base text-gray-500 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-                  Perché non anticipare il cambio di stagione quest’anno?
-                  Portaci il tuo piumone entro il 30 Aprile e risparmia!
-                  Lavaggio ad acqua con detergenti professionali e additivi
-                  disinfettanti ed igienizzanti.
+                  Fa veramente troppo caldo per continuare a tenere il piumone
+                  sul letto, portalo in lavanderia entro il 6 Giugno e
+                  risparmia!
+                  <br />
+                  <br />
+                  La consegna sarà a settembre, così non devi neanche
+                  preoccupati di dove tenerlo.
+                  <br />
+                  <br />E se vuoi riaverlo al più presto e non hai tanto spazio
+                  in casa, con un supplemento di €3,50, possiamo mettere il tuo
+                  piumone sottovuoto, addio ingombro!
                 </p>
-                <div className="mt-6 space-y-2 lg:space-y-4">
-                  <p className="text-2xl font-bold sm:text-3xl md:text-4xl">
-                    Sintetico{' '}
-                    <span className="text-3xl font-bold text-indigo-600 sm:text-4xl md:text5xl">
-                      €11,90
-                    </span>
-                  </p>
-                  <p className="text-2xl font-bold sm:text-3xl md:text-4xl">
-                    Piuma d'oca{' '}
-                    <span className="text-3xl font-bold text-indigo-600 sm:text-4xl md:text5xl">
-                      €15,90
-                    </span>
-                  </p>
+                <div className="mt-6 space-y-4 lg:space-y-8">
+                  <div>
+                    <p className="text-2xl font-bold sm:text-3xl md:text-4xl">
+                      Sintetico
+                    </p>
+                    <div className="flex mt-2 space-x-10 sm:justify-center lg:justify-start">
+                      <div>
+                        <span className="block text-sm font-normal tracking-wider text-gray-500 uppercase sm:text-base md:text-lg">
+                          1 Piazza
+                        </span>
+                        <span className="text-3xl font-bold text-indigo-600 sm:text-4xl md:text5xl">
+                          €14,90
+                        </span>
+                      </div>
+                      <div>
+                        <span className="block text-sm font-normal tracking-wider text-gray-500 uppercase sm:text-base md:text-lg">
+                          2 Piazze
+                        </span>
+                        <span className="text-3xl font-bold text-indigo-600 sm:text-4xl md:text5xl">
+                          €16,90
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-2xl font-bold sm:text-3xl md:text-4xl">
+                      Piuma d'oca
+                    </p>
+                    <div className="flex mt-2 space-x-10 sm:justify-center lg:justify-start">
+                      <div>
+                        <span className="block text-sm font-normal tracking-wider text-gray-500 uppercase sm:text-base md:text-lg">
+                          1 Piazza
+                        </span>
+                        <span className="text-3xl font-bold text-indigo-600 sm:text-4xl md:text5xl">
+                          €16,90
+                        </span>
+                      </div>
+                      <div>
+                        <span className="block text-sm font-normal tracking-wider text-gray-500 uppercase sm:text-base md:text-lg">
+                          2 Piazze
+                        </span>
+                        <span className="text-3xl font-bold text-indigo-600 sm:text-4xl md:text5xl">
+                          €18,90
+                        </span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div className="mt-6 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-full shadow">
@@ -110,7 +151,7 @@ export default function MaglieMaglioni2021() {
                 </div>
                 <p className="mt-4 text-xs text-gray-500 sm:mt-6 sm:max-w-xl sm:mx-auto lg:mx-0">
                   La promozione in oggetto è valida esclusivamente dal giorno
-                  19/04/2022 al giorno 30/04/2022. Sono esclusi dalla promozione
+                  25/05/2022 al giorno 06/06/2022. Sono esclusi dalla promozione
                   eventuali piumoni in tessuti particolari (e.g. seta, lana,
                   ricamati) o che comunque richiedono un lavaggio a secco.
                 </p>
