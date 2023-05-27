@@ -26,7 +26,7 @@ export default function HeroSlider() {
         <div className="absolute inset-x-0 bottom-0 bg-gray-100 h-1/2" />
         <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div ref={sliderRef} className="keen-slider">
-            <div className="relative shadow-xl keen-slider__slide sm:rounded-2xl sm:overflow-hidden">
+            {/* <div className="relative shadow-xl keen-slider__slide sm:rounded-2xl sm:overflow-hidden">
               <div className="absolute inset-0">
                 <Image
                   className="absolute inset-0 object-cover w-full h-full"
@@ -64,7 +64,7 @@ export default function HeroSlider() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="relative shadow-xl keen-slider__slide sm:rounded-2xl sm:overflow-hidden">
               <div className="absolute inset-0">
