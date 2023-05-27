@@ -50,10 +50,8 @@ export default function HeroSlider() {
                 </p>
                 <div className="max-w-sm mx-auto mt-10 sm:max-w-none sm:flex sm:justify-center">
                   <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                    <Link href="/promo/piumoni-flash-2022">
-                      <a className="flex items-center justify-center px-4 py-3 text-base font-medium text-indigo-700 bg-white border border-transparent rounded-md shadow-sm hover:bg-indigo-50 focus:outline-none focus:ring focus:ring-indigo-300 sm:px-8">
+                    <Link href="/promo/piumoni-flash-2022" className="flex items-center justify-center px-4 py-3 text-base font-medium text-indigo-700 bg-white border border-transparent rounded-md shadow-sm hover:bg-indigo-50 focus:outline-none focus:ring focus:ring-indigo-300 sm:px-8">
                         Scopri di più
-                      </a>
                     </Link>
                     <a
                       href="https://ordini.lavalava.it"

@@ -65,10 +65,11 @@ export default function Home() {
                         quantità, piu ne porti e più risparmi!
                       </p>
                       <div className="mt-6">
-                        <Link href="/promo/la-camicia-conveniente">
-                          <a className="inline-flex px-4 py-2 font-medium text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400">
-                            Vedi i prezzi
-                          </a>
+                        <Link
+                          href="/promo/la-camicia-conveniente"
+                          className="inline-flex px-4 py-2 font-medium text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
+                        >
+                          Vedi i prezzi
                         </Link>
                       </div>
                     </div>
@@ -1004,18 +1005,20 @@ export default function Home() {
                     </h3>
                     <ul className="mt-4 space-y-4">
                       <li>
-                        <Link href="/legal/privacy-policy">
-                          <a className="text-base text-gray-500 hover:text-gray-900">
-                            Privacy
-                          </a>
+                        <Link
+                          href="/legal/privacy-policy"
+                          className="text-base text-gray-500 hover:text-gray-900"
+                        >
+                          Privacy
                         </Link>
                       </li>
 
                       <li>
-                        <Link href="/legal/cookie-policy">
-                          <a className="text-base text-gray-500 hover:text-gray-900">
-                            Cookie Policy
-                          </a>
+                        <Link
+                          href="/legal/cookie-policy"
+                          className="text-base text-gray-500 hover:text-gray-900"
+                        >
+                          Cookie Policy
                         </Link>
                       </li>
                     </ul>

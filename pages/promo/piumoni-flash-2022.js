@@ -43,17 +43,15 @@ export default function MaglieMaglioni2021() {
                 className="relative flex items-center justify-between sm:h-10 lg:justify-start"
                 aria-label="Global"
               >
-                <Link href="/">
-                  <a className="sm:mx-auto lg:mx-0">
-                    <span className="sr-only">Lava&Lava</span>
-                    <img
-                      className="w-auto h-8 sm:h-10"
-                      src="/logo.svg"
-                      height={40}
-                      width={113}
-                      alt="Lava&Lava"
-                    />
-                  </a>
+                <Link href="/" className="sm:mx-auto lg:mx-0">
+                  <span className="sr-only">Lava&Lava</span>
+                  <img
+                    className="w-auto h-8 sm:h-10"
+                    src="/logo.svg"
+                    height={40}
+                    width={113}
+                    alt="Lava&Lava"
+                  />
                 </Link>
               </nav>
             </div>
@@ -132,10 +130,11 @@ export default function MaglieMaglioni2021() {
                 </div>
                 <div className="mt-6 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-full shadow">
-                    <Link href="/#dove-siamo">
-                      <a className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-indigo-700 border border-transparent rounded-full hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 md:py-4 md:text-lg md:px-10">
-                        Vieni in negozio
-                      </a>
+                    <Link
+                      href="/#dove-siamo"
+                      className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-indigo-700 border border-transparent rounded-full hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 md:py-4 md:text-lg md:px-10"
+                    >
+                      Vieni in negozio
                     </Link>
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
