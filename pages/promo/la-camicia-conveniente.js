@@ -65,38 +65,38 @@ export default function LaCamiciaConveniente() {
                   prova la convenienza!
                 </p>
                 <p className="mt-3">
-                  <span className="mr-5 text-2xl font-bold text-light-blue-900 sm:text-3xl md:text4xl">
+                  <span className="mr-5 text-2xl font-bold text-sky-900 sm:text-3xl md:text4xl">
                     10 o più
                   </span>
-                  <span className="text-3xl font-bold text-light-blue-600 sm:text-4xl md:text5xl">
-                    €1,99
+                  <span className="text-3xl font-bold text-sky-600 sm:text-4xl md:text5xl">
+                    €2,40
                   </span>
-                  <span className="text-base font-semibold text-light-blue-700 sm:text-lg md:text-xl">
+                  <span className="text-base font-semibold text-sky-700 sm:text-lg md:text-xl">
                     /camicia
                   </span>
                 </p>
                 <p className="mt-3">
-                  <span className="mr-5 text-2xl font-bold text-light-blue-900 sm:text-3xl md:text4xl">
+                  <span className="mr-5 text-2xl font-bold text-sky-900 sm:text-3xl md:text4xl">
                     Da 5 a 9
                   </span>
-                  <span className="text-3xl font-bold text-light-blue-600 sm:text-4xl md:text5xl">
-                    €2,10
+                  <span className="text-3xl font-bold text-sky-600 sm:text-4xl md:text5xl">
+                    €2,50
                   </span>
-                  <span className="text-base font-semibold text-light-blue-700 sm:text-lg md:text-xl">
+                  <span className="text-base font-semibold text-sky-700 sm:text-lg md:text-xl">
                     /camicia
                   </span>
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-full shadow">
                     <Link href="/#dove-siamo">
-                      <a className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-full bg-light-blue-700 hover:bg-light-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-light-blue-500 md:py-4 md:text-lg md:px-10">
+                      <a className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-full bg-sky-700 hover:bg-sky-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 md:py-4 md:text-lg md:px-10">
                         Dove siamo
                       </a>
                     </Link>
                   </div>
                   <div className="mt-3 sm:mt-0 sm:ml-3">
                     <Link href="/">
-                      <a className="flex items-center justify-center w-full px-8 py-3 text-base font-medium border border-transparent rounded-full text-light-blue-700 bg-light-blue-100 hover:bg-light-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-light-blue-500 md:py-4 md:text-lg md:px-10">
+                      <a className="flex items-center justify-center w-full px-8 py-3 text-base font-medium border border-transparent rounded-full text-sky-700 bg-sky-100 hover:bg-sky-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 md:py-4 md:text-lg md:px-10">
                         Su di noi
                       </a>
                     </Link>
