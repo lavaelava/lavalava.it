@@ -600,27 +600,15 @@ export default function Home() {
                           <SpecialHoursDisclosure>
                             <ul className="w-full space-y-3 text-lg text-gray-700">
                               <li className="flex justify-between">
-                                Dal 11/07 al 29/07 <br />
-                                (Lun, Mar, Mer, Ven)
+                                Dal 17/07 al 17/08 <br />
                                 <span className="font-medium">08:30-13:30</span>
                               </li>
                               <li className="flex justify-between">
-                                Dal 11/07 al 29/07 <br />
-                                (Giovedì)
-                                <span className="font-medium">
-                                  08:30-13:30
-                                  <span className="invisible block h-0 xs:visible xs:inline xs:h-auto">
-                                    ,
-                                  </span>{' '}
-                                  15:30-19
-                                </span>
+                                15/08 <br />
+                                <span className="font-medium">Chiuso</span>
                               </li>
                               <li className="flex justify-between">
-                                Dal 01/08 al 12/08
-                                <span className="font-medium">08:30-13:30</span>
-                              </li>
-                              <li className="flex justify-between">
-                                Dal 15/08 al 31/08
+                                Dal 18/08 al 01/09
                                 <span className="font-medium">Chiuso</span>
                               </li>
                             </ul>
@@ -729,7 +717,7 @@ export default function Home() {
                           <SpecialHoursDisclosure>
                             <ul className="w-full text-lg text-gray-700">
                               <li className="flex justify-between">
-                                Dal 13/08 al 31/08
+                                Dal 14/08 al 02/09
                                 <span className="font-medium">Chiuso</span>
                               </li>
                             </ul>
