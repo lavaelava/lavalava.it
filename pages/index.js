@@ -175,7 +175,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="pt-24" id="domicilio">
+            {/* <div className="pt-24" id="domicilio">
               <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
                 <div className="max-w-xl px-4 mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
                   <div>
@@ -267,7 +267,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Gradient Feature Section */}
