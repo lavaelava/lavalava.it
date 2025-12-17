@@ -601,7 +601,7 @@ export default function Home() {
                             <ul className="w-full space-y-1 text-lg text-gray-700">
                               <li className="flex justify-between">
                                 24/12/2025 <br />
-                                <span className="font-medium">08:30-13:30</span>
+                                <span className="font-medium">08:30-13:00</span>
                               </li>
                               <li className="flex justify-between">
                                 25/12/2025 - 26/12/2025 <br />
@@ -609,7 +609,7 @@ export default function Home() {
                               </li>
                               <li className="flex justify-between">
                                 31/12/2025 <br />
-                                <span className="font-medium">08:30-13:30</span>
+                                <span className="font-medium">08:30-13:00</span>
                               </li>
                               <li className="flex justify-between">
                                 01/01/2026 - 02/01/2026 <br />
