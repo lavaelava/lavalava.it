@@ -725,7 +725,7 @@ export default function Home() {
                           <SpecialHoursDisclosure>
                             <ul className="w-full space-y-1 text-lg text-gray-700">
                               <li className="flex justify-between">
-                                24/12/2025 - 26/12/2025 <br />
+                                24/12/2025 - 27/12/2025 <br />
                                 <span className="font-medium">Chiuso</span>
                               </li>
                               <li className="flex justify-between">
@@ -737,7 +737,7 @@ export default function Home() {
                                 <span className="font-medium">Chiuso</span>
                               </li>
                               <li className="flex justify-between">
-                                05/01/2026 - 06/01/2026 <br />
+                                05/01/2026 - 07/01/2026 <br />
                                 <span className="font-medium">Chiuso</span>
                               </li>
                             </ul>
