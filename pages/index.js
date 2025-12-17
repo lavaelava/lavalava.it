@@ -598,17 +598,25 @@ export default function Home() {
                             </ul>
                           </li>
                           <SpecialHoursDisclosure>
-                            <ul className="w-full space-y-3 text-lg text-gray-700">
+                            <ul className="w-full space-y-1 text-lg text-gray-700">
                               <li className="flex justify-between">
-                                Dal 17/07 al 17/08 <br />
+                                24/12/2025 <br />
                                 <span className="font-medium">08:30-13:30</span>
                               </li>
                               <li className="flex justify-between">
-                                15/08 <br />
+                                25/12/2025 - 26/12/2025 <br />
                                 <span className="font-medium">Chiuso</span>
                               </li>
                               <li className="flex justify-between">
-                                Dal 18/08 al 01/09
+                                31/12/2025 <br />
+                                <span className="font-medium">08:30-13:30</span>
+                              </li>
+                              <li className="flex justify-between">
+                                01/01/2026 - 02/01/2026 <br />
+                                <span className="font-medium">Chiuso</span>
+                              </li>
+                              <li className="flex justify-between">
+                                05/01/2026 - 06/01/2026 <br />
                                 <span className="font-medium">Chiuso</span>
                               </li>
                             </ul>
@@ -715,9 +723,21 @@ export default function Home() {
                             </ul>
                           </li>
                           <SpecialHoursDisclosure>
-                            <ul className="w-full text-lg text-gray-700">
+                            <ul className="w-full space-y-1 text-lg text-gray-700">
                               <li className="flex justify-between">
-                                Dal 14/08 al 02/09
+                                24/12/2025 - 26/12/2025 <br />
+                                <span className="font-medium">Chiuso</span>
+                              </li>
+                              <li className="flex justify-between">
+                                31/12/2025 <br />
+                                <span className="font-medium">Chiuso</span>
+                              </li>
+                              <li className="flex justify-between">
+                                01/01/2026 - 03/01/2026 <br />
+                                <span className="font-medium">Chiuso</span>
+                              </li>
+                              <li className="flex justify-between">
+                                05/01/2026 - 06/01/2026 <br />
                                 <span className="font-medium">Chiuso</span>
                               </li>
                             </ul>
