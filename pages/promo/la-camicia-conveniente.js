@@ -64,10 +64,10 @@ export default function LaCamiciaConveniente() {
                 </p>
                 <p className="mt-3">
                   <span className="mr-5 text-2xl font-bold text-sky-900 sm:text-3xl md:text4xl">
-                    10 o più
+                    5 o più
                   </span>
                   <span className="text-3xl font-bold text-sky-600 sm:text-4xl md:text5xl">
-                    €2,40
+                    €2,60
                   </span>
                   <span className="text-base font-semibold text-sky-700 sm:text-lg md:text-xl">
                     /camicia
@@ -75,10 +75,10 @@ export default function LaCamiciaConveniente() {
                 </p>
                 <p className="mt-3">
                   <span className="mr-5 text-2xl font-bold text-sky-900 sm:text-3xl md:text4xl">
-                    Da 5 a 9
+                    Da 1 a 4
                   </span>
                   <span className="text-3xl font-bold text-sky-600 sm:text-4xl md:text5xl">
-                    €2,50
+                    €2,90
                   </span>
                   <span className="text-base font-semibold text-sky-700 sm:text-lg md:text-xl">
                     /camicia
