@@ -38,6 +38,7 @@ export default function LaCamiciaConveniente() {
                     height={40}
                     width={113}
                     alt="Lava&Lava"
+                    priority
                     unoptimized
                   />
                 </Link>
@@ -52,6 +53,7 @@ export default function LaCamiciaConveniente() {
                   width={350}
                   height={96}
                   alt="La Camicia Conveniente"
+                  priority
                   unoptimized
                 />
                 <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">

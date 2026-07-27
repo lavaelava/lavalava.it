@@ -39,6 +39,7 @@ export default function MaglieMaglioni2021() {
                     height={40}
                     width={113}
                     alt="Lava&Lava"
+                    priority
                     unoptimized
                   />
                 </Link>

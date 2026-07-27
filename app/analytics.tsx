@@ -20,13 +20,18 @@ import * as fbq from '@/lib/fpixel'
 export default function Analytics() {
   const pathname = usePathname()
   const searchParams = useSearchParams()
+  // Depend on the serialised query, not the ReadonlyURLSearchParams object:
+  // useSearchParams() hands back a fresh instance on every router update,
+  // including hash-only ones, which would re-fire this effect and report a
+  // duplicate of the current page. Every item in the header nav is a
+  // `/#anchor` Link, so that is the common case, not an edge case.
+  const query = searchParams.toString()
 
   useEffect(() => {
     if (process.env.NODE_ENV !== 'production') return
-    const query = searchParams.toString()
     gtag.pageview(pathname + (query ? `?${query}` : ''))
     fbq.pageview()
-  }, [pathname, searchParams])
+  }, [pathname, query])
 
   return null
 }

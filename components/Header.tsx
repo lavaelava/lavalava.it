@@ -20,6 +20,7 @@ export default function Header() {
                   height={40}
                   width={113}
                   alt="Lava&Lava"
+                  priority
                   unoptimized
                 />
               </span>
