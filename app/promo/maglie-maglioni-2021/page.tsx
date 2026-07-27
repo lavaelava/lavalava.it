@@ -58,8 +58,8 @@ export default function MaglieMaglioni2021() {
                 <p className="mt-6 text-base text-gray-500 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
                   Scalda le tue giornate con un maglione, a lavarlo ci pensiamo
                   noi! <br />
-                  Con l'innovativo sistema di lavaggio a secco SENSENE le tue
-                  maglie saranno più morbide e profumate che mai. <br />
+                  Con l&apos;innovativo sistema di lavaggio a secco SENSENE le
+                  tue maglie saranno più morbide e profumate che mai. <br />
                   La promozione è disponibile esclusivamente nel nostro nuovo
                   negozio di Fornacette, clicca il pulsante qui sotto per
                   scoprire dove siamo.

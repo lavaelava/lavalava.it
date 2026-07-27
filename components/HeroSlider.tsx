@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
 import { useKeenSlider } from 'keen-slider/react'
@@ -8,7 +7,9 @@ import 'keen-slider/keen-slider.min.css'
 
 export default function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0)
-  const [loaded, setLoaded] = useState(false)
+  // Kept in state rather than read off instanceRef during render: refs are not
+  // reactive, so rendering from one can leave the dots out of sync.
+  const [slideCount, setSlideCount] = useState(0)
   const [sliderRef, instanceRef] = useKeenSlider({
     slides: {
       spacing: 50,
@@ -16,8 +17,8 @@ export default function HeroSlider() {
     slideChanged(slider) {
       setCurrentSlide(slider.track.details.rel)
     },
-    created() {
-      setLoaded(true)
+    created(slider) {
+      setSlideCount(slider.track.details.slides.length)
     },
   })
 
@@ -117,13 +118,9 @@ export default function HeroSlider() {
             className="flex items-center justify-center mt-12"
             aria-label="Slides"
           >
-            {loaded && instanceRef.current && (
+            {slideCount > 0 && (
               <ol className="z-10 flex items-center space-x-5">
-                {[
-                  ...Array(
-                    instanceRef.current.track.details.slides.length,
-                  ).keys(),
-                ].map((idx) => (
+                {[...Array(slideCount).keys()].map((idx) => (
                   <li key={idx}>
                     {currentSlide === idx ? (
                       <button

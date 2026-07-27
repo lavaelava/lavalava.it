@@ -139,8 +139,8 @@ export default function Home() {
                       <p className="mt-4 text-lg text-gray-500">
                         Nata a Pisa nel 1981 con perseveranza e determinazione
                         della Signora Raffaella Lava&Lava é diventata, con
-                        l'ingresso del figlio Vittorio, punto di riferimento per
-                        tutto il territorio.
+                        l&apos;ingresso del figlio Vittorio, punto di
+                        riferimento per tutto il territorio.
                         <span className="block">
                           Nel 2017 abbiamo avviato un laboratorio attrezzato con
                           macchinari moderni per rispondere alla crescente
@@ -284,9 +284,9 @@ export default function Home() {
                 I nostri principali servizi
               </h2>
               <p className="max-w-3xl mt-4 text-lg text-gray-500">
-                In oltre quarant'anni di esperienza abbiamo ampliato le nostre
-                competenze e continuato ad investre in nuove tecnologie per
-                migliorare ed incrementare i nostri servizi.
+                In oltre quarant&apos;anni di esperienza abbiamo ampliato le
+                nostre competenze e continuato ad investre in nuove tecnologie
+                per migliorare ed incrementare i nostri servizi.
               </p>
               <div className="grid grid-cols-1 mt-12 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
                 <div>
@@ -460,9 +460,9 @@ export default function Home() {
                       Sanificazione ad ozono
                     </h3>
                     <p className="mt-2 text-base text-gray-500">
-                      L'innovativo sistema di igienizzazione ad ozono elimina
-                      muffe, acari, virus, batteri e cattivi odori da cuscini,
-                      caschi moto, passeggini, valigie, ecc.
+                      L&apos;innovativo sistema di igienizzazione ad ozono
+                      elimina muffe, acari, virus, batteri e cattivi odori da
+                      cuscini, caschi moto, passeggini, valigie, ecc.
                     </p>
                   </div>
                 </div>

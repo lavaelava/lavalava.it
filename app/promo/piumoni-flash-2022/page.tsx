@@ -101,7 +101,7 @@ export default function MaglieMaglioni2021() {
                   </div>
                   <div>
                     <p className="text-2xl font-bold sm:text-3xl md:text-4xl">
-                      Piuma d'oca
+                      Piuma d&apos;oca
                     </p>
                     <div className="flex mt-2 space-x-10 sm:justify-center lg:justify-start">
                       <div>
