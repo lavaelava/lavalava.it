@@ -41,3 +41,6 @@ yarn-error.log*
 .yarnrc.yml
 # next-agents-md
 .next-docs/
+
+# typescript
+*.tsbuildinfo
