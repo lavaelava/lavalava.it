@@ -32,12 +32,13 @@ export default function LaCamiciaConveniente() {
               >
                 <Link href="/" className="sm:mx-auto lg:mx-0">
                   <span className="sr-only">Lava&Lava</span>
-                  <img
+                  <Image
                     className="w-auto h-8 sm:h-10"
                     src="/logo.svg"
                     height={40}
                     width={113}
                     alt="Lava&Lava"
+                    unoptimized
                   />
                 </Link>
               </nav>
@@ -45,12 +46,13 @@ export default function LaCamiciaConveniente() {
 
             <main className="flex items-center h-full px-4 mt-10 max-w-7xl sm:mt-12 sm:px-6 sm:justify-center md:mt-16 lg:justify-start lg:mt-0 lg:px-8">
               <div className="sm:text-center lg:text-left">
-                <img
+                <Image
                   src="/lcc-logo.svg"
                   className="w-auto h-16 sm:mx-auto sm:h-20 md:h-24 lg:mx-0"
                   width={350}
                   height={96}
                   alt="La Camicia Conveniente"
+                  unoptimized
                 />
                 <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                   Stanco di stirare le tue camicie? Ci pensiamo noi! <br />

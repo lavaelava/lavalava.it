@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
@@ -13,12 +14,13 @@ export default function Header() {
             <Link href="/">
               <span>
                 <span className="sr-only">Lava&Lava</span>
-                <img
+                <Image
                   className="w-auto h-8 sm:h-10"
                   src="/logo.svg"
                   height={40}
                   width={113}
                   alt="Lava&Lava"
+                  unoptimized
                 />
               </span>
             </Link>
@@ -74,12 +76,13 @@ export default function Header() {
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <img
+                  <Image
                     className="w-auto h-8 sm:h-10"
                     src="/logo.svg"
                     height={40}
                     width={113}
                     alt="Lava&Lava"
+                    unoptimized
                   />
                 </div>
                 <div className="-mr-2">

@@ -33,12 +33,13 @@ export default function MaglieMaglioni2021() {
               >
                 <Link href="/" className="sm:mx-auto lg:mx-0">
                   <span className="sr-only">Lava&Lava</span>
-                  <img
+                  <Image
                     className="w-auto h-8 sm:h-10"
                     src="/logo.svg"
                     height={40}
                     width={113}
                     alt="Lava&Lava"
+                    unoptimized
                   />
                 </Link>
               </nav>

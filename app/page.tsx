@@ -81,9 +81,11 @@ export default function Home() {
                       <footer className="mt-3">
                         <div className="flex items-center space-x-3">
                           <div className="shrink-0">
-                            <img
+                            <Image
                               className="w-6 h-6 rounded-full"
                               src="/images/testimonials/walter.jpg"
+                              width={24}
+                              height={24}
                               alt="Walter"
                             />
                           </div>
@@ -97,9 +99,12 @@ export default function Home() {
                 </div>
                 <div className="mt-12 sm:mt-16 lg:mt-0">
                   <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-                    <img
+                    <Image
                       className="w-full shadow-xl rounded-xl ring-1 ring-black/5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                       src="/images/shirt.jpg"
+                      width={2000}
+                      height={1335}
+                      sizes="(min-width: 1024px) 50vw, 100vw"
                       alt="Macchinario per stirare la camicie"
                     />
                   </div>
@@ -160,9 +165,12 @@ export default function Home() {
                 </div>
                 <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
                   <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-                    <img
+                    <Image
                       className="w-full shadow-xl rounded-xl ring-1 ring-black/5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                       src="/images/old-laundry.jpg"
+                      width={900}
+                      height={592}
+                      sizes="(min-width: 1024px) 50vw, 100vw"
                       alt="Lavanderia nel negli anni 80"
                     />
                   </div>
@@ -236,9 +244,11 @@ export default function Home() {
                         <footer className="mt-3">
                           <div className="flex items-center space-x-3">
                             <div className="shrink-0">
-                              <img
+                              <Image
                                 className="w-6 h-6 rounded-full"
                                 src="/images/testimonials/pier-francesco.jpg"
+                                width={24}
+                                height={24}
                                 alt="Pier Francesco"
                               />
                             </div>
@@ -253,9 +263,12 @@ export default function Home() {
                 </div>
                 <div className="mt-12 sm:mt-16 lg:mt-0">
                   <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-                    <img
+                    <Image
                       className="w-full shadow-xl rounded-xl ring-1 ring-black/5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                       src="/images/phone-mockup.jpg"
+                      width={1500}
+                      height={1125}
+                      sizes="(min-width: 1024px) 50vw, 100vw"
                       alt="Applicazione degli ordini online mostrata su dei telefoni"
                     />
                   </div>
@@ -736,10 +749,12 @@ export default function Home() {
           <div className="relative bg-gray-900">
             <div className="absolute bottom-0 h-80 xl:inset-0 xl:h-full xl:w-full">
               <div className="w-full h-full xl:grid xl:grid-cols-2">
-                <div className="h-full xl:relative xl:col-start-2">
-                  <img
-                    className="object-cover w-full h-full opacity-25 xl:absolute xl:inset-0"
+                <div className="relative h-full xl:col-start-2">
+                  <Image
+                    className="object-cover opacity-25"
                     src="/images/businessmen.jpeg"
+                    fill
+                    sizes="(min-width: 1280px) 50vw, 100vw"
                     alt="Businessmen looking at a tablet"
                   />
                   <div
@@ -859,12 +874,13 @@ export default function Home() {
           <div className="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:py-16 lg:px-8">
             <div className="xl:grid xl:grid-cols-3 xl:gap-8">
               <div className="space-y-8 xl:col-span-1">
-                <img
+                <Image
                   className="w-auto h-10"
                   src="/logo.svg"
                   height={40}
                   width={113}
                   alt="Lava&Lava"
+                  unoptimized
                 />
                 <p className="text-base text-gray-500">
                   Ci prendiamo cura dei tuoi capi dal 1981.
