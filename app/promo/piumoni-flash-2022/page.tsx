@@ -1,30 +1,24 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title:
+    'Piumoni in promozione - Fino al 6 Giugno il piumone sintetico ad una piazza viene solo €14,90 | Lava&Lava',
+  description:
+    'Non aspettare il caldo, portaci adesso il tuo piumone e risparmia. Lava il tuo piumone a partire da soli €14,90! Solo fino al 6 Giugno.',
+  openGraph: {
+    title: 'Promozione Piumoni - Lava&Lava',
+    url: 'https://lavalava.it/promo/piumoni-flash-2022',
+    images: [
+      'https://s3.eu-central-1.amazonaws.com/assets.lavalava.it/images/promo/promo-piumoni-flash-2022-og-image-2.png',
+    ],
+  },
+}
 
 export default function MaglieMaglioni2021() {
   return (
     <>
-      <Head>
-        <title>
-          Piumoni in promozione - Fino al 6 Giugno il piumone sintetico ad una
-          piazza viene solo €14,90 | Lava&Lava
-        </title>
-        <meta
-          name="description"
-          content="Non aspettare il caldo, portaci adesso il tuo piumone e risparmia. Lava il tuo piumone a partire da soli €14,90! Solo fino al 6 Giugno."
-        />
-        <meta name="og:title" content="Promozione Piumoni - Lava&Lava" />
-        <meta
-          name="og:url"
-          content="https://lavalava.it/promo/piumoni-flash-2022"
-        />
-        <meta
-          name="og:image"
-          content="https://s3.eu-central-1.amazonaws.com/assets.lavalava.it/images/promo/promo-piumoni-flash-2022-og-image-2.png"
-        />
-      </Head>
-
       <div className="relative overflow-hidden bg-white font-sen">
         <div className="mx-auto max-w-7xl lg:min-h-screen">
           <div className="relative z-10 flex flex-col justify-center h-full pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:min-h-screen lg:pb-28 xl:pb-32">

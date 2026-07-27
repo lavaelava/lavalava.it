@@ -1,21 +1,16 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title:
+    'Promo Maglie e Maglioni - Lavati a secco a partire da €2,99 | Lava&Lava',
+  description: 'Maglie e Maglioni in promozione! Prezzi a partire da €2,99',
+}
 
 export default function MaglieMaglioni2021() {
   return (
     <>
-      <Head>
-        <title>
-          Promo Maglie e Maglioni - Lavati a secco a partire da €2,99 |
-          Lava&Lava
-        </title>
-        <meta
-          name="description"
-          content="Maglie e Maglioni in promozione! Prezzi a partire da €2,99"
-        />
-      </Head>
-
       <div className="relative overflow-hidden bg-white font-sen">
         <div className="mx-auto max-w-7xl lg:min-h-screen">
           <div className="relative z-10 flex flex-col justify-center h-full pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:min-h-screen lg:pb-28 xl:pb-32">

@@ -1,22 +1,18 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import FooterSimple from '../../components/FooterSimple'
+import FooterSimple from '@/components/FooterSimple'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title:
+    'Promozione Tappeti - Lavaggio ed igienizzazione a soli €4,99 al Kg | Lava&Lava',
+  description:
+    'Tappeti in promozione! Lavati ed igienizzati a soli €4,99 al Kg',
+}
 
 export default function MaglieMaglioni2021() {
   return (
     <>
-      <Head>
-        <title>
-          Promozione Tappeti - Lavaggio ed igienizzazione a soli €4,99 al Kg |
-          Lava&Lava
-        </title>
-        <meta
-          name="description"
-          content="Tappeti in promozione! Lavati ed igienizzati a soli €4,99 al Kg"
-        />
-      </Head>
-
       <div className="relative overflow-hidden bg-white font-sen">
         <div className="mx-auto max-w-7xl lg:min-h-screen">
           <div className="relative z-10 flex flex-col justify-center h-full pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:min-h-screen lg:pb-28 xl:pb-32">

@@ -2,16 +2,12 @@
 
 @plugin '@tailwindcss/typography';
 
-@theme {
-  --font-sen:
-    Sen, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  --font-gilroy:
-    Gilroy, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+@theme inline {
+  --font-sen: var(--sen), var(--font-sans);
+  --font-gilroy: var(--gilroy), var(--font-sans);
+}
 
+@theme {
   --breakpoint-xs: 360px;
 }
 
@@ -24,66 +20,6 @@
   button:not(:disabled),
   [role='button']:not(:disabled) {
     cursor: pointer;
-  }
-}
-
-@layer base {
-  @font-face {
-    font-family: Sen;
-    font-weight: 400;
-    src: url(/fonts/sen/400-regular.woff2) format('woff2'),
-      url(/fonts/sen/400-regular.woff) format('woff');
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Sen;
-    font-weight: 700;
-    src: url(/fonts/sen/700-bold.woff2) format('woff2'),
-      url(/fonts/sen/700-bold.woff) format('woff');
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Sen;
-    font-weight: 800;
-    src: url(/fonts/sen/800-extrabold.woff2) format('woff2'),
-      url(/fonts/sen/800-extrabold.woff) format('woff');
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: Gilroy;
-    font-weight: 400;
-    src: url(/fonts/gilroy/400-regular.woff2) format('woff2'),
-      url(/fonts/gilroy/400-regular.woff) format('woff');
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Gilroy;
-    font-weight: 500;
-    src: url(/fonts/gilroy/500-medium.woff2) format('woff2'),
-      url(/fonts/gilroy/500-medium.woff) format('woff');
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Gilroy;
-    font-weight: 600;
-    src: url(/fonts/gilroy/600-semibold.woff2) format('woff2'),
-      url(/fonts/gilroy/600-semibold.woff) format('woff');
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Gilroy;
-    font-weight: 700;
-    src: url(/fonts/gilroy/700-bold.woff2) format('woff2'),
-      url(/fonts/gilroy/700-bold.woff) format('woff');
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Gilroy;
-    font-weight: 800;
-    src: url(/fonts/gilroy/800-extrabold.woff2) format('woff2'),
-      url(/fonts/gilroy/800-extrabold.woff) format('woff');
-    font-display: swap;
   }
 }
 

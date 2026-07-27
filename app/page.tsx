@@ -1,26 +1,20 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
-import Header from '../components/Header'
-import HeroSlider from '../components/HeroSlider'
-import SpecialHoursDisclosure from '../components/SpecialHoursDisclosure'
-import {
-  MapPinIcon,
-  PhoneIcon,
-  ClockIcon,
-} from '@heroicons/react/24/outline'
+import Header from '@/components/Header'
+import HeroSlider from '@/components/HeroSlider'
+import SpecialHoursDisclosure from '@/components/SpecialHoursDisclosure'
+import { MapPinIcon, PhoneIcon, ClockIcon } from '@heroicons/react/24/outline'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Lava&Lava',
+  description:
+    'Lavaggio a secco e ad acqua, sanificazione ad ozono e lavaggio tappeti. Questi sono solo alcuni dei servizi che offriamo da Lava&Lava. Vieni a trovarci: siamo a Pisa e a Fornacette.',
+}
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Lava&Lava</title>
-        <meta
-          name="description"
-          content="Lavaggio a secco e ad acqua, sanificazione ad ozono e lavaggio tappeti. Questi sono solo alcuni dei servizi che offriamo da Lava&Lava. Vieni a trovarci: siamo a Pisa e a Fornacette."
-        />
-      </Head>
-
       <div className="bg-white font-gilroy">
         <Header />
         <main>

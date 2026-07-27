@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
@@ -119,7 +121,7 @@ export default function HeroSlider() {
               <ol className="z-10 flex items-center space-x-5">
                 {[
                   ...Array(
-                    instanceRef.current.track.details.slides.length
+                    instanceRef.current.track.details.slides.length,
                   ).keys(),
                 ].map((idx) => (
                   <li key={idx}>

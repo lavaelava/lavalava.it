@@ -1,4 +1,10 @@
-import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
+'use client'
+
+import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+} from '@headlessui/react'
 import { ChevronUpIcon } from '@heroicons/react/24/outline'
 
 export default function SpecialHoursDisclosure({

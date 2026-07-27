@@ -1,21 +1,17 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title:
+    'La Camicia Conveniente - Camicia da uomo lavata e stirata a partire da €1,99 | Lava&Lava',
+  description:
+    'Vieni a provare la convenienza. Se ci porti 10 o più camicie ogni camicia la paghi solo €1,99!',
+}
 
 export default function LaCamiciaConveniente() {
   return (
     <>
-      <Head>
-        <title>
-          La Camicia Conveniente - Camicia da uomo lavata e stirata a partire da
-          €1,99 | Lava&Lava
-        </title>
-        <meta
-          name="description"
-          content="Vieni a provare la convenienza. Se ci porti 10 o più camicie ogni camicia la paghi solo €1,99!"
-        />
-      </Head>
-
       <div className="relative overflow-hidden bg-white">
         <div className="mx-auto max-w-7xl lg:h-screen">
           <div className="relative z-10 h-full pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
