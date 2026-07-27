@@ -5,10 +5,10 @@ import Header from '../components/Header'
 import HeroSlider from '../components/HeroSlider'
 import SpecialHoursDisclosure from '../components/SpecialHoursDisclosure'
 import {
-  LocationMarkerIcon,
+  MapPinIcon,
   PhoneIcon,
   ClockIcon,
-} from '@heroicons/react/outline'
+} from '@heroicons/react/24/outline'
 
 export default function Home() {
   return (
@@ -30,7 +30,7 @@ export default function Home() {
           <div id="overview" className="relative pt-16 pb-32 overflow-hidden">
             <div
               aria-hidden="true"
-              className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100"
+              className="absolute inset-x-0 top-0 h-48 bg-linear-to-b/srgb from-gray-100"
             />
             <div className="relative">
               <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
@@ -67,7 +67,7 @@ export default function Home() {
                       <div className="mt-6">
                         <Link
                           href="/promo/la-camicia-conveniente"
-                          className="inline-flex px-4 py-2 font-medium text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
+                          className="inline-flex px-4 py-2 font-medium text-white rounded-md shadow-sm bg-linear-to-r/srgb from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
                         >
                           Vedi i prezzi
                         </Link>
@@ -104,7 +104,7 @@ export default function Home() {
                 <div className="mt-12 sm:mt-16 lg:mt-0">
                   <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                     <img
-                      className="w-full shadow-xl rounded-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                      className="w-full shadow-xl rounded-xl ring-1 ring-black/5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                       src="/images/shirt.jpg"
                       alt="Macchinario per stirare la camicie"
                     />
@@ -156,7 +156,7 @@ export default function Home() {
                       <div className="mt-6">
                         <a
                           href="#servizi"
-                          className="inline-flex px-4 py-2 font-medium text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
+                          className="inline-flex px-4 py-2 font-medium text-white rounded-md shadow-sm bg-linear-to-r/srgb from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
                         >
                           Scopri i nostri servizi
                         </a>
@@ -167,7 +167,7 @@ export default function Home() {
                 <div className="mt-12 sm:mt-16 lg:mt-0 lg:col-start-1">
                   <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                     <img
-                      className="w-full shadow-xl rounded-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                      className="w-full shadow-xl rounded-xl ring-1 ring-black/5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
                       src="/images/old-laundry.jpg"
                       alt="Lavanderia nel negli anni 80"
                     />
@@ -222,7 +222,7 @@ export default function Home() {
                       <div className="mt-6">
                         <a
                           href="https://ordini.lavalava.it"
-                          className="inline-flex px-4 py-2 font-medium text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
+                          className="inline-flex px-4 py-2 font-medium text-white rounded-md shadow-sm bg-linear-to-r/srgb from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
                         >
                           Ordina ora
                         </a>
@@ -260,7 +260,7 @@ export default function Home() {
                 <div className="mt-12 sm:mt-16 lg:mt-0">
                   <div className="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
                     <img
-                      className="w-full shadow-xl rounded-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                      className="w-full shadow-xl rounded-xl ring-1 ring-black/5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                       src="/images/phone-mockup.jpg"
                       alt="Applicazione degli ordini online mostrata su dei telefoni"
                     />
@@ -466,7 +466,7 @@ export default function Home() {
           {/* Where */}
           <div
             id="dove-siamo"
-            className="bg-gradient-to-r from-teal-500 to-cyan-600"
+            className="bg-linear-to-r/srgb from-teal-500 to-cyan-600"
           >
             <div className="pt-12 sm:pt-16 lg:pt-24">
               <div className="px-4 mx-auto text-center max-w-7xl sm:px-6 lg:px-8">
@@ -485,7 +485,7 @@ export default function Home() {
             </div>
             <div className="pb-12 mt-8 bg-gray-50 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24">
               <div className="relative">
-                <div className="absolute inset-0 h-3/4 bg-gradient-to-r from-teal-500 to-cyan-600"></div>
+                <div className="absolute inset-0 h-3/4 bg-linear-to-r/srgb from-teal-500 to-cyan-600"></div>
                 <div className="relative z-10 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                   <div className="max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-2 lg:gap-5 lg:space-y-0">
                     <div className="flex flex-col overflow-hidden rounded-lg shadow-lg">
@@ -493,7 +493,8 @@ export default function Home() {
                         <Image
                           className="object-cover"
                           src="/images/lava-e-lava--pisa.jpg"
-                          layout="fill"
+                          fill
+                          sizes="(min-width: 1024px) 50vw, 100vw"
                           alt="Facciata del punto vendita Lava&Lava a Pisa"
                         />
                         <div className="absolute top-6 left-6">
@@ -509,7 +510,7 @@ export default function Home() {
                         <ul className="space-y-4">
                           <li className="flex items-start">
                             <div className="shrink-0">
-                              <LocationMarkerIcon className="w-6 h-6 text-cyan-500" />
+                              <MapPinIcon className="w-6 h-6 text-cyan-500" />
                             </div>
                             <a
                               href="https://g.page/lavaelava"
@@ -610,10 +611,10 @@ export default function Home() {
                             </ul>
                           </SpecialHoursDisclosure>
                         </ul>
-                        <div className="rounded-full shadow">
+                        <div className="rounded-full shadow-sm">
                           <a
                             href="https://goo.gl/maps/Kh1QRqXv1YmUnKBu5"
-                            className="flex items-center justify-center px-5 py-3 font-medium text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
+                            className="flex items-center justify-center px-5 py-3 font-medium text-white rounded-md shadow-sm bg-linear-to-r/srgb from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
                             aria-describedby="tier-standard"
                           >
                             Ottieni Indicazioni
@@ -630,7 +631,8 @@ export default function Home() {
                         <Image
                           className="object-cover"
                           src="/images/lava-e-lava--fornacette.jpg"
-                          layout="fill"
+                          fill
+                          sizes="(min-width: 1024px) 50vw, 100vw"
                           alt="Facciata del punto vendita Lava&Lava a Fornacette"
                         />
                         <div className="absolute top-6 left-6">
@@ -646,7 +648,7 @@ export default function Home() {
                         <ul className="space-y-4">
                           <li className="flex items-start">
                             <div className="shrink-0">
-                              <LocationMarkerIcon className="w-6 h-6 text-cyan-500" />
+                              <MapPinIcon className="w-6 h-6 text-cyan-500" />
                             </div>
                             <div className="ml-3">
                               <a
@@ -719,10 +721,10 @@ export default function Home() {
                             </ul>
                           </SpecialHoursDisclosure>
                         </ul>
-                        <div className="rounded-full shadow">
+                        <div className="rounded-full shadow-sm">
                           <a
                             href="https://goo.gl/maps/fxpdmBXMkoCMetkU7"
-                            className="flex items-center justify-center px-5 py-3 font-medium text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
+                            className="flex items-center justify-center px-5 py-3 font-medium text-white rounded-md shadow-sm bg-linear-to-r/srgb from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
                             aria-describedby="tier-standard"
                           >
                             Ottieni Indicazioni
@@ -748,7 +750,7 @@ export default function Home() {
                   />
                   <div
                     aria-hidden="true"
-                    className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-gradient-to-r"
+                    className="absolute inset-x-0 top-0 h-32 bg-linear-to-b/srgb from-gray-900 xl:inset-y-0 xl:left-0 xl:h-full xl:w-32 xl:bg-linear-to-r/srgb"
                   />
                 </div>
               </div>
@@ -759,7 +761,7 @@ export default function Home() {
             >
               <div className="relative pt-12 pb-64 sm:pt-24 sm:pb-64 xl:col-start-1 xl:pb-24">
                 <h2 className="text-sm font-semibold tracking-wide uppercase">
-                  <span className="text-transparent bg-gradient-to-r from-teal-300 to-cyan-300 bg-clip-text">
+                  <span className="text-transparent bg-linear-to-r/srgb from-teal-300 to-cyan-300 bg-clip-text">
                     Per le lavanderie
                   </span>
                 </h2>
@@ -778,7 +780,7 @@ export default function Home() {
                 <div className="mt-6">
                   <a
                     href="mailto:info@lavalava.it"
-                    className="text-base font-medium text-transparent bg-gradient-to-r from-teal-300 to-cyan-300 bg-clip-text"
+                    className="text-base font-medium text-transparent bg-linear-to-r/srgb from-teal-300 to-cyan-300 bg-clip-text"
                   >
                     Contattaci&nbsp;&rarr;
                   </a>
@@ -834,20 +836,20 @@ export default function Home() {
             <div className="max-w-4xl px-4 py-16 mx-auto sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8 lg:flex lg:items-center lg:justify-between">
               <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                 <span className="block">Hai dei capi da lavare?</span>
-                <span className="block text-transparent bg-gradient-to-r from-teal-500 to-cyan-600 bg-clip-text">
+                <span className="block text-transparent bg-linear-to-r/srgb from-teal-500 to-cyan-600 bg-clip-text">
                   Veniamo noi da te o puoi portarli in lavanderia.
                 </span>
               </h2>
               <div className="mt-6 space-y-4 sm:space-y-0 sm:flex sm:space-x-5">
                 <a
                   href="https://ordini.lavalava.it"
-                  className="flex items-center justify-center px-4 py-3 font-medium text-white rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
+                  className="flex items-center justify-center px-4 py-3 font-medium text-white rounded-md shadow-sm bg-linear-to-r/srgb from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400"
                 >
                   Ordina online
                 </a>
                 <a
                   href="#dove-siamo"
-                  className="flex items-center justify-center px-4 py-3 text-base font-medium border border-transparent rounded-md shadow-sm text-cyan-800 bg-cyan-100 hover:bg-cyan-200"
+                  className="flex items-center justify-center px-4 py-3 text-base font-medium border border-transparent rounded-md shadow-xs text-cyan-800 bg-cyan-100 hover:bg-cyan-200"
                 >
                   Vieni in negozio
                 </a>

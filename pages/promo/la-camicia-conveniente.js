@@ -85,10 +85,10 @@ export default function LaCamiciaConveniente() {
                   </span>
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                  <div className="rounded-full shadow">
+                  <div className="rounded-full shadow-sm">
                     <Link
                       href="/#dove-siamo"
-                      className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-full bg-sky-700 hover:bg-sky-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 md:py-4 md:text-lg md:px-10"
+                      className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white border border-transparent rounded-full bg-sky-700 hover:bg-sky-800 focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 md:py-4 md:text-lg md:px-10"
                     >
                       Dove siamo
                     </Link>
@@ -96,7 +96,7 @@ export default function LaCamiciaConveniente() {
                   <div className="mt-3 sm:mt-0 sm:ml-3">
                     <Link
                       href="/"
-                      className="flex items-center justify-center w-full px-8 py-3 text-base font-medium border border-transparent rounded-full text-sky-700 bg-sky-100 hover:bg-sky-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 md:py-4 md:text-lg md:px-10"
+                      className="flex items-center justify-center w-full px-8 py-3 text-base font-medium border border-transparent rounded-full text-sky-700 bg-sky-100 hover:bg-sky-200 focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-sky-500 md:py-4 md:text-lg md:px-10"
                     >
                       Su di noi
                     </Link>
@@ -108,9 +108,10 @@ export default function LaCamiciaConveniente() {
         </div>
         <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           <Image
-            className="absolute inset-0 object-cover w-full h-full"
+            className="object-cover"
             src="/images/confused-guy.jpg"
-            layout="fill"
+            fill
+            sizes="(min-width: 1024px) 50vw, 100vw"
             alt="Guy with a confused look"
           />
         </div>

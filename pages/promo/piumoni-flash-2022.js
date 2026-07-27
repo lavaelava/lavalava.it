@@ -129,10 +129,10 @@ export default function MaglieMaglioni2021() {
                   </div>
                 </div>
                 <div className="mt-6 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                  <div className="rounded-full shadow">
+                  <div className="rounded-full shadow-sm">
                     <Link
                       href="/#dove-siamo"
-                      className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-indigo-700 border border-transparent rounded-full hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 md:py-4 md:text-lg md:px-10"
+                      className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-indigo-700 border border-transparent rounded-full hover:bg-indigo-800 focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 md:py-4 md:text-lg md:px-10"
                     >
                       Vieni in negozio
                     </Link>
@@ -142,7 +142,7 @@ export default function MaglieMaglioni2021() {
                       href="https://ordini.lavalava.it"
                       target="_blank"
                       rel="nofollow"
-                      className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-indigo-700 bg-indigo-100 border border-transparent rounded-full hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 md:py-4 md:text-lg md:px-10"
+                      className="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-indigo-700 bg-indigo-100 border border-transparent rounded-full hover:bg-indigo-200 focus:outline-hidden focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 md:py-4 md:text-lg md:px-10"
                     >
                       Ritiro a domicilio
                     </a>
@@ -160,9 +160,10 @@ export default function MaglieMaglioni2021() {
         </div>
         <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
           <Image
-            className="absolute inset-0 object-cover w-full h-full"
+            className="object-cover"
             src="/images/woman-with-duvet.jpeg"
-            layout="fill"
+            fill
+            sizes="(min-width: 1024px) 50vw, 100vw"
             alt="Ragazza che si nasconde dietro ad un piumone"
           />
         </div>

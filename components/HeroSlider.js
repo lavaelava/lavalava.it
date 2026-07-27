@@ -29,9 +29,11 @@ export default function HeroSlider() {
             {/* <div className="relative shadow-xl keen-slider__slide sm:rounded-2xl sm:overflow-hidden">
               <div className="absolute inset-0">
                 <Image
-                  className="absolute inset-0 object-cover w-full h-full"
+                  className="object-cover"
                   src="/images/woman-with-duvet.jpeg"
-                  layout="fill"
+                  fill
+                  priority
+                  sizes="(min-width: 1280px) 1280px, 100vw"
                   alt="Ragazza che si nasconde dietro ad un piumone"
                 />
                 <div className="absolute inset-0 bg-indigo-200 mix-blend-multiply" />
@@ -50,12 +52,12 @@ export default function HeroSlider() {
                 </p>
                 <div className="max-w-sm mx-auto mt-10 sm:max-w-none sm:flex sm:justify-center">
                   <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                    <Link href="/promo/piumoni-flash-2022" className="flex items-center justify-center px-4 py-3 text-base font-medium text-indigo-700 bg-white border border-transparent rounded-md shadow-sm hover:bg-indigo-50 focus:outline-none focus:ring focus:ring-indigo-300 sm:px-8">
+                    <Link href="/promo/piumoni-flash-2022" className="flex items-center justify-center px-4 py-3 text-base font-medium text-indigo-700 bg-white border border-transparent rounded-md shadow-xs hover:bg-indigo-50 focus:outline-hidden focus:ring-3 focus:ring-indigo-300 sm:px-8">
                         Scopri di più
                     </Link>
                     <a
                       href="https://ordini.lavalava.it"
-                      className="flex items-center justify-center px-4 py-3 text-base font-medium text-white bg-indigo-500 border border-transparent rounded-md shadow-sm bg-opacity-60 hover:bg-opacity-70 focus:outline-none focus:ring focus:ring-white sm:px-8"
+                      className="flex items-center justify-center px-4 py-3 text-base font-medium text-white bg-indigo-500/60 border border-transparent rounded-md shadow-xs hover:bg-indigo-500/70 focus:outline-hidden focus:ring-3 focus:ring-white sm:px-8"
                     >
                       Ordina online
                     </a>
@@ -67,12 +69,14 @@ export default function HeroSlider() {
             <div className="relative shadow-xl keen-slider__slide sm:rounded-2xl sm:overflow-hidden">
               <div className="absolute inset-0">
                 <Image
-                  className="absolute inset-0 object-cover w-full h-full"
+                  className="object-cover"
                   src="/images/hero.jpg"
-                  layout="fill"
+                  fill
+                  priority
+                  sizes="(min-width: 1280px) 1280px, 100vw"
                   alt="Pila di vestiti su un tavolo"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-600 mix-blend-multiply" />
+                <div className="absolute inset-0 bg-linear-to-r/srgb from-teal-500 to-cyan-600 mix-blend-multiply" />
               </div>
               <div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                 <h1 className="text-4xl font-extrabold tracking-tight text-center sm:text-5xl lg:text-6xl">
@@ -92,13 +96,13 @@ export default function HeroSlider() {
                   <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
                     <a
                       href="#dove-siamo"
-                      className="flex items-center justify-center px-4 py-3 text-base font-medium bg-white border border-transparent rounded-md shadow-sm text-cyan-700 hover:bg-cyan-50 focus:outline-none focus:ring focus:ring-cyan-300 sm:px-8"
+                      className="flex items-center justify-center px-4 py-3 text-base font-medium bg-white border border-transparent rounded-md shadow-xs text-cyan-700 hover:bg-cyan-50 focus:outline-hidden focus:ring-3 focus:ring-cyan-300 sm:px-8"
                     >
                       Dove siamo
                     </a>
                     <a
                       href="#overview"
-                      className="flex items-center justify-center px-4 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-sm bg-cyan-500 bg-opacity-60 hover:bg-opacity-70 focus:outline-none focus:ring focus:ring-white sm:px-8"
+                      className="flex items-center justify-center px-4 py-3 text-base font-medium text-white border border-transparent rounded-md shadow-xs bg-cyan-500/60 hover:bg-cyan-500/70 focus:outline-hidden focus:ring-3 focus:ring-white sm:px-8"
                     >
                       Scopri di più
                     </a>
@@ -143,7 +147,7 @@ export default function HeroSlider() {
                     ) : (
                       <button
                         type="button"
-                        className="block w-3 h-3 bg-gray-300 rounded-full hover:bg-gray-400 focus:outline-none focus:bg-gray-400"
+                        className="block w-3 h-3 bg-gray-300 rounded-full hover:bg-gray-400 focus:outline-hidden focus:bg-gray-400"
                         onClick={() => {
                           instanceRef.current?.moveToIdx(idx)
                         }}

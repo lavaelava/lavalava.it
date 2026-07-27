@@ -10,7 +10,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="it">
+      <Html lang="it" data-scroll-behavior="smooth">
         <Head>
           <link rel="icon" href="/favicon.ico" />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
