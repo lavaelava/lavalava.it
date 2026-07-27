@@ -1,64 +1,25 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
+@plugin '@tailwindcss/typography';
+
+@theme inline {
+  --font-sen: var(--sen), var(--font-sans);
+  --font-gilroy: var(--gilroy), var(--font-sans);
+}
+
+@theme {
+  --breakpoint-xs: 360px;
+}
+
+/*
+  Tailwind v4's Preflight sets `cursor: default` on buttons; v3 left them as
+  `pointer`. Restore the old behaviour so the slider dots and the Headless UI
+  triggers still read as clickable.
+*/
 @layer base {
-  @font-face {
-    font-family: Sen;
-    font-weight: 400;
-    src: url(/fonts/sen/400-regular.woff2) format('woff2'),
-      url(/fonts/sen/400-regular.woff) format('woff');
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Sen;
-    font-weight: 700;
-    src: url(/fonts/sen/700-bold.woff2) format('woff2'),
-      url(/fonts/sen/700-bold.woff) format('woff');
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Sen;
-    font-weight: 800;
-    src: url(/fonts/sen/800-extrabold.woff2) format('woff2'),
-      url(/fonts/sen/800-extrabold.woff) format('woff');
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: Gilroy;
-    font-weight: 400;
-    src: url(/fonts/gilroy/400-regular.woff2) format('woff2'),
-      url(/fonts/gilroy/400-regular.woff) format('woff');
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Gilroy;
-    font-weight: 500;
-    src: url(/fonts/gilroy/500-medium.woff2) format('woff2'),
-      url(/fonts/gilroy/500-medium.woff) format('woff');
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Gilroy;
-    font-weight: 600;
-    src: url(/fonts/gilroy/600-semibold.woff2) format('woff2'),
-      url(/fonts/gilroy/600-semibold.woff) format('woff');
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Gilroy;
-    font-weight: 700;
-    src: url(/fonts/gilroy/700-bold.woff2) format('woff2'),
-      url(/fonts/gilroy/700-bold.woff) format('woff');
-    font-display: swap;
-  }
-  @font-face {
-    font-family: Gilroy;
-    font-weight: 800;
-    src: url(/fonts/gilroy/800-extrabold.woff2) format('woff2'),
-      url(/fonts/gilroy/800-extrabold.woff) format('woff');
-    font-display: swap;
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
   }
 }
 
