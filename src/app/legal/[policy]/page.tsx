@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Header from '@/components/Header'
-import FooterSimple from '@/components/FooterSimple'
+import Footer from '@/components/Footer'
 
 const POLICIES = {
   'privacy-policy': 'Privacy Policy',
@@ -55,7 +55,7 @@ export default async function LegalPolicy({
         dangerouslySetInnerHTML={{ __html: policyContent }}
       ></div>
 
-      <FooterSimple />
+      <Footer />
     </>
   )
 }

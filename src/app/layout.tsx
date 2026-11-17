@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import { GA_TRACKING_ID } from '@/lib/gtag'
 import { FB_PIXEL_ID } from '@/lib/fpixel'
 import Analytics from './analytics'
-import { gilroy, sen } from './fonts'
+import { gilroy } from './fonts'
 import '@/styles/globals.css'
 
 export const metadata: Metadata = {
@@ -22,11 +22,7 @@ export default function RootLayout({
     // data-scroll-behavior opts back into Next's scroll-behavior override
     // during client navigations, which it stopped doing by default in v16.
     // Without it the in-page hash links would smooth-scroll route changes too.
-    <html
-      lang="it"
-      className={`${sen.variable} ${gilroy.variable}`}
-      data-scroll-behavior="smooth"
-    >
+    <html lang="it" className={gilroy.variable} data-scroll-behavior="smooth">
       <body className="antialiased">
         {children}
 
