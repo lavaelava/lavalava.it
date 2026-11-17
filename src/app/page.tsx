@@ -1,11 +1,16 @@
 import Image from 'next/image'
 import type { Metadata } from 'next'
 import type { ComponentType } from 'react'
+import {
+  ArrowRight02Icon,
+  ArrowUpRight01Icon,
+  StarIcon,
+} from '@hugeicons/core-free-icons'
+import { HugeiconsIcon } from '@hugeicons/react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import LocationCard from '@/components/LocationCard'
 import { primaryButton, secondaryButton } from '@/components/buttons'
-import { ArrowRightIcon, ArrowUpRightIcon, StarIcon } from '@/components/icons'
 import {
   CarpetIcon,
   DryCleaningIcon,
@@ -302,7 +307,11 @@ export default function Home() {
                 className="inline-flex min-h-12 items-center gap-2.5 font-bold text-sky-700"
               >
                 Leggi tutte le recensioni su Google
-                <ArrowUpRightIcon className="size-5" />
+                <HugeiconsIcon
+                  icon={ArrowUpRight01Icon}
+                  size={20}
+                  aria-hidden="true"
+                />
               </a>
             </div>
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -317,9 +326,13 @@ export default function Home() {
                     className="flex gap-0.5"
                   >
                     {[1, 2, 3, 4, 5].map((i) => (
-                      <StarIcon
+                      <HugeiconsIcon
                         key={i}
-                        className="size-[22px] text-amber-500"
+                        icon={StarIcon}
+                        size={22}
+                        fill="currentColor"
+                        className="text-amber-500"
+                        aria-hidden="true"
                       />
                     ))}
                   </div>
@@ -408,14 +421,18 @@ export default function Home() {
                   className={`${primaryButton} gap-2.5`}
                 >
                   Contattaci
-                  <ArrowRightIcon className="size-5" />
+                  <HugeiconsIcon
+                    icon={ArrowRight02Icon}
+                    size={20}
+                    aria-hidden="true"
+                  />
                 </a>
               </div>
             </div>
             <div className="relative min-h-[260px] min-w-0 flex-[1_1_380px]">
               <Image
                 src="/images/businessmen.jpeg"
-                alt="Due persone che si stringono la mano"
+                alt="Due persone consultano un tablet"
                 fill
                 sizes="(min-width: 1248px) 520px, (min-width: 960px) 45vw, 100vw"
                 className="object-cover"

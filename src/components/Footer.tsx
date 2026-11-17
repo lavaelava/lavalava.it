@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { FacebookIcon, InstagramIcon } from './icons'
+import { Facebook02Icon, InstagramIcon } from '@hugeicons/core-free-icons'
+import { HugeiconsIcon } from '@hugeicons/react'
 
 const COLUMNS = [
   {
@@ -50,14 +51,22 @@ export default function Footer() {
                 aria-label="Facebook"
                 className="-ml-3 inline-flex size-12 items-center justify-center text-slate-600 hover:text-sky-700"
               >
-                <FacebookIcon className="size-6" />
+                <HugeiconsIcon
+                  icon={Facebook02Icon}
+                  size={24}
+                  aria-hidden="true"
+                />
               </a>
               <a
                 href="https://www.instagram.com/lavanderialavaelava"
                 aria-label="Instagram"
                 className="inline-flex size-12 items-center justify-center text-slate-600 hover:text-sky-700"
               >
-                <InstagramIcon className="size-6" />
+                <HugeiconsIcon
+                  icon={InstagramIcon}
+                  size={24}
+                  aria-hidden="true"
+                />
               </a>
             </div>
           </div>

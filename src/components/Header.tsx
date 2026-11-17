@@ -2,10 +2,15 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState, type ComponentType } from 'react'
+import { useEffect, useRef, useState, type ComponentType } from 'react'
+import {
+  ArrowRight01Icon,
+  Cancel01Icon,
+  Menu01Icon,
+} from '@hugeicons/core-free-icons'
+import { HugeiconsIcon } from '@hugeicons/react'
 import { stores } from '@/data/stores'
 import { LaundriesIcon, LocationIcon, ServicesIcon } from './brand-icons'
-import { ChevronRightIcon, CloseIcon, MenuIcon } from './icons'
 import LocationCard from './LocationCard'
 
 const NAV: {
@@ -36,7 +41,37 @@ const NAV: {
 
 export default function Header() {
   const [open, setOpen] = useState(false)
+  const toggle = useRef<HTMLButtonElement>(null)
+  const panel = useRef<HTMLDivElement>(null)
   const close = () => setOpen(false)
+
+  useEffect(() => {
+    if (!open) return
+
+    function dismissOutside({ target }: Event) {
+      if (
+        target instanceof Node &&
+        !toggle.current?.contains(target) &&
+        !panel.current?.contains(target)
+      ) {
+        setOpen(false)
+      }
+    }
+
+    function handleEscape(event: KeyboardEvent) {
+      if (event.key === 'Escape') {
+        setOpen(false)
+        toggle.current?.focus()
+      }
+    }
+
+    const controller = new AbortController()
+    const { signal } = controller
+    document.addEventListener('focusin', dismissOutside, { signal })
+    document.addEventListener('pointerdown', dismissOutside, { signal })
+    document.addEventListener('keydown', handleEscape, { signal })
+    return () => controller.abort()
+  }, [open])
 
   return (
     <header className="relative z-20 border-b border-rule bg-white px-[clamp(20px,4vw,48px)] py-3.5">
@@ -69,6 +104,7 @@ export default function Header() {
         </nav>
 
         <button
+          ref={toggle}
           type="button"
           onClick={() => setOpen(!open)}
           aria-expanded={open}
@@ -76,16 +112,18 @@ export default function Header() {
           aria-label={open ? 'Chiudi menu' : 'Apri menu'}
           className={`-mr-2 inline-flex size-12 items-center justify-center rounded-xl text-sky-800 md:hidden ${open ? 'bg-sky-100' : ''}`}
         >
-          {open ? (
-            <CloseIcon className="size-7 stroke-[1.75]" />
-          ) : (
-            <MenuIcon className="size-7 stroke-[1.75]" />
-          )}
+          <HugeiconsIcon
+            icon={open ? Cancel01Icon : Menu01Icon}
+            size={28}
+            strokeWidth={1.75}
+            aria-hidden="true"
+          />
         </button>
       </div>
 
       {open && (
         <div
+          ref={panel}
           id="menu-mobile"
           className="absolute inset-x-0 top-full border-b border-line bg-white px-5 pt-2 pb-6 shadow-[0_24px_40px_-12px_rgba(7,89,133,0.22)] md:hidden"
         >
@@ -104,7 +142,12 @@ export default function Header() {
                   </span>
                   <span className="text-[15px] text-slate-600">{hint}</span>
                 </span>
-                <ChevronRightIcon className="size-5 flex-none text-sky-700" />
+                <HugeiconsIcon
+                  icon={ArrowRight01Icon}
+                  size={20}
+                  className="flex-none text-sky-700"
+                  aria-hidden="true"
+                />
               </a>
             ))}
           </nav>

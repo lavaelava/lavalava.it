@@ -2,9 +2,15 @@
 
 import Image from 'next/image'
 import { useSyncExternalStore } from 'react'
+import {
+  ArrowRight02Icon,
+  Call02Icon,
+  Clock01Icon,
+  Location01Icon,
+} from '@hugeicons/core-free-icons'
+import { HugeiconsIcon } from '@hugeicons/react'
 import type { Store } from '@/data/stores'
 import { dayName, formatRanges, romeNow, storeStatus } from '@/lib/hours'
-import { ArrowRightIcon, ClockIcon, MapPinIcon, PhoneIcon } from './icons'
 import { primaryButton } from './buttons'
 
 // Current minute, re-read every 30s. null on the server and during hydration,
@@ -21,6 +27,7 @@ const useMinute = () =>
   )
 
 const TONES = {
+  unknown: { band: '', dot: 'invisible', label: '' },
   open: {
     band: 'bg-[#E3F5EA] text-[#00562B]',
     dot: 'bg-[#00AE52] border-[#00AE52]',
@@ -50,7 +57,7 @@ export default function LocationCard({
   const minute = useMinute()
   const now = minute === null ? null : romeNow(new Date(minute * 60_000))
   const status = now && storeStatus(store.week, now)
-  const tone = TONES[status?.tone ?? 'closed']
+  const tone = TONES[status?.tone ?? 'unknown']
 
   if (variant === 'compact') {
     return (
@@ -77,13 +84,21 @@ export default function LocationCard({
             )}
           </span>
         </span>
-        <ArrowRightIcon className="size-5 flex-none text-sky-600" />
+        <HugeiconsIcon
+          icon={ArrowRight02Icon}
+          size={20}
+          className="flex-none text-sky-600"
+          aria-hidden="true"
+        />
       </a>
     )
   }
 
   return (
-    <article className="flex flex-col overflow-hidden rounded-3xl border border-line bg-white text-[16.5px] leading-[1.45]">
+    <article
+      id={`dove-siamo--${store.id}`}
+      className="flex scroll-mt-6 flex-col overflow-hidden rounded-3xl border border-line bg-white text-[16.5px] leading-[1.45]"
+    >
       <Image
         src={store.image}
         alt={store.imageAlt}
@@ -117,7 +132,12 @@ export default function LocationCard({
             {store.name}
           </h3>
           <div className="flex items-start gap-3">
-            <MapPinIcon className="mt-0.5 size-[22px] flex-none stroke-[1.5] text-slate-500" />
+            <HugeiconsIcon
+              icon={Location01Icon}
+              size={22}
+              className="mt-0.5 flex-none text-slate-500"
+              aria-hidden="true"
+            />
             <div className="flex flex-col">
               <span className="font-semibold">{store.address[0]}</span>
               <span className="text-slate-600">{store.address[1]}</span>
@@ -130,7 +150,12 @@ export default function LocationCard({
 
         <div className="flex flex-col gap-2">
           <div className="flex items-center gap-3">
-            <ClockIcon className="size-[22px] flex-none stroke-[1.5] text-slate-500" />
+            <HugeiconsIcon
+              icon={Clock01Icon}
+              size={22}
+              className="flex-none text-slate-500"
+              aria-hidden="true"
+            />
             <h4 className="text-sm font-bold tracking-[0.08em] text-slate-600 uppercase">
               Orari
             </h4>
@@ -172,14 +197,14 @@ export default function LocationCard({
             href={store.maps}
             className={`${primaryButton} flex-[1_1_170px] gap-2.5 px-5`}
           >
-            <MapPinIcon className="size-5" />
+            <HugeiconsIcon icon={Location01Icon} size={20} aria-hidden="true" />
             Indicazioni
           </a>
           <a
             href={`tel:${store.tel}`}
             className="inline-flex min-h-[52px] flex-[1_1_170px] items-center justify-center gap-2.5 rounded-[14px] border border-sky-200 bg-white px-5 text-[17px] font-bold text-sky-700"
           >
-            <PhoneIcon className="size-5" />
+            <HugeiconsIcon icon={Call02Icon} size={20} aria-hidden="true" />
             {store.phone}
           </a>
         </div>
