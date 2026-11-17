@@ -1,37 +1,59 @@
 'use client'
 
-import { useEffect } from 'react'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { usePathname, useSearchParams } from 'next/navigation'
-import * as gtag from '@/lib/gtag'
-import * as fbq from '@/lib/fpixel'
+import Script from 'next/script'
+import { useEffect, useState, useSyncExternalStore } from 'react'
+import {
+  gaId,
+  getTrackingPurposes,
+  pixelId,
+  subscribeToConsent,
+} from '@/lib/consent'
 
-/**
- * Reports a pageview to Google Analytics and the Meta Pixel on first render and
- * on every client-side navigation. The App Router has no `router.events`, so
- * pathname + search params are the navigation signal.
- *
- * Both vendors are driven from here on purpose: the gtag config snippet in the
- * root layout sets `send_page_view: false`, so this is the single place a
- * pageview is emitted and there is no double counting on the landing page.
- *
- * `useSearchParams` opts the subtree into client rendering, so the caller wraps
- * this in a <Suspense> boundary.
- */
-export default function Analytics() {
+function MetaPixel({ id }: { id: string }) {
+  const [ready, setReady] = useState(false)
   const pathname = usePathname()
-  const searchParams = useSearchParams()
-  // Depend on the serialised query, not the ReadonlyURLSearchParams object:
-  // useSearchParams() hands back a fresh instance on every router update,
-  // including hash-only ones, which would re-fire this effect and report a
-  // duplicate of the current page. Every item in the header nav is a
-  // `/#anchor` Link, so that is the common case, not an edge case.
-  const query = searchParams.toString()
+  const query = useSearchParams().toString()
 
   useEffect(() => {
-    if (process.env.NODE_ENV !== 'production') return
-    gtag.pageview(pathname + (query ? `?${query}` : ''))
-    fbq.pageview()
-  }, [pathname, query])
+    if (ready && getTrackingPurposes()?.[5] === true) {
+      window.fbq?.('track', 'PageView')
+    }
+  }, [ready, pathname, query])
 
-  return null
+  return (
+    <Script
+      id="fb-pixel-init"
+      strategy="afterInteractive"
+      onReady={() => setReady(true)}
+    >
+      {`
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq.disablePushState = true;
+        fbq('init', ${JSON.stringify(id)});
+      `}
+    </Script>
+  )
+}
+
+export default function Analytics() {
+  const purposes = useSyncExternalStore(
+    subscribeToConsent,
+    getTrackingPurposes,
+    () => undefined,
+  )
+  return (
+    <>
+      {gaId && purposes?.[4] === true && <GoogleAnalytics gaId={gaId} />}
+      {pixelId && purposes?.[5] === true && <MetaPixel id={pixelId} />}
+    </>
+  )
 }

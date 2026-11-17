@@ -1,8 +1,6 @@
 import { Suspense } from 'react'
 import Script from 'next/script'
 import type { Metadata } from 'next'
-import { GA_TRACKING_ID } from '@/lib/gtag'
-import { FB_PIXEL_ID } from '@/lib/fpixel'
 import Analytics from './analytics'
 import { gilroy } from './fonts'
 import '@/styles/globals.css'
@@ -26,56 +24,36 @@ export default function RootLayout({
       <body className="antialiased">
         {children}
 
-        {/* Global Site Tag (gtag.js) - Google Analytics */}
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-          strategy="afterInteractive"
-        />
         {isProduction && (
           <>
-            <Script id="gtag-init" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${GA_TRACKING_ID}', {
-                  send_page_view: false,
-                });
-              `}
-            </Script>
-
-            {/* Global Site Code Pixel - Facebook Pixel */}
-            <Script id="fb-pixel-init" strategy="afterInteractive">
-              {`
-                !function(f,b,e,v,n,t,s)
-                {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-                n.queue=[];t=b.createElement(e);t.async=!0;
-                t.src=v;s=b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t,s)}(window, document,'script',
-                'https://connect.facebook.net/en_US/fbevents.js');
-                fbq('init', ${FB_PIXEL_ID});
-              `}
-            </Script>
-            <noscript>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                height="1"
-                width="1"
-                style={{ display: 'none' }}
-                src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
-                alt=""
-              />
-            </noscript>
-
-            {/* Iubenda Cookie Solution. Loaded beforeInteractive so the consent
-                manager is in place ahead of the trackers above. */}
             <Script id="iubenda-config" strategy="beforeInteractive">
               {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){window.dataLayer.push(arguments);}
+                gtag('consent', 'default', {
+                  analytics_storage: 'denied',
+                  ad_storage: 'denied',
+                  ad_user_data: 'denied',
+                  ad_personalization: 'denied',
+                });
                 var _iub = _iub || [];
                 _iub.csConfiguration = {
                     "perPurposeConsent": true,
+                    "googleConsentMode": true,
+                    "floatingPreferencesButtonDisplay": "bottom-right",
+                    "callback": {
+                        "onPreferenceExpressed": function(preference) {
+                            var purposes = preference && preference.purposes;
+                            window.lavalavaCookiePurposes = {
+                                4: purposes?.[4] === true,
+                                5: purposes?.[5] === true,
+                            };
+                            try {
+                                localStorage.setItem('iubenda:preferences', JSON.stringify(window.lavalavaCookiePurposes));
+                            } catch {}
+                            window.dispatchEvent(new Event('iubenda:preferences'));
+                        }
+                    },
                     "whitelabel": false,
                     "lang": "it",
                     "siteId": 2199998,
@@ -91,6 +69,7 @@ export default function RootLayout({
                         "acceptButtonCaptionColor": "white",
                         "customizeButtonColor": "#d1d5db",
                         "customizeButtonCaptionColor": "#4b5563",
+                        "rejectButtonDisplay": true,
                         "rejectButtonColor": "#0073CE",
                         "rejectButtonCaptionColor": "white",
                         "position": "float-bottom-left",
@@ -105,12 +84,11 @@ export default function RootLayout({
               src="https://cdn.iubenda.com/cs/iubenda_cs.js"
               strategy="beforeInteractive"
             />
+            <Suspense fallback={null}>
+              <Analytics />
+            </Suspense>
           </>
         )}
-
-        <Suspense fallback={null}>
-          <Analytics />
-        </Suspense>
       </body>
     </html>
   )
