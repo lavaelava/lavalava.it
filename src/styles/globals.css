@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/typography';
+
+@theme inline {
+  --font-sans: var(--gilroy), system-ui, sans-serif;
+}
+
+/* Exact design hexes: Tailwind v4's default oklch shades drift slightly. */
+@theme {
+  --color-sky-50: #f0f9ff;
+  --color-sky-100: #e0f2fe;
+  --color-sky-200: #bae6fd;
+  --color-sky-600: #0284c7;
+  --color-sky-650: #0277bd;
+  --color-sky-700: #0369a1;
+  --color-sky-800: #075985;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-line: #d6e8f5;
+  --color-rule: #e5eaec;
+}
+
+/*
+  Tailwind v4's Preflight sets `cursor: default` on buttons; restore pointer.
+*/
+@layer base {
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+a[target='_blank']::after {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+  margin: 0 3px 0 5px;
+}

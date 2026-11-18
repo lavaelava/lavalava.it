@@ -24,16 +24,17 @@
     ],
     "paths": {
       "@/*": [
-        "./*"
+        "./src/*"
       ]
-    }
+    },
+    "allowImportingTsExtensions": true
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "types/global.d.ts",
+    "src/types/global.d.ts",
     ".next/dev/types/**/*.ts"
   ],
   "exclude": [
