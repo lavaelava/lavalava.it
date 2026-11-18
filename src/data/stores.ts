@@ -10,6 +10,8 @@ export type Store = {
   maps: string
   image: string
   imageAlt: string
+  /** CSS object-position for the card crop. */
+  imagePosition: string
   week: WeekHours
 }
 
@@ -31,7 +33,9 @@ export const stores: Store[] = [
     tel: '+3905041046',
     maps: 'https://goo.gl/maps/Kh1QRqXv1YmUnKBu5',
     image: '/images/lava-e-lava--pisa.jpg',
-    imageAlt: 'Ingresso del negozio Lava&Lava di Pisa',
+    imageAlt:
+      'Insegna e ingresso del negozio Lava&Lava di Pisa, via Benedetto Croce 81',
+    imagePosition: '50% 35%',
     week: [[], PISA_DAY, PISA_DAY, PISA_DAY, PISA_DAY, PISA_DAY, []],
   },
   {
@@ -43,7 +47,8 @@ export const stores: Store[] = [
     tel: '+390587477444',
     maps: 'https://goo.gl/maps/fxpdmBXMkoCMetkU7',
     image: '/images/lava-e-lava--fornacette.jpg',
-    imageAlt: 'Vetrina del negozio Lava&Lava di Fornacette',
+    imageAlt: 'Insegna e vetrina del negozio Lava&Lava di Fornacette',
+    imagePosition: '50% 25%',
     week: [[], AFTERNOON, MORNING, [], MORNING, AFTERNOON, MORNING],
   },
 ]

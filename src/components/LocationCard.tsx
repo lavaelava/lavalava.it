@@ -102,10 +102,11 @@ export default function LocationCard({
       <Image
         src={store.image}
         alt={store.imageAlt}
-        width={1040}
-        height={520}
+        width={1600}
+        height={900}
         sizes="(min-width: 1024px) 588px, 100vw"
-        className="h-[220px] w-full object-cover"
+        className="aspect-video max-h-[300px] w-full object-cover"
+        style={{ objectPosition: store.imagePosition }}
       />
 
       <div

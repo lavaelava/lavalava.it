@@ -144,10 +144,10 @@ export default function Home() {
               </div>
               <div className="min-w-0 flex-[1_1_420px]">
                 <Image
-                  src="/images/sweaters.jpg"
-                  alt="Pila di maglioni piegati su un tavolo"
-                  width={1600}
-                  height={1066}
+                  src="/images/hero.jpg"
+                  alt="Mano che prende un sacchetto Lava&Lava al banco del negozio"
+                  width={1200}
+                  height={960}
                   sizes="(min-width: 1248px) 570px, (min-width: 960px) 46vw, 100vw"
                   priority
                   className="h-[clamp(240px,34vw,440px)] w-full rounded-[28px] object-cover"
@@ -429,13 +429,17 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="relative min-h-[260px] min-w-0 flex-[1_1_380px]">
+            <div className="relative isolate min-h-[260px] min-w-0 flex-[1_1_380px]">
               <Image
                 src="/images/businessmen.jpeg"
                 alt="Due persone consultano un tablet"
                 fill
                 sizes="(min-width: 1248px) 520px, (min-width: 960px) 45vw, 100vw"
                 className="object-cover"
+              />
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute inset-0 bg-sky-700 opacity-50 mix-blend-color"
               />
             </div>
           </div>
